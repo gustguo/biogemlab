@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPHT Diamond Synthesis Technology | BioGem Lab — Memorial Diamond Manufacturing</title>
+    <meta name="description" content="Technical deep-dive into BioGem Lab's HPHT diamond synthesis process. 5.5 GPa pressure, 1,450°C temperature, ~60-day growth cycle. Patent-backed carbon extraction and purification technology.">
+    <meta name="keywords" content="HPHT diamond synthesis, high pressure high temperature diamond, memorial diamond technology, carbon extraction, bio carbon purification, lab grown diamond process, diamond crystal growth, HPHT memorial diamond">
+    
+    <meta property="og:title" content="HPHT Diamond Synthesis Technology | BioGem Lab">
+    <meta property="og:description" content="Technical deep-dive into HPHT diamond synthesis — 5.5 GPa, 1,450°C, ~60-day growth cycle. Patent-backed carbon extraction technology.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.biogemlab.com/technology.html">
+    <meta property="og:image" content="https://www.biogemlab.com/assets/images/og-image.jpg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HPHT Diamond Synthesis Technology | BioGem Lab">
+    <meta name="twitter:description" content="Technical deep-dive into HPHT diamond synthesis process and carbon extraction technology.">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💎%3C/text%3E%3C/svg%3E">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter','sans-serif'], serif: ['Crimson Pro','serif'] },
+                    colors: { brand: { gold: '#C5A059', dark: '#0B0F17', slate: '#151B26', light: '#F7F8FA', accent: '#1A2744' }}
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-600 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-brand-dark/90 backdrop-blur-xl border-b border-white/5" role="navigation" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20">
+                        <i class="fas fa-atom text-brand-gold"></i>
+                    </div>
+                    <div>
+                        <span class="font-serif text-xl font-semibold text-white tracking-wide">BioGem Lab</span>
+                        <p class="text-[10px] text-brand-gold/60 tracking-[0.2em] uppercase">Memorial Diamond Laboratory</p>
+                    </div>
+                </a>
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="index.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Home</a>
+                    <a href="technology.html" class="text-brand-gold text-sm font-medium">Technology</a>
+                    <a href="manufacturing.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Manufacturing</a>
+                    <a href="applications.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Applications</a>
+                    <a href="partnership.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Partnership</a>
+                    <a href="laboratory.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Laboratory</a>
+                    <a href="blog/index.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Resources</a>
+                    <a href="faq.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">FAQ</a>
+                    <a href="contact.html" class="px-5 py-2.5 bg-brand-gold text-brand-dark text-sm font-semibold rounded-lg hover:bg-white transition">Contact</a>
+                </div>
+                <button class="lg:hidden text-white" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden pb-6">
+                <div class="flex flex-col gap-4">
+                    <a href="index.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Home</a>
+                    <a href="technology.html" class="text-brand-gold text-sm font-medium">Technology</a>
+                    <a href="manufacturing.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Manufacturing</a>
+                    <a href="applications.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Applications</a>
+                    <a href="partnership.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Partnership</a>
+                    <a href="laboratory.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Laboratory</a>
+                    <a href="blog/index.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Resources</a>
+                    <a href="faq.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">FAQ</a>
+                    <a href="contact.html" class="px-5 py-2.5 bg-brand-gold text-brand-dark text-sm font-semibold rounded-lg text-center">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-brand-dark overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1920&q=80')] bg-cover bg-center opacity-5"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <p class="text-brand-gold/70 text-sm font-semibold tracking-[0.25em] uppercase mb-6">Core Technology</p>
+                <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-6">
+                    HPHT Diamond Synthesis:<br>
+                    <span class="gradient-text">The Complete Technical Pipeline</span>
+                </h1>
+                <p class="text-gray-300 text-lg md:text-xl leading-relaxed">
+                    From biological carbon source to gem-quality diamond — a seven-stage precision manufacturing process operating at 5.5 GPa and 1,450°C.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="section-spacing bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <span class="text-brand-gold text-sm font-semibold tracking-[0.2em] uppercase">Process Overview</span>
+                    <h2 class="font-serif text-4xl md:text-5xl font-semibold text-brand-dark mt-5 mb-6 leading-tight">High-Pressure High-Temperature Crystal Growth</h2>
+                    <p class="text-gray-500 text-lg leading-relaxed mb-6">
+                        HPHT is the established industrial method for producing gem-quality laboratory-grown diamonds. Our process replicates the natural conditions of diamond formation — extreme pressure and temperature — within a controlled manufacturing environment.
+                    </p>
+                    <p class="text-gray-500 leading-relaxed mb-8">
+                        The HPHT method produces diamonds with the same optical, physical, and chemical properties as natural diamonds. The key differentiator in memorial diamond production is the carbon source: rather than generic carbon feedstock, we use carbon extracted and purified from biological materials submitted by partners and end customers.
+                    </p>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="text-center p-4 bg-brand-light rounded-xl">
+                            <p class="font-serif text-2xl font-semibold text-brand-gold">5.5 GPa</p>
+                            <p class="text-gray-400 text-xs mt-1">Synthesis Pressure</p>
+                        </div>
+                        <div class="text-center p-4 bg-brand-light rounded-xl">
+                            <p class="font-serif text-2xl font-semibold text-brand-gold">1,450°C</p>
+                            <p class="text-gray-400 text-xs mt-1">Growth Temperature</p>
+                        </div>
+                        <div class="text-center p-4 bg-brand-light rounded-xl">
+                            <p class="font-serif text-2xl font-semibold text-brand-gold">~60 Days</p>
+                            <p class="text-gray-400 text-xs mt-1">Growth Cycle</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <div class="bg-brand-slate rounded-2xl p-8 border border-white/10">
+                        <h3 class="font-serif text-xl font-semibold text-white mb-6">HPHT Process Parameters</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center py-3 border-b border-white/5">
+                                <span class="text-gray-400 text-sm">Pressure Range</span>
+                                <span class="text-white font-medium">5.0 – 6.0 GPa</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-white/5">
+                                <span class="text-gray-400 text-sm">Temperature Range</span>
+                                <span class="text-white font-medium">1,350 – 1,600°C</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-white/5">
+                                <span class="text-gray-400 text-sm">Growth Chamber Type</span>
+                                <span class="text-white font-medium">Belt / Cubic Press</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-white/5">
+                                <span class="text-gray-400 text-sm">Catalyst Alloy</span>
+                                <span class="text-white font-medium">Fe-Ni-Co System</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-white/5">
+                                <span class="text-gray-400 text-sm">Carbon Source Purity</span>
+                                <span class="text-white font-medium">≥ 99.95%</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-white/5">
+                                <span class="text-gray-400 text-sm">Typical Output Size</span>
+                                <span class="text-white font-medium">0.3 – 2.0 ct rough</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3">
+                                <span class="text-gray-400 text-sm">Quality Consistency</span>
+                                <span class="text-brand-gold font-medium">98.7% Batch Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STAGE 1: BIOLOGICAL MATERIAL -->
+    <section class="section-spacing bg-brand-slate relative molecule-pattern" id="stage-1">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-4 reveal">
+                    <div class="sticky top-32">
+                        <span class="text-brand-gold text-sm font-semibold tracking-[0.2em] uppercase">Stage 01</span>
+                        <h2 class="font-serif text-3xl md:text-4xl font-semibold text-white mt-4 mb-4 leading-tight">Biological Material Intake</h2>
+                        <p class="text-gray-400 leading-relaxed">
+                            Carbon-bearing biological materials are received, catalogued, and assessed for carbon content and sample viability.
+                        </p>
+                    </div>
+                </div>
+                <div class="lg:col-span-8 reveal">
+                    <div class="glass-panel p-8 rounded-2xl border border-white/10 mb-6">
+                        <h3 class="font-serif text-xl font-semibold text-white mb-4">Compatible Carbon Sources</h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="flex items-start gap-4 p-4 bg-brand-dark/50 rounded-xl">
+                                <div class="w-10 h-10 rounded-full bg-brand-gold/10 flex items-center justify-center flex-shrink-0"><i class="fas fa-user text-brand-gold text-sm"></i></div>
+                                <div>
+                                    <p class="text-white font-medium text-sm">Human Hair</p>
+                                    <p class="text-gray-500 text-xs mt-1">Minimum 0.3g. Keratin-based carbon extraction with high yield.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4 p-4 bg-brand-dark/50 rounded-xl">
+                                <div class="w-10 h-10 rounded-full bg-brand-gold/10 flex items-center justify-center flex-shrink-0"><i class="fas fa-paw text-brand-gold text-sm"></i></div>
+                                <div>
+                                    <p class="text-white font-medium text-sm">Pet Fur</p>
+                                    <p class="text-gray-500 text-xs mt-1">All mammalian keratin. Compatible with cat, dog, horse, and other species.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4 p-4 bg-brand-dark/50 rounded-xl">
+                                <div class="w-10 h-10 rounded-full bg-brand-gold/10 flex items-center justify-center flex-shrink-0"><i class="fas fa-fire text-brand-gold text-sm"></i></div>
+                                <div>
+                                    <p class="text-white font-medium text-sm">Cremated Ashes</p>
+                                    <p class="text-gray-500 text-xs mt-1">Carbon-rich residue. Requires extended purification stage.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4 p-4 bg-brand-dark/50 rounded-xl">
+                                <div class="w-10 h-10 rounded-full bg-brand-gold/10 flex items-center justify-center flex-shrink-0"><i class="fas fa-seedling text-brand-gold text-sm"></i></div>
+                                <div>
+                                    <p class="text-white font-medium text-sm">Flowers & Plants</p>
+                                    <p class="text-gray-500 text-xs mt-1">Botanical cellulose and lignin carbon. Seasonal viability assessment.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-8 rounded-2xl border border-white/10">
+                        <h3 class="font-serif text-xl font-semibold text-white mb-4">Intake Protocol</h3>
+                        <div class="space-y-4">
+                            <div class="flex gap-4">
+                                <div class="w-8 h-8 rounded-full bg-brand-gold/20 flex items-center justify-center flex-shrink-0 text-brand-gold text-sm font-semibold">1</div>
+                                <div>
+                                    <p class="text-white font-medium text-sm">Sample Receipt & Documentation</p>
+                                    <p class="text-gray-500 text-xs">Unique batch ID assigned. Chain-of-custody log initiated. Photo documentation of sealed sample container.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-8 h-8 rounded-full bg-brand-gold/20 flex items-center justify-center flex-shrink-0 text-brand-gold text-sm font-semibold">2</div>
+                                <div>
+                                    <p class="text-white font-medium text-sm">Carbon Content Assessment</p>
+                                    <p class="text-gray-500 text-xs">Preliminary spectroscopic analysis to estimate available carbon mass and identify potential contaminants.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-8 h-8 rounded-full bg-brand-gold/20 flex items-center justify-center flex-shrink-0 text-brand-gold text-sm font-semibold">3</div>
+                                <div>
+                                    <p class="text-white font-medium text-sm">Sample Viability Confirmation</p>
+                                    <p class="text-gray-500 text-xs">Go/no-go decision based on carbon yield estimate. Partner notified of any material constraints.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STAGE 2-3: EXTRACTION & PURIFICATION -->
+    <section class="section-spacing bg-white relative" id="stage-2">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <span class="text-brand-gold text-sm font-semibold tracking-[0.2em] uppercase">Stages 02 – 03</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-semibold text-brand-dark mt-5 mb-6 leading-tight">Carbon Extraction & Purification</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto text-lg">The proprietary stage that determines diamond quality. Our 2012 national invention patent covers the complete bio-carbon-to-diamond purification pipeline.</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 reveal">
+                <div class="bg-brand-light p-8 rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 rounded-full bg-brand-gold/10 flex items-center justify-center mb-5"><i class="fas fa-filter text-brand-gold text-xl"></i></div>
+                    <h3 class="font-serif text-2xl font-semibold text-brand-dark mb-4">Stage 2: Carbon Extraction</h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">
+                        Biological materials undergo multi-phase processing to liberate and isolate carbon content. This stage removes organic binders, moisture, and non-carbon biological compounds through controlled thermal and chemical decomposition.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li class="flex items-start gap-3"><i class="fas fa-check text-brand-gold mt-1 flex-shrink-0"></i><span>Thermal decomposition at controlled atmosphere</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check text-brand-gold mt-1 flex-shrink-0"></i><span>Acid digestion to remove mineral contaminants</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check text-brand-gold mt-1 flex-shrink-0"></i><span>Initial carbon fraction isolation</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check text-brand-gold mt-1 flex-shrink-0"></i><span>Mass yield documentation</span></li>
+                    </ul>
+                </div>
+                <div class="bg-brand-light p-8 rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 rounded-full bg-brand-gold/10 flex items-center justify-center mb-5"><i class="fas fa-vial text-brand-gold text-xl"></i></div>
+                    <h3 class="font-serif text-2xl font-semibold text-brand-dark mb-4">Stage 3: Carbon Purification</h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">
+                        The extracted carbon fraction undergoes rigorous purification to achieve 99.95%+ purity — the threshold required for successful diamond synthesis. This is the most critical quality-determining stage of the entire pipeline.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li class="flex items-start gap-3"><i class="fas fa-check text-brand-gold mt-1 flex-shrink-0"></i><span>Multi-stage filtration and washing</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check text-brand-gold mt-1 flex-shrink-0"></i><span>High-temperature purification under inert atmosphere</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check text-brand-gold mt-1 flex-shrink-0"></i><span>Spectroscopic purity verification (≥99.95%)</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check text-brand-gold mt-1 flex-shrink-0"></i><span>Purified carbon sealed for graphitization</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STAGE 4: GRAPHITIZATION -->
+    <section class="section-spacing bg-brand-slate relative molecule-pattern" id="stage-4">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 reveal">
+                    <div class="glass-panel p-8 rounded-2xl border border-white/10">
+                        <span class="text-brand-gold text-sm font-semibold tracking-[0.2em] uppercase">Stage 04</span>
+                        <h2 class="font-serif text-3xl md:text-4xl font-semibold text-white mt-4 mb-6 leading-tight">Graphitization</h2>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Purified amorphous carbon is converted into crystalline graphite — the direct precursor material for diamond synthesis. This structural transformation is essential because diamond growth requires an ordered carbon lattice as the starting material.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="p-4 bg-brand-dark/50 rounded-xl">
+                                <p class="text-white font-medium text-sm mb-2">Process Temperature</p>
+                                <p class="text-gray-500 text-xs">2,000 – 3,000°C under vacuum or inert gas atmosphere</p>
+                            </div>
+                            <div class="p-4 bg-brand-dark/50 rounded-xl">
+                                <p class="text-white font-medium text-sm mb-2">Duration</p>
+                                <p class="text-gray-500 text-xs">12 – 48 hours depending on carbon mass and source material</p>
+                            </div>
+                            <div class="p-4 bg-brand-dark/50 rounded-xl">
+                                <p class="text-white font-medium text-sm mb-2">Structural Outcome</p>
+                                <p class="text-gray-500 text-xs">Hexagonal graphite crystal structure with layered atomic arrangement</p>
+                            </div>
+                            <div class="p-4 bg-brand-dark/50 rounded-xl">
+                                <p class="text-white font-medium text-sm mb-2">Quality Checkpoint</p>
+                                <p class="text-gray-500 text-xs">X-ray diffraction confirmation of crystalline graphite phase</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 reveal">
+                    <div class="bg-brand-dark p-8 rounded-2xl border border-white/10">
+                        <h3 class="font-serif text-xl font-semibold text-white mb-6">Why Graphitization Matters</h3>
+                        <div class="space-y-4">
+                            <div class="flex gap-4">
+                                <i class="fas fa-atom text-brand-gold mt-1"></i>
+                                <div>
+                                    <p class="text-white font-medium text-sm">Structural Precondition</p>
+                                    <p class="text-gray-500 text-xs">Diamond is a cubic crystal of carbon. Graphitization creates the ordered hexagonal precursor that restructures into diamond under HPHT conditions.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <i class="fas fa-tachometer-alt text-brand-gold mt-1"></i>
+                                <div>
+                                    <p class="text-white font-medium text-sm">Growth Kinetics</p>
+                                    <p class="text-gray-500 text-xs">Graphite-to-diamond conversion is faster and more controllable than amorphous-carbon-to-diamond, enabling the ~60-day cycle.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <i class="fas fa-gem text-brand-gold mt-1"></i>
+                                <div>
+                                    <p class="text-white font-medium text-sm">Quality Impact</p>
+                                    <p class="text-gray-500 text-xs">Incomplete graphitization leads to inclusions, color defects, and structural weakness in the final diamond.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STAGE 5: HPHT CRYSTAL GROWTH -->
+    <section class="section-spacing bg-white relative" id="stage-5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <span class="text-brand-gold text-sm font-semibold tracking-[0.2em] uppercase">Stage 05</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-semibold text-brand-dark mt-5 mb-6 leading-tight">HPHT Crystal Growth</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto text-lg">The core synthesis stage. Graphite is transformed into diamond through sustained high-pressure, high-temperature conditions in a synthesis chamber.</p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-6 reveal">
+                <div class="bg-brand-light p-8 rounded-2xl border border-gray-100">
+                    <div class="w-14 h-14 rounded-full bg-brand-gold/10 flex items-center justify-center mb-5"><i class="fas fa-compress-arrows-alt text-brand-gold text-xl"></i></div>
+                    <h3 class="font-semibold text-brand-dark mb-3">Pressure Application</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                        The synthesis chamber is pressurized to 5.0 – 6.0 GPa (approximately 55,000 atmospheres) using a belt-type or cubic multi-anvil press.
+                    </p>
+                    <div class="p-3 bg-white rounded-lg border border-gray-100">
+                        <p class="text-xs text-gray-400">Equivalent to the pressure at ~180 km depth in Earth's mantle</p>
+                    </div>
+                </div>
+                <div class="bg-brand-light p-8 rounded-2xl border border-gray-100">
+                    <div class="w-14 h-14 rounded-full bg-brand-gold/10 flex items-center justify-center mb-5"><i class="fas fa-temperature-high text-brand-gold text-xl"></i></div>
+                    <h3 class="font-semibold text-brand-dark mb-3">Temperature Control</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                        Temperature is elevated to 1,350 – 1,600°C, creating a thermal gradient across the growth cell that drives carbon transport from graphite to the diamond seed.
+                    </p>
+                    <div class="p-3 bg-white rounded-lg border border-gray-100">
+                        <p class="text-xs text-gray-400">Precision ±5°C maintained throughout the growth cycle</p>
+                    </div>
+                </div>
+                <div class="bg-brand-light p-8 rounded-2xl border border-gray-100">
+                    <div class="w-14 h-14 rounded-full bg-brand-gold/10 flex items-center justify-center mb-5"><i class="fas fa-hourglass-half text-brand-gold text-xl"></i></div>
+                    <h3 class="font-semibold text-brand-dark mb-3">Growth Duration</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                        The growth cycle runs continuously for 40 – 70 days depending on target carat weight. Larger diamonds require extended growth periods.
+                    </p>
+                    <div class="p-3 bg-white rounded-lg border border-gray-100">
+                        <p class="text-xs text-gray-400">Growth rate: ~0.01 – 0.03 mm/day depending on conditions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 reveal">
+                <div class="bg-brand-slate p-8 rounded-2xl border border-white/10">
+                    <h3 class="font-serif text-xl font-semibold text-white mb-6">Growth Chamber Configuration</h3>
+                    <div class="grid md:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="w-16 h-16 rounded-full bg-brand-gold/10 flex items-center justify-center mx-auto mb-3"><i class="fas fa-layer-group text-brand-gold text-xl"></i></div>
+                            <p class="text-white font-medium text-sm">Graphite Source</p>
+                            <p class="text-gray-500 text-xs mt-1">Purified bio-carbon graphite positioned at the high-temperature end</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 rounded-full bg-brand-gold/10 flex items-center justify-center mx-auto mb-3"><i class="fas fa-flask text-brand-gold text-xl"></i></div>
+                            <p class="text-white font-medium text-sm">Catalyst Alloy</p>
+                            <p class="text-gray-500 text-xs mt-1">Fe-Ni-Co molten metal solvent that dissolves and transports carbon</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 rounded-full bg-brand-gold/10 flex items-center justify-center mx-auto mb-3"><i class="fas fa-gem text-brand-gold text-xl"></i></div>
+                            <p class="text-white font-medium text-sm">Diamond Seed</p>
+                            <p class="text-gray-500 text-xs mt-1">Small natural or synthetic diamond crystal that initiates growth</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 rounded-full bg-brand-gold/10 flex items-center justify-center mx-auto mb-3"><i class="fas fa-snowflake text-brand-gold text-xl"></i></div>
+                            <p class="text-white font-medium text-sm">Thermal Gradient</p>
+                            <p class="text-gray-500 text-xs mt-1">Temperature differential drives carbon from source to seed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STAGE 6-7: PROCESSING & CERTIFICATION -->
+    <section class="section-spacing bg-brand-slate relative molecule-pattern" id="stage-6">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div class="reveal">
+                    <span class="text-brand-gold text-sm font-semibold tracking-[0.2em] uppercase">Stage 06</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-semibold text-white mt-4 mb-6 leading-tight">Diamond Processing</h2>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        After synthesis, the rough diamond undergoes cutting and polishing to achieve the desired shape and optical quality. Our processing protocol prioritizes maximum carat retention while optimizing for clarity and brilliance.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="glass-panel p-6 rounded-xl border border-white/10">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-brand-gold/10 flex items-center justify-center flex-shrink-0"><i class="fas fa-search text-brand-gold text-sm"></i></div>
+                                <div>
+                                    <p class="text-white font-medium text-sm">Rough Assessment</p>
+                                    <p class="text-gray-500 text-xs mt-1">Microscopic examination to identify optimal cut plan. Inclusions mapped and documented.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-6 rounded-xl border border-white/10">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-brand-gold/10 flex items-center justify-center flex-shrink-0"><i class="fas fa-cut text-brand-gold text-sm"></i></div>
+                                <div>
+                                    <p class="text-white font-medium text-sm">Precision Cutting</p>
+                                    <p class="text-gray-500 text-xs mt-1">Laser or mechanical sawing followed by bruting to create the girdle and basic shape.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-6 rounded-xl border border-white/10">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-brand-gold/10 flex items-center justify-center flex-shrink-0"><i class="fas fa-gem text-brand-gold text-sm"></i></div>
+                                <div>
+                                    <p class="text-white font-medium text-sm">Polishing & Faceting</p>
+                                    <p class="text-gray-500 text-xs mt-1">Multi-stage polishing on scaif to achieve the final facet arrangement and surface luster.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <span class="text-brand-gold text-sm font-semibold tracking-[0.2em] uppercase">Stage 07</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-semibold text-white mt-4 mb-6 leading-tight">Grading & Delivery</h2>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Every finished diamond is graded and documented before delivery. Our certification system provides partners with the documentation needed to present a complete, verifiable product to their customers.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="glass-panel p-6 rounded-xl border border-white/10">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-brand-gold/10 flex items-center justify-center flex-shrink-0"><i class="fas fa-balance-scale text-brand-gold text-sm"></i></div>
+                                <div>
+                                    <p class="text-white font-medium text-sm">4C Grading</p>
+                                    <p class="text-gray-500 text-xs mt-1">Carat weight, color grade, clarity grade, and cut quality assessed per industry standards.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-6 rounded-xl border border-white/10">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-brand-gold/10 flex items-center justify-center flex-shrink-0"><i class="fas fa-qrcode text-brand-gold text-sm"></i></div>
+                                <div>
+                                    <p class="text-white font-medium text-sm">CCIC Traceability Code</p>
+                                    <p class="text-gray-500 text-xs mt-1">National traceability QR code assigned. Full chain-of-custody documentation available via scan.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-6 rounded-xl border border-white/10">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-brand-gold/10 flex items-center justify-center flex-shrink-0"><i class="fas fa-certificate text-brand-gold text-sm"></i></div>
+                                <div>
+                                    <p class="text-white font-medium text-sm">Gemological Certificate</p>
+                                    <p class="text-gray-500 text-xs mt-1">Chinese Gemological certification standard. IGI certificate available as optional add-on.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-6 rounded-xl border border-white/10">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-brand-gold/10 flex items-center justify-center flex-shrink-0"><i class="fas fa-video text-brand-gold text-sm"></i></div>
+                                <div>
+                                    <p class="text-white font-medium text-sm">Production Video</p>
+                                    <p class="text-gray-500 text-xs mt-1">Key stage video documentation compiled for partner and end-customer access.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PATENT SECTION -->
+    <section class="section-spacing bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="bg-brand-dark rounded-2xl p-10 md:p-16 relative overflow-hidden reveal">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-brand-gold/5 rounded-full blur-3xl"></div>
+                <div class="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-brand-gold text-sm font-semibold tracking-[0.2em] uppercase">Intellectual Property</span>
+                        <h2 class="font-serif text-3xl md:text-4xl font-semibold text-white mt-4 mb-6 leading-tight">National Invention Patent — Carbon Extraction & Diamond Synthesis</h2>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Our core carbon extraction and purification technology is protected by a national invention patent granted in 2012. This patent covers the complete pipeline from biological material intake through purified carbon production, establishing a proprietary foundation that differentiates our manufacturing process from generic lab-grown diamond producers.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="px-4 py-2 bg-brand-gold/10 rounded-lg border border-brand-gold/20">
+                                <p class="text-brand-gold text-xs font-medium">Patent Type</p>
+                                <p class="text-white text-sm">National Invention Patent</p>
+                            </div>
+                            <div class="px-4 py-2 bg-brand-gold/10 rounded-lg border border-brand-gold/20">
+                                <p class="text-brand-gold text-xs font-medium">Granted</p>
+                                <p class="text-white text-sm">2012</p>
+                            </div>
+                            <div class="px-4 py-2 bg-brand-gold/10 rounded-lg border border-brand-gold/20">
+                                <p class="text-brand-gold text-xs font-medium">R&D Origin</p>
+                                <p class="text-white text-sm">Since 2003</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-brand-slate p-8 rounded-xl border border-white/10">
+                        <h3 class="font-serif text-lg font-semibold text-white mb-4">Patent Coverage Scope</h3>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex items-start gap-3 text-gray-400"><i class="fas fa-check text-brand-gold mt-1 flex-shrink-0"></i><span>Biological carbon extraction from keratin-based materials</span></li>
+                            <li class="flex items-start gap-3 text-gray-400"><i class="fas fa-check text-brand-gold mt-1 flex-shrink-0"></i><span>Multi-stage purification to 99.95%+ carbon purity</span></li>
+                            <li class="flex items-start gap-3 text-gray-400"><i class="fas fa-check text-brand-gold mt-1 flex-shrink-0"></i><span>Graphitization of amorphous biological carbon</span></li>
+                            <li class="flex items-start gap-3 text-gray-400"><i class="fas fa-check text-brand-gold mt-1 flex-shrink-0"></i><span>HPHT diamond synthesis from bio-carbon graphite</span></li>
+                            <li class="flex items-start gap-3 text-gray-400"><i class="fas fa-check text-brand-gold mt-1 flex-shrink-0"></i><span>Integrated quality control and traceability system</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-spacing bg-brand-dark relative">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center reveal">
+            <h2 class="font-serif text-4xl md:text-5xl font-semibold text-white mb-6 leading-tight">Ready to Partner on Memorial Diamond Supply?</h2>
+            <p class="text-gray-400 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+                Discuss OEM manufacturing, white-label supply, or custom technology requirements with our partnership team.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="partnership.html" class="px-8 py-4 bg-brand-gold text-brand-dark font-semibold rounded-xl hover:bg-white transition shadow-xl shadow-brand-gold/20 tracking-wide">Request Partnership</a>
+                <a href="contact.html" class="px-8 py-4 border border-white/20 text-white font-semibold rounded-xl hover:bg-white/5 transition tracking-wide">Contact Laboratory</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark border-t border-white/5 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20">
+                            <i class="fas fa-atom text-brand-gold"></i>
+                        </div>
+                        <div>
+                            <span class="font-serif text-xl font-semibold text-white tracking-wide">BioGem Lab</span>
+                            <p class="text-[10px] text-brand-gold/60 tracking-[0.2em] uppercase">Memorial Diamond Laboratory</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed max-w-md">White-label memorial diamond production for pet services, veterinary clinics, and memorial businesses. Patent-backed carbon extraction technology. ~60-day turnaround. Global partner network.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="technology.html" class="text-gray-400 hover:text-brand-gold transition">Technology</a></li>
+                        <li><a href="manufacturing.html" class="text-gray-400 hover:text-brand-gold transition">Manufacturing</a></li>
+                        <li><a href="applications.html" class="text-gray-400 hover:text-brand-gold transition">Applications</a></li>
+                        <li><a href="partnership.html" class="text-gray-400 hover:text-brand-gold transition">Partnership</a></li>
+                        <li><a href="laboratory.html" class="text-gray-400 hover:text-brand-gold transition">Laboratory</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="mailto:partners@biogemlab.com" class="text-gray-400 hover:text-brand-gold transition">partners@biogemlab.com</a></li>
+                        <li><a href="https://wa.me/13104373166" target="_blank" class="text-gray-400 hover:text-brand-gold transition">WhatsApp Business</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-brand-gold transition">Contact Form</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-600 text-sm">BioGem Lab. Laboratory-grown diamond manufacturing. B2B white-label supply only.</p>
+                <p class="text-gray-600 text-sm">Patent-backed carbon extraction since 2012.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://www.biogemlab.com/#organization",
+                "name": "BioGem Lab",
+                "url": "https://www.biogemlab.com",
+                "description": "Memorial diamond manufacturer. HPHT diamond synthesis and bio-carbon extraction laboratory. B2B OEM/ODM supply."
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://www.biogemlab.com/technology.html#webpage",
+                "url": "https://www.biogemlab.com/technology.html",
+                "name": "HPHT Diamond Synthesis Technology | BioGem Lab",
+                "description": "Technical deep-dive into HPHT diamond synthesis process. 5.5 GPa pressure, 1,450°C temperature, ~60-day growth cycle."
+            }
+        ]
+    }
+    </script>
+</body>
+</html>
