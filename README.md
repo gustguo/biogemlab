@@ -1,2 +1,0 @@
-# biogemlab
-biogemlab-landing page 
