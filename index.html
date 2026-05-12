@@ -120,6 +120,14 @@
         .param-card:hover { background: rgba(197,160,89,0.08); border-color: rgba(197,160,89,0.3); }
         .stat-number { font-variant-numeric: tabular-nums; }
     </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W4JJ8RGFWC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-W4JJ8RGFWC');
+</script>
 </head>
 <body class="font-sans text-gray-600 antialiased">
 
@@ -643,5 +651,15 @@
         ]
     }
     </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="mailto:"]').forEach(function(el) {
+      el.addEventListener('click', function() { gtag('event', 'email_click', { event_category: 'engagement' }); });
+    });
+    document.querySelectorAll('a[href*="wa.me"]').forEach(function(el) {
+      el.addEventListener('click', function() { gtag('event', 'whatsapp_click', { event_category: 'engagement' }); });
+    });
+  });
+</script>
 </body>
 </html>
