@@ -130,8 +130,6 @@ git commit -m "..."
 git push origin main
 ```
 
-**SSH Key**: `~/.ssh/id_ed25519_biogemlab` (agent: `openclaw-biogemlab-deploy`)
-
 ---
 
 *Last updated: 2026-05-12*
