@@ -113,7 +113,6 @@ biogemlab/
 | Patent | `ZL 2010 1 0565778.9` (CNIPA) |
 | Certificate | `1058820` |
 | Contact Email | `partners@biogemlab.com` |
-| WhatsApp | `+1 (310) 437-3166` |
 | Business Hours | Mon–Fri 9:00–18:00 CST (GMT+8) |
 | Address | Luoyang Institute of Technology / National University Science Park / Luoyang, Henan, China |
 
