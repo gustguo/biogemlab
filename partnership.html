@@ -91,8 +91,8 @@
 
     <!-- HERO — New background: hpht-pressurization-diamond-growth.jpg, no Chinese text -->
     <section class="relative pt-32 pb-20 lg:pt-44 lg:pb-32 bg-brand-dark overflow-hidden">
-        <div class="absolute inset-0 bg-[url('assets/images/lab/hpht-equipment-array-panorama.jpg')] bg-cover bg-center opacity-15"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/95 to-brand-dark/80"></div>
+        <div class="absolute inset-0 bg-[url('assets/images/lab/hpht-equipment-array-panorama.jpg')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/90 to-brand-dark/70"></div>
         <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
             <div class="max-w-3xl">
                 <p class="text-brand-gold/80 text-sm font-semibold tracking-[0.25em] uppercase mb-6">White-Label Memorial Diamond Manufacturing</p>
@@ -103,8 +103,7 @@
                     We manufacture memorial diamonds from pet hair under your brand. You sell, we produce and ship directly to your customer. Full white-label documentation included.
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <a href="contact.html" class="px-8 py-4 bg-brand-gold text-brand-dark font-semibold rounded-xl hover:bg-white transition shadow-xl shadow-brand-gold/20 tracking-wide text-center">Get Partnership Pricing</a>
-                    <a href="mailto:partners@biogemlab.com" class="px-8 py-4 border border-white/20 text-white font-semibold rounded-xl hover:bg-white/5 transition tracking-wide text-center">Email Us — 24h Reply</a>
+                    <a href="contact.html" class="px-8 py-4 bg-brand-gold text-brand-dark font-semibold rounded-xl hover:bg-white transition shadow-xl shadow-brand-gold/20 tracking-wide text-center">Request Partnership Pricing</a>
                 </div>
                 <div class="mt-8 flex items-center gap-6 text-sm text-gray-400">
                     <span class="flex items-center gap-2"><i class="fas fa-check-circle text-brand-gold/60"></i> ~60-day production</span>
@@ -278,7 +277,7 @@
                     </ul>
                 </div>
             </div>
-            <p class="text-center text-gray-500 text-sm mt-8">Exact pricing is shared in the custom proposal. <a href="contact.html" class="text-brand-gold hover:underline">Request yours →</a></p>
+            <p class="text-center text-gray-500 text-sm mt-8">Exact pricing is shared in the custom proposal.</p>
         </div>
     </section>
 
@@ -360,10 +359,8 @@
             </p>
             <div class="flex flex-wrap justify-center gap-4 mb-8">
                 <a href="contact.html" class="px-10 py-4 bg-brand-gold text-brand-dark font-semibold rounded-xl hover:bg-white transition shadow-xl shadow-brand-gold/20 tracking-wide text-lg">Request Proposal — Free</a>
-                <a href="mailto:partners@biogemlab.com" class="px-10 py-4 border border-white/20 text-white font-semibold rounded-xl hover:bg-white/5 transition tracking-wide text-lg">Email partners@biogemlab.com</a>
             </div>
             <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
-                <span class="flex items-center gap-2"><i class="fab fa-whatsapp text-brand-gold/60"></i> <a href="https://wa.me/13104373166?text=Hello%20BioGem%20Lab%2C%20I%20am%20interested%20in%20your%20memorial%20diamond%20manufacturing%20services%20and%20would%20like%20to%20discuss%20partnership%20opportunities." target="_blank" class="hover:text-brand-gold transition">WhatsApp +1 310 437 3166</a></span>
                 <span class="flex items-center gap-2"><i class="fas fa-reply text-brand-gold/60"></i> Reply within 24 hours</span>
                 <span class="flex items-center gap-2"><i class="fas fa-file-contract text-brand-gold/60"></i> No commitment required</span>
             </div>
@@ -400,7 +397,6 @@
                     <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="mailto:partners@biogemlab.com" class="text-gray-400 hover:text-brand-gold transition">partners@biogemlab.com</a></li>
-                        <li><a href="https://wa.me/13104373166?text=Hello%20BioGem%20Lab%2C%20I%20am%20interested%20in%20your%20memorial%20diamond%20manufacturing%20services%20and%20would%20like%20to%20discuss%20partnership%20opportunities." target="_blank" class="text-gray-400 hover:text-brand-gold transition">WhatsApp</a></li>
                         <li><a href="contact.html" class="text-gray-400 hover:text-brand-gold transition">Contact Form</a></li>
                     </ul>
                 </div>
@@ -441,9 +437,6 @@
   document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('a[href^="mailto:"]').forEach(function(el) {
       el.addEventListener('click', function() { gtag('event', 'email_click', { event_category: 'engagement' }); });
-    });
-    document.querySelectorAll('a[href*="wa.me"]').forEach(function(el) {
-      el.addEventListener('click', function() { gtag('event', 'whatsapp_click', { event_category: 'engagement' }); });
     });
   });
 </script>
