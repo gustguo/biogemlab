@@ -12,6 +12,7 @@
     <meta property="og:type" content="article">
     <meta name="twitter:card" content="summary_large_image">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -129,21 +130,47 @@
         .prose blockquote { border-left: 3px solid #C5A059; padding-left: 1.25em; margin: 1.5em 0; font-style: italic; color: #4a5568; }
     </style>
 </head>
-<body class="font-sans text-gray-700 bg-brand-light">
+<body class="font-sans text-gray-600 antialiased bg-brand-light">
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-100 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="../index.html" class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-brand-dark rounded-lg flex items-center justify-center">
-                    <span class="text-brand-gold font-bold text-lg">B</span>
+    <nav class="fixed w-full z-50 bg-brand-dark/90 backdrop-blur-xl border-b border-white/5" role="navigation" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="../index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20">
+                        <i class="fas fa-atom text-brand-gold"></i>
+                    </div>
+                    <div>
+                        <span class="font-serif text-xl font-semibold text-white tracking-wide">BioGem Lab</span>
+                        <p class="text-[10px] text-brand-gold/60 tracking-[0.2em] uppercase">Memorial Diamond Laboratory</p>
+                    </div>
+                </a>
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="../index.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Home</a>
+                    <a href="../technology.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Technology</a>
+                    <a href="../manufacturing.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Manufacturing</a>
+                    <a href="../applications.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Applications</a>
+                    <a href="../partnership.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Partnership</a>
+                    <a href="../laboratory.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Laboratory</a>
+                    <a href="index.html" class="text-brand-gold text-sm font-medium">Resources</a>
+                    <a href="../faq.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">FAQ</a>
+                    <a href="../contact.html" class="px-5 py-2.5 bg-brand-gold text-brand-dark text-sm font-semibold rounded-lg hover:bg-white transition">Contact</a>
                 </div>
-                <span class="font-serif font-semibold text-xl text-brand-dark">BioGem Lab</span>
-            </a>
-            <div class="hidden md:flex items-center gap-8">
-                <a href="../technology.html" class="text-sm font-medium text-gray-600 hover:text-brand-dark transition">Technology</a>
-                <a href="../manufacturing.html" class="text-sm font-medium text-gray-600 hover:text-brand-dark transition">Manufacturing</a>
-                <a href="../partnership.html" class="text-sm font-medium text-gray-600 hover:text-brand-dark transition">Partnership</a>
-                <a href="../contact.html" class="text-sm font-medium text-gray-600 hover:text-brand-dark transition">Contact</a>
+                <button class="lg:hidden text-white" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden pb-6">
+                <div class="flex flex-col gap-4">
+                    <a href="../index.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Home</a>
+                    <a href="../technology.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Technology</a>
+                    <a href="../manufacturing.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Manufacturing</a>
+                    <a href="../applications.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Applications</a>
+                    <a href="../partnership.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Partnership</a>
+                    <a href="../laboratory.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Laboratory</a>
+                    <a href="index.html" class="text-brand-gold text-sm font-medium">Resources</a>
+                    <a href="../faq.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">FAQ</a>
+                    <a href="../contact.html" class="px-5 py-2.5 bg-brand-gold text-brand-dark text-sm font-semibold rounded-lg text-center">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -334,47 +361,54 @@
     </article>
 
     <!-- Footer -->
-    <footer class="bg-brand-dark text-gray-400 py-16">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-8 mb-12">
-                <div>
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-8 h-8 bg-brand-gold rounded flex items-center justify-center">
-                            <span class="text-brand-dark font-bold">B</span>
+    <footer class="bg-brand-dark border-t border-white/5 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20">
+                            <i class="fas fa-atom text-brand-gold"></i>
                         </div>
-                        <span class="font-serif font-semibold text-white">BioGem Lab</span>
+                        <div>
+                            <span class="font-serif text-xl font-semibold text-white tracking-wide">BioGem Lab</span>
+                            <p class="text-[10px] text-brand-gold/60 tracking-[0.2em] uppercase">Memorial Diamond Laboratory</p>
+                        </div>
                     </div>
-                    <p class="text-sm leading-relaxed">HPHT memorial diamond production laboratory. White-label and OEM services for pet aftercare providers.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed max-w-md">
+                        White-label memorial diamond production for pet services, veterinary clinics, and memorial businesses. Patent-backed carbon extraction technology. ~60-day turnaround. Global partner network.
+                    </p>
                 </div>
                 <div>
-                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Technology</h4>
+                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Explore</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="../technology.html" class="hover:text-brand-gold transition">Core Technology</a></li>
-                        <li><a href="../manufacturing.html" class="hover:text-brand-gold transition">Manufacturing</a></li>
-                        <li><a href="../laboratory.html" class="hover:text-brand-gold transition">Laboratory</a></li>
+                        <li><a href="../technology.html" class="text-gray-400 hover:text-brand-gold transition">Technology</a></li>
+                        <li><a href="../manufacturing.html" class="text-gray-400 hover:text-brand-gold transition">Manufacturing</a></li>
+                        <li><a href="../partnership.html" class="text-gray-400 hover:text-brand-gold transition">Partnership</a></li>
+                        <li><a href="../contact.html" class="text-gray-400 hover:text-brand-gold transition">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Partnership</h4>
+                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="../partnership.html" class="hover:text-brand-gold transition">Partner Program</a></li>
-                        <li><a href="../applications.html" class="hover:text-brand-gold transition">Applications</a></li>
-                        <li><a href="../contact.html" class="hover:text-brand-gold transition">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Resources</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="index.html" class="hover:text-brand-gold transition">Blog</a></li>
-                        <li><a href="../faq.html" class="hover:text-brand-gold transition">FAQ</a></li>
+                        <li><a href="mailto:partners@biogemlab.com" class="text-gray-400 hover:text-brand-gold transition">partners@biogemlab.com</a></li>
+                        <li><a href="https://wa.me/13104373166?text=Hello%20BioGem%20Lab%2C%20I%20am%20interested%20in%20your%20memorial%20diamond%20manufacturing%20services%20and%20would%20like%20to%20discuss%20partnership%20opportunities." target="_blank" class="text-gray-400 hover:text-brand-gold transition">WhatsApp</a></li>
+                        <li><a href="../contact.html" class="text-gray-400 hover:text-brand-gold transition">Contact Form</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-sm"> BioGem Lab. All rights reserved.</p>
-                <p class="text-xs text-gray-500">National Invention Patent ZL 2010 1 0565778.9</p>
+            <div class="mb-8 text-center">
+                <p class="text-gray-500 text-sm inline-flex items-center gap-2"><i class="fas fa-map-marker-alt text-brand-gold/40"></i> Laboratory: Luoyang, Henan, China</p>
+            </div>
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-600 text-sm">BioGem Lab. Laboratory-grown diamond manufacturing. B2B white-label supply only.</p>
+                <p class="text-gray-600 text-sm"><a href="https://pss-system.cponline.cnipa.gov.cn/conventionalSearch" target="_blank" rel="noopener" class="hover:text-brand-gold transition underline underline-offset-2">Patent No. ZL 2010 1 0565778.9</a> · Patent-backed carbon extraction since 2012.</p>
             </div>
         </div>
     </footer>
+<script>
+    function toggleMobileMenu() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+</script>
 </body>
 </html>
