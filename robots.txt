@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.biogemlab.com/sitemap.xml
+
+# For AI crawlers and LLMs
+# LLM-friendly site summary: https://www.biogemlab.com/llms.txt
