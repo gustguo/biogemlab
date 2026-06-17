@@ -50,9 +50,15 @@
   </url>
   <url>
     <loc>https://www.biogemlab.com/blog/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.biogemlab.com/blog/memorial-diamond-sales-transparency-strategies.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.biogemlab.com/blog/memorial-diamond-size-guide-carat-weight.html</loc>
