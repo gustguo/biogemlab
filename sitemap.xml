@@ -50,9 +50,15 @@
   </url>
   <url>
     <loc>https://www.biogemlab.com/blog/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.biogemlab.com/blog/memorial-diamond-returns-remakes-partner-policies.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.biogemlab.com/blog/memorial-diamond-marketing-messaging-pet-owners.html</loc>
