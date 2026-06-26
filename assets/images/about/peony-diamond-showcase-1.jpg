@@ -1,0 +1,53 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0" />
+<meta content="app-id=425349261" name="apple-itunes-app">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<title>手机河南一百度</title>
+<style>
+body { line-height: 1; font: normal normal 0.875em/180% "Microsoft Yahei",Arial,sans-serif; color:#222;min-width:320px;margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+.bg{text-align:center;}
+.bg div{margin-top:60px;}
+.line p{margin:0 10px;}
+.line{text-align:center;}
+section{width:100%;}
+.nav1 div{margin-top:15px;margin-left:10px;}
+.nav1 img{width:50%; height:auto; max-width:261px;}
+.line a{text-decoration:none;color:#163963;}
+</style>
+
+</head>
+
+<body>
+	<section class="nav1">
+		<div><img src="https://www.henan100.com/static/image/mobile/logo-site.png" alt="河南一百度手机版"  /></div>
+	</section>
+	
+	<section class="bg">
+		<div><img src="https://www.henan100.com/static/image/mobile/404.png" alt="404" /></div>
+ 	</section>
+	
+	<section class="line">
+		<img src="https://www.henan100.com/static/image/mobile/line_404.png" />
+	</section>
+	
+	<section class="line">
+	<p>对不起，您所访问的页面不存在！</p>
+	<p>10秒后将跳转到<a href="http://www.henan100.com/">河南一百度网站首页</a>...</p>
+	
+	</section>
+	<script>
+		function go(){
+			window.location.href = 'http://www.henan100.com/';
+		}
+		window.onload=function(){
+			var bar = window.setTimeout("go()", 100000);
+			
+		}
+	</script>
+     
+</body>
+</html>
