@@ -277,6 +277,200 @@
         </div>
     </section>
 
+    <!-- TRACEABILITY / PROVENANCE VERIFICATION -->
+    <section class="py-20 bg-brand-dark border-y border-white/5 relative overflow-hidden" id="traceability">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgba(197,160,89,0.3) 1px, transparent 0); background-size: 40px 40px;"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left: Text content -->
+                <div>
+                    <span class="text-brand-gold text-sm font-semibold tracking-[0.2em] uppercase">Chain of Custody</span>
+                    <h2 class="font-serif text-4xl md:text-5xl font-semibold text-white mt-5 mb-6 leading-tight">
+                        Every Diamond Has<br>a Story to Tell
+                    </h2>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                        Trace the complete journey of your memorial diamond — from biological carbon source to certified gemstone. Our proprietary chain-of-custody system, registered with the International Life Diamond Association, provides full transparency at every stage.
+                    </p>
+                    <div class="space-y-4 mb-10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20 flex-shrink-0 mt-0.5">
+                                <i class="fas fa-fingerprint text-brand-gold text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-white font-semibold text-sm">Unique Dossier Number</p>
+                                <p class="text-gray-500 text-sm">Each diamond receives a globally unique ILDA identifier for lifetime verification.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20 flex-shrink-0 mt-0.5">
+                                <i class="fas fa-qrcode text-brand-gold text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-white font-semibold text-sm">QR Code Verification</p>
+                                <p class="text-gray-500 text-sm">Scan any BioGem Lab certificate to instantly view the full provenance timeline.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20 flex-shrink-0 mt-0.5">
+                                <i class="fas fa-shield-alt text-brand-gold text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-white font-semibold text-sm">Third-Party Registry</p>
+                                <p class="text-gray-500 text-sm">All records are independently stored and verified by ILDA — not controlled by BioGem Lab.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openTraceModal()" class="inline-flex items-center gap-3 px-8 py-4 bg-brand-gold text-brand-dark font-semibold rounded-xl hover:bg-white transition shadow-xl shadow-brand-gold/20 tracking-wide">
+                        <i class="fas fa-search"></i>
+                        Trace a Diamond
+                    </button>
+                </div>
+                <!-- Right: Certificate preview mockup -->
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-white/10 bg-brand-slate/50 backdrop-blur-sm shadow-2xl shadow-brand-gold/5">
+                        <!-- Mock certificate header -->
+                        <div class="bg-brand-slate border-b border-white/5 p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20">
+                                        <i class="fas fa-gem text-brand-gold"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-serif font-semibold text-sm">BioGem Lab</p>
+                                        <p class="text-gray-500 text-[10px] uppercase tracking-wider">Provenance Report</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-brand-gold font-mono text-xs font-semibold">ILDA-2025-001-0001</p>
+                                    <p class="text-gray-600 text-[10px]">DEMO DATA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mock certificate body -->
+                        <div class="p-6 space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-brand-dark/50 rounded-lg p-4 border border-white/5">
+                                    <p class="text-gray-500 text-[10px] uppercase tracking-wider mb-1">Carbon Source</p>
+                                    <p class="text-white text-sm font-medium">Canine Hair</p>
+                                    <p class="text-gray-500 text-xs">Sample ID: BG-2025-001</p>
+                                </div>
+                                <div class="bg-brand-dark/50 rounded-lg p-4 border border-white/5">
+                                    <p class="text-gray-500 text-[10px] uppercase tracking-wider mb-1">Diamond</p>
+                                    <p class="text-white text-sm font-medium">0.50ct Round Brilliant</p>
+                                    <p class="text-gray-500 text-xs">E Color, VS1 Clarity</p>
+                                </div>
+                            </div>
+                            <!-- Timeline preview -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+                                    <div class="flex-1 h-px bg-brand-gold/30"></div>
+                                    <span class="text-brand-gold text-xs">Sample Received</span>
+                                    <span class="text-gray-600 text-xs">Jan 15, 2025</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold/60"></div>
+                                    <div class="flex-1 h-px bg-brand-gold/20"></div>
+                                    <span class="text-brand-gold/80 text-xs">Carbon Extracted</span>
+                                    <span class="text-gray-600 text-xs">Jan 18, 2025</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold/40"></div>
+                                    <div class="flex-1 h-px bg-brand-gold/10"></div>
+                                    <span class="text-brand-gold/60 text-xs">HPHT Growth</span>
+                                    <span class="text-gray-600 text-xs">Feb 20, 2025</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand-gold/20"></div>
+                                    <div class="flex-1 h-px bg-white/5"></div>
+                                    <span class="text-brand-gold/40 text-xs">Certified</span>
+                                    <span class="text-gray-600 text-xs">Mar 10, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mock certificate footer -->
+                        <div class="bg-brand-dark/30 border-t border-white/5 p-4 flex items-center justify-between">
+                            <span class="text-gray-600 text-xs">View full timeline →</span>
+                            <div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center">
+                                <div class="w-12 h-12 border-2 border-brand-dark rounded">
+                                    <div class="w-full h-full flex items-center justify-center">
+                                        <i class="fas fa-qrcode text-brand-dark text-2xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative elements -->
+                    <div class="absolute -top-4 -right-4 w-24 h-24 border border-brand-gold/10 rounded-full"></div>
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 border border-brand-gold/5 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traceability Modal -->
+    <div id="traceModal" class="fixed inset-0 z-[100] hidden" role="dialog" aria-modal="true" aria-labelledby="traceModalTitle">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-brand-dark/90 backdrop-blur-sm" onclick="closeTraceModal()"></div>
+        <!-- Modal content -->
+        <div class="relative z-10 flex items-center justify-center min-h-screen p-4">
+            <div class="bg-brand-slate rounded-2xl border border-white/10 shadow-2xl w-full max-w-5xl overflow-hidden" style="max-height: 90vh;">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between px-6 py-4 border-b border-white/5 bg-brand-dark/50">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20">
+                            <i class="fas fa-search text-brand-gold text-sm"></i>
+                        </div>
+                        <div>
+                            <h3 id="traceModalTitle" class="text-white font-serif font-semibold">Diamond Provenance Lookup</h3>
+                            <p class="text-gray-500 text-xs">International Life Diamond Association Registry</p>
+                        </div>
+                    </div>
+                    <button onclick="closeTraceModal()" class="w-8 h-8 rounded-lg hover:bg-white/10 flex items-center justify-center transition" aria-label="Close">
+                        <i class="fas fa-times text-gray-400"></i>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-0" style="height: calc(90vh - 64px);">
+                    <iframe 
+                        id="traceIframe"
+                        src="" 
+                        class="w-full h-full border-0"
+                        title="ILDA Diamond Provenance Lookup"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTraceModal() {
+            const modal = document.getElementById('traceModal');
+            const iframe = document.getElementById('traceIframe');
+            iframe.src = 'https://lifediamondassociation.org/embed.html?id=9b7aa06c';
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeTraceModal() {
+            const modal = document.getElementById('traceModal');
+            const iframe = document.getElementById('traceIframe');
+            modal.classList.add('hidden');
+            iframe.src = '';
+            document.body.style.overflow = '';
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeTraceModal();
+            }
+        });
+    </script>
+
     <!-- ABOUT — Asymmetric -->
     <section class="bg-white relative overflow-hidden">
         <div class="grid lg:grid-cols-12 min-h-[80vh]">
