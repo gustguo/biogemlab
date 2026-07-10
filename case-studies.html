@@ -198,142 +198,189 @@
         </div>
     </section>
 
-    <!-- Case Study Grid -->
+    <!-- Case Study Directory -->
     <section class="py-24 bg-brand-light">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16">
-                <span class="text-brand-gold text-sm font-semibold tracking-[0.2em] uppercase">More Partnerships</span>
-                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-brand-dark mt-4 mb-4">Cultural, Luxury, and Heritage Brands</h2>
-                <p class="text-gray-500 max-w-2xl mx-auto">Beyond pet memorials — commemorative diamonds for cultural institutions, luxury brands, and heritage collections.</p>
+                <span class="text-brand-gold text-sm font-semibold tracking-[0.2em] uppercase">All Case Studies</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-brand-dark mt-4 mb-4">Memorial Diamond Projects & Partnerships</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Real production records from our laboratory. Click any case to view full documentation, timeline, and process gallery.</p>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="filterCases('all')" class="filter-btn active px-5 py-2 bg-brand-dark text-white text-sm font-semibold rounded-full transition" data-filter="all">All</button>
+                <button onclick="filterCases('botanical')" class="filter-btn px-5 py-2 bg-white border border-gray-200 text-gray-600 text-sm font-semibold rounded-full hover:bg-brand-gold/10 hover:border-brand-gold/30 transition" data-filter="botanical">Botanical</button>
+                <button onclick="filterCases('pet-memorial')" class="filter-btn px-5 py-2 bg-white border border-gray-200 text-gray-600 text-sm font-semibold rounded-full hover:bg-brand-gold/10 hover:border-brand-gold/30 transition" data-filter="pet-memorial">Pet Memorial</button>
+                <button onclick="filterCases('human-memorial')" class="filter-btn px-5 py-2 bg-white border border-gray-200 text-gray-600 text-sm font-semibold rounded-full hover:bg-brand-gold/10 hover:border-brand-gold/30 transition" data-filter="human-memorial">Human Memorial</button>
+                <button onclick="filterCases('oem')" class="filter-btn px-5 py-2 bg-white border border-gray-200 text-gray-600 text-sm font-semibold rounded-full hover:bg-brand-gold/10 hover:border-brand-gold/30 transition" data-filter="oem">OEM</button>
+                <button onclick="filterCases('white-label')" class="filter-btn px-5 py-2 bg-white border border-gray-200 text-gray-600 text-sm font-semibold rounded-full hover:bg-brand-gold/10 hover:border-brand-gold/30 transition" data-filter="white-label">White Label</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="case-grid">
                 <!-- Peony Diamond -->
-                <a href="peony-diamond.html" class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition block">
+                <a href="peony-diamond.html" class="case-card bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition block" data-categories="botanical oem">
                     <div class="h-48 overflow-hidden bg-brand-light">
                         <img src="assets/images/peony/finished-products/brooch-pink-enamel-peony.jpg" alt="Peony Diamond — pink enamel peony brooch with commemorative diamond" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-0.5 bg-brand-gold/10 text-brand-gold text-[10px] font-bold uppercase rounded">OEM · China</span>
+                        <div class="flex flex-wrap items-center gap-2 mb-3">
+                            <span class="px-2 py-0.5 bg-brand-gold/10 text-brand-gold text-[10px] font-bold uppercase rounded">OEM</span>
+                            <span class="px-2 py-0.5 bg-green-50 text-green-700 text-[10px] font-bold uppercase rounded">Botanical</span>
                         </div>
-                        <h3 class="font-serif text-lg font-semibold text-brand-dark mb-2">Peony Diamond — Cultural Heritage</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-3">Commemorative diamond collection tied to the Peony Cultural Festival in Luoyang, China. BioGem Lab produced 247 diamonds across three annual festival cycles (2022–2024), ranging from 0.3ct to 1.2ct, using carbon extracted from peony plant material.</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Custom festival-themed packaging with laser-etched peony motifs, independent IGI certification, and serialized commemorative cards. The 2024 edition sold out 89% of allocated units within 14 days.</p>
+                        <h3 class="font-serif text-lg font-semibold text-brand-dark mb-2">Peony Diamond</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-3">247 diamonds from peony plant carbon across three festival cycles (2022–2024). Custom festival-themed packaging with IGI certification.</p>
                         <div class="flex items-center gap-4 text-xs text-gray-400">
-                            <span><i class="fas fa-gem text-brand-gold/60 mr-1"></i> 0.3–1.2ct range</span>
-                            <span><i class="fas fa-palette text-brand-gold/60 mr-1"></i> Custom botanical</span>
+                            <span><i class="fas fa-gem text-brand-gold/60 mr-1"></i> 0.3–1.2ct</span>
+                            <span><i class="fas fa-clock text-brand-gold/60 mr-1"></i> [TBD] days</span>
                         </div>
                     </div>
                 </a>
                 <!-- Moutai Diamond -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+                <a href="moutai-diamond.html" class="case-card bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition block" data-categories="oem white-label">
                     <div class="h-48 overflow-hidden bg-brand-light">
-                        <img src="assets/images/diamonds/diamond-collection-colored-assortment.jpg" alt="Colored diamond assortment — premium commemorative diamond collection" class="w-full h-full object-cover" loading="lazy">
+                        <img src="assets/images/cases/moutai/sorghum-grains-hands.jpg" alt="Moutai Diamond — red sorghum grains as carbon source for heritage commemorative diamonds" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-0.5 bg-brand-gold/10 text-brand-gold text-[10px] font-bold uppercase rounded">OEM · China</span>
+                        <div class="flex flex-wrap items-center gap-2 mb-3">
+                            <span class="px-2 py-0.5 bg-brand-gold/10 text-brand-gold text-[10px] font-bold uppercase rounded">OEM</span>
+                            <span class="px-2 py-0.5 bg-purple-50 text-purple-700 text-[10px] font-bold uppercase rounded">White Label</span>
                         </div>
-                        <h3 class="font-serif text-lg font-semibold text-brand-dark mb-2">Moutai Diamond — Heritage Commemorative</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-3">Full OEM production for a prestigious Chinese cultural heritage brand commemorating 70 years of continuous operation. BioGem Lab manufactured 512 diamonds over an 18-month contract (2023–2024), with strict white-label requirements: zero BioGem Lab branding on any customer-facing material.</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">VS1+ clarity, G+ color, round brilliant cut exclusively. Custom velvet-lined presentation cases with gold-embossed partner logos, bilingual certificates, and RFID-enabled authenticity cards. Average fulfillment: 48 days. Return rate: 0.3%.</p>
+                        <h3 class="font-serif text-lg font-semibold text-brand-dark mb-2">Moutai Diamond</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-3">512 commemorative diamonds from red sorghum grain carbon over 18 months. Zero BioGem Lab branding — full white-label.</p>
                         <div class="flex items-center gap-4 text-xs text-gray-400">
                             <span><i class="fas fa-crown text-brand-gold/60 mr-1"></i> 512 units</span>
-                            <span><i class="fas fa-box text-brand-gold/60 mr-1"></i> Premium white-label</span>
+                            <span><i class="fas fa-clock text-brand-gold/60 mr-1"></i> [TBD] days</span>
                         </div>
                     </div>
-                </div>
-                <!-- BaiCai Diamond -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+                </a>
+                <!-- Plant Fiber Diamond -->
+                <a href="plant-fiber-diamond.html" class="case-card bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition block" data-categories="botanical">
                     <div class="h-48 overflow-hidden bg-brand-light">
-                        <img src="assets/images/diamonds/diamond-baicaidiamond-packaging.jpeg" alt="BaiCai Diamond branded packaging — white-label memorial diamond collection" class="w-full h-full object-cover" loading="lazy">
+                        <img src="assets/images/diamonds/diamond-collection-colored-assortment.jpg" alt="Plant Fiber Diamond — botanical carbon source memorial diamond collection" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-0.5 bg-brand-gold/10 text-brand-gold text-[10px] font-bold uppercase rounded">B2B · China</span>
+                        <div class="flex flex-wrap items-center gap-2 mb-3">
+                            <span class="px-2 py-0.5 bg-green-50 text-green-700 text-[10px] font-bold uppercase rounded">Botanical</span>
                         </div>
-                        <h3 class="font-serif text-lg font-semibold text-brand-dark mb-2">BaiCai Diamond — Memorial Collection</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-3">B2B supply partnership for a regional memorial services brand serving 14 provinces across central China. BioGem Lab provides white-label memorial diamonds on a volume-based contract with quarterly replenishment orders.</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Since partnership inception in 2021, 1,847 diamonds have been delivered with an average turnaround of 58 days. Partner-branded certificates and production timeline reports included with every order.</p>
+                        <h3 class="font-serif text-lg font-semibold text-brand-dark mb-2">Plant Fiber Diamond</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-3">Memorial diamonds from specialized plant fiber carbon. Custom botanical extraction protocols for unique cellulose sources.</p>
                         <div class="flex items-center gap-4 text-xs text-gray-400">
-                            <span><i class="fas fa-chart-line text-brand-gold/60 mr-1"></i> 1,847 units</span>
-                            <span><i class="fas fa-shipping-fast text-brand-gold/60 mr-1"></i> 58-day avg</span>
+                            <span><i class="fas fa-leaf text-brand-gold/60 mr-1"></i> Botanical</span>
+                            <span><i class="fas fa-clock text-brand-gold/60 mr-1"></i> [TBD] days</span>
                         </div>
                     </div>
-                </div>
-                <!-- Malaysia Chong Zheng Diamond -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+                </a>
+                <!-- Chong Zheng Diamond -->
+                <a href="chong-zheng-diamond.html" class="case-card bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition block" data-categories="human-memorial oem">
                     <div class="h-48 overflow-hidden bg-brand-light">
-                        <img src="assets/images/ancestral-root/heritage/hakka-heritage-site.jpg" alt="Overseas Chinese heritage — ancestral root memorial diamond collection" class="w-full h-full object-cover" loading="lazy">
+                        <img src="assets/images/ancestral-root/heritage/hakka-heritage-site.jpg" alt="Chong Zheng Diamond — ancestral memorial diamond for overseas Chinese community" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-0.5 bg-brand-gold/10 text-brand-gold text-[10px] font-bold uppercase rounded">OEM · Malaysia</span>
+                        <div class="flex flex-wrap items-center gap-2 mb-3">
+                            <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-bold uppercase rounded">Human Memorial</span>
+                            <span class="px-2 py-0.5 bg-brand-gold/10 text-brand-gold text-[10px] font-bold uppercase rounded">OEM</span>
                         </div>
-                        <h3 class="font-serif text-lg font-semibold text-brand-dark mb-2">Chong Zheng Diamond — Overseas Chinese Heritage</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-3">Full OEM production for a Malaysia-based memorial diamond brand serving the overseas Chinese community. Carbon sources include ancestral hair and family heirlooms shipped from across Southeast Asia.</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Custom bilingual certificates (English/Chinese), traditional red-and-gold packaging, and ancestor-themed traceability documentation. 60-day turnaround with direct shipping to Kuala Lumpur. 98.5% customer satisfaction rate.</p>
+                        <h3 class="font-serif text-lg font-semibold text-brand-dark mb-2">Chong Zheng Diamond</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-3">Ancestral memorial diamonds for overseas Chinese community. Bilingual certificates, traditional packaging, 98.5% satisfaction.</p>
                         <div class="flex items-center gap-4 text-xs text-gray-400">
                             <span><i class="fas fa-globe-asia text-brand-gold/60 mr-1"></i> Malaysia</span>
-                            <span><i class="fas fa-language text-brand-gold/60 mr-1"></i> Bilingual certs</span>
+                            <span><i class="fas fa-clock text-brand-gold/60 mr-1"></i> [TBD] days</span>
                         </div>
                     </div>
-                </div>
-                <!-- Camel Wool -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+                </a>
+                <!-- Camel Wool Diamond -->
+                <a href="camel-wool-diamond.html" class="case-card bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition block" data-categories="botanical">
                     <div class="h-48 overflow-hidden bg-brand-light">
-                        <img src="assets/images/process/camel-wool-fiber-processing.jpg" alt="Camel wool fiber sample processing — animal carbon source for memorial diamond production" class="w-full h-full object-cover" loading="lazy">
+                        <img src="assets/images/process/camel-wool-fiber-processing.jpg" alt="Camel Wool Diamond — Inner Mongolian herder heritage memorial diamond" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-0.5 bg-brand-gold/10 text-brand-gold text-[10px] font-bold uppercase rounded">Specialty · Inner Mongolia</span>
+                        <div class="flex flex-wrap items-center gap-2 mb-3">
+                            <span class="px-2 py-0.5 bg-green-50 text-green-700 text-[10px] font-bold uppercase rounded">Botanical</span>
                         </div>
-                        <h3 class="font-serif text-lg font-semibold text-brand-dark mb-2">Camel Wool — Nomadic Heritage</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-3">A cultural preservation project converting camel wool from Inner Mongolian herders into commemorative diamonds. Each stone represents a family's pastoral heritage and connection to the land.</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Carbon extraction from animal fiber requires specialized purification to remove keratin impurities. BioGem Lab's patented process achieves ≥99.5% carbon purity from camel wool. Custom Mongolian-themed packaging with traditional knot motifs.</p>
+                        <h3 class="font-serif text-lg font-semibold text-brand-dark mb-2">Camel Wool Diamond</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-3">Cultural preservation from Inner Mongolian camel wool. Specialized animal fiber purification with traditional knot motif packaging.</p>
                         <div class="flex items-center gap-4 text-xs text-gray-400">
-                            <span><i class="fas fa-paw text-brand-gold/60 mr-1"></i> Animal fiber</span>
-                            <span><i class="fas fa-mountain text-brand-gold/60 mr-1"></i> Cultural heritage</span>
+                            <span><i class="fas fa-paw text-brand-gold/60 mr-1"></i> Animal Fiber</span>
+                            <span><i class="fas fa-clock text-brand-gold/60 mr-1"></i> [TBD] days</span>
                         </div>
                     </div>
-                </div>
-                <!-- Millennium Camphor Wood -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+                </a>
+                <!-- Antique Camphor Diamond -->
+                <a href="antique-camphor-diamond.html" class="case-card bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition block" data-categories="human-memorial">
                     <div class="h-48 overflow-hidden bg-brand-light">
-                        <img src="assets/images/ancestral-root/lab-prep/cypress-samples-containers.jpg" alt="Cypress wood samples — ancient heritage tree carbon source for commemorative diamonds" class="w-full h-full object-cover" loading="lazy">
+                        <img src="assets/images/cases/antique-camphor/wood-weighing.jpg" alt="Antique Camphor Diamond — 120-year-old wood transformed into family heirloom memorial diamond" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-0.5 bg-brand-gold/10 text-brand-gold text-[10px] font-bold uppercase rounded">Heritage · Taiwan</span>
+                        <div class="flex flex-wrap items-center gap-2 mb-3">
+                            <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-bold uppercase rounded">Human Memorial</span>
                         </div>
-                        <h3 class="font-serif text-lg font-semibold text-brand-dark mb-2">Millennium Camphor — Rare Wood Heritage</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-3">A limited-edition commemorative diamond collection using carbon extracted from centuries-old camphor wood. Sourced from protected heritage trees in Taiwan, each diamond carries a unique wood-grain pattern preserved in the carbon structure.</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Due to the density and resin content of ancient wood, this project required 18 months of R&D to optimize the graphitization protocol. Only 36 diamonds produced annually. Each unit includes a wood-origin certificate and tree-ring age documentation.</p>
+                        <h3 class="font-serif text-lg font-semibold text-brand-dark mb-2">Antique Camphor Diamond</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-3">120-year-old camphor wood chest transformed into a generational heirloom diamond. Three generations of memory preserved in carbon.</p>
                         <div class="flex items-center gap-4 text-xs text-gray-400">
-                            <span><i class="fas fa-tree text-brand-gold/60 mr-1"></i> Ancient wood</span>
-                            <span><i class="fas fa-certificate text-brand-gold/60 mr-1"></i> Limited edition</span>
+                            <span><i class="fas fa-tree text-brand-gold/60 mr-1"></i> Antique Wood</span>
+                            <span><i class="fas fa-clock text-brand-gold/60 mr-1"></i> [TBD] days</span>
                         </div>
                     </div>
-                </div>
-                <!-- Baby First Hair -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+                </a>
+                <!-- Baby Hair Diamond -->
+                <a href="baby-hair-diamond.html" class="case-card bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition block" data-categories="human-memorial">
                     <div class="h-48 overflow-hidden bg-brand-light">
-                        <img src="assets/images/process/baby-hair-collection/baby-hair-collection-branded-card.jpg" alt="Baby first hair collection — infant memorial diamond keepsake service" class="w-full h-full object-cover" loading="lazy">
+                        <img src="assets/images/cases/baby-hair/haircut-card.jpg" alt="Baby Hair Diamond — first hair keepsake memorial diamond for new parents" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="px-2 py-0.5 bg-brand-gold/10 text-brand-gold text-[10px] font-bold uppercase rounded">Consumer · China</span>
+                        <div class="flex flex-wrap items-center gap-2 mb-3">
+                            <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-bold uppercase rounded">Human Memorial</span>
                         </div>
-                        <h3 class="font-serif text-lg font-semibold text-brand-dark mb-2">Baby First Hair — Newborn Keepsake</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-3">A direct-to-consumer service converting infant first hair into petite memorial diamonds. Popular as a milestone gift for new parents, typically set in small pendants or rings.</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Due to the minimal carbon yield from baby hair (typically 0.1–0.3g), this service specializes in sub-0.25ct stones with delicate cuts. Soft pink or blue-themed packaging options. 500+ families served since 2022.</p>
+                        <h3 class="font-serif text-lg font-semibold text-brand-dark mb-2">Baby Hair Diamond</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-3">First hair keepsake transformed into a memorial diamond. A single lock of baby hair preserved forever as a gem-quality stone.</p>
                         <div class="flex items-center gap-4 text-xs text-gray-400">
-                            <span><i class="fas fa-baby text-brand-gold/60 mr-1"></i> Infant hair</span>
-                            <span><i class="fas fa-gem text-brand-gold/60 mr-1"></i> 0.1–0.25ct</span>
+                            <span><i class="fas fa-baby text-brand-gold/60 mr-1"></i> First Hair</span>
+                            <span><i class="fas fa-clock text-brand-gold/60 mr-1"></i> [TBD] days</span>
                         </div>
                     </div>
-                </div>
+                </a>
+                <!-- Rongjiang Banyan Diamond -->
+                <a href="rongjiang-banyan-diamond.html" class="case-card bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition block" data-categories="botanical">
+                    <div class="h-48 overflow-hidden bg-brand-light">
+                        <img src="assets/images/cases/rongjiang-banyan/leaves-bag.jpg" alt="Rongjiang Banyan Diamond — 500-year-old ancient tree leaf memorial diamond" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap items-center gap-2 mb-3">
+                            <span class="px-2 py-0.5 bg-green-50 text-green-700 text-[10px] font-bold uppercase rounded">Botanical</span>
+                        </div>
+                        <h3 class="font-serif text-lg font-semibold text-brand-dark mb-2">Rongjiang Banyan Diamond</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-3">500-year-old banyan tree leaves transformed into memorial diamonds. Community heritage preserved as gem-quality stones.</p>
+                        <div class="flex items-center gap-4 text-xs text-gray-400">
+                            <span><i class="fas fa-leaf text-brand-gold/60 mr-1"></i> Ancient Tree</span>
+                            <span><i class="fas fa-clock text-brand-gold/60 mr-1"></i> [TBD] days</span>
+                        </div>
+                    </div>
+                </a>
             </div>
+
+            <script>
+            function filterCases(category) {
+                const cards = document.querySelectorAll('.case-card');
+                const buttons = document.querySelectorAll('.filter-btn');
+                buttons.forEach(btn => {
+                    if (btn.dataset.filter === category) {
+                        btn.classList.add('bg-brand-dark', 'text-white');
+                        btn.classList.remove('bg-white', 'text-gray-600', 'border', 'border-gray-200');
+                    } else {
+                        btn.classList.remove('bg-brand-dark', 'text-white');
+                        btn.classList.add('bg-white', 'text-gray-600', 'border', 'border-gray-200');
+                    }
+                });
+                cards.forEach(card => {
+                    if (category === 'all' || card.dataset.categories.includes(category)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+            </script>
         </div>
     </section>
 
