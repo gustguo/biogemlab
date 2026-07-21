@@ -109,7 +109,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
             theme: {
@@ -120,26 +120,7 @@
             }
         }
     </script>
-    <style>
-        .prose h2 { font-family: 'Crimson Pro', serif; font-weight: 600; font-size: 1.75rem; color: #0B0F17; margin-top: 2.5rem; margin-bottom: 1rem; }
-        .prose h3 { font-family: 'Crimson Pro', serif; font-weight: 600; font-size: 1.35rem; color: #0B0F17; margin-top: 2rem; margin-bottom: 0.75rem; }
-        .prose p { margin-bottom: 1rem; line-height: 1.7; color: #4B5563; }
-        .prose ul { margin-bottom: 1rem; padding-left: 1.5rem; }
-        .prose li { margin-bottom: 0.5rem; color: #4B5563; }
-        .prose a { color: #C5A059; text-decoration: underline; text-underline-offset: 2px; }
-        .prose a:hover { color: #0B0F17; }
-        .prose strong { color: #0B0F17; font-weight: 600; }
-        .quick-answer { background: linear-gradient(135deg, #1A2744 0%, #0B0F17 100%); }
-        .data-table th { background: #0B0F17; color: #C5A059; font-weight: 600; text-align: left; padding: 0.75rem 1rem; }
-        .data-table td { padding: 0.75rem 1rem; border-bottom: 1px solid #E5E7EB; }
-        .data-table tr:hover { background: #F7F8FA; }
-        details { border: 1px solid #E5E7EB; border-radius: 0.5rem; margin-bottom: 0.75rem; overflow: hidden; }
-        summary { padding: 1rem 1.25rem; background: #F7F8FA; cursor: pointer; font-weight: 600; color: #0B0F17; display: flex; justify-content: space-between; align-items: center; }
-        summary:hover { background: #F3F4F6; }
-        summary::after { content: '+'; font-size: 1.25rem; color: #C5A059; }
-        details[open] summary::after { content: '−'; }
-        details > div { padding: 1rem 1.25rem; background: white; }
-    </style>
+    
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W4JJ8RGFWC"></script>
 <script>
@@ -148,6 +129,7 @@
   gtag('js', new Date());
   gtag('config', 'G-W4JJ8RGFWC');
 </script>
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body class="font-sans text-gray-600 antialiased bg-brand-light">
 
@@ -197,7 +179,7 @@
 
     <!-- Article Header -->
     <header class="pt-32 pb-12 bg-white border-b border-gray-100">
-        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8">
             <div class="flex items-center gap-3 mb-4">
                 <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Technical</span>
                 <span class="text-gray-400 text-sm">July 11, 2026</span>
@@ -232,7 +214,7 @@
 
     <!-- Quick Answer Box (GEO-optimized) -->
     <section class="py-8 quick-answer text-white">
-        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8">
             <div class="flex items-center gap-2 mb-4">
                 <i class="fas fa-bolt text-brand-gold"></i>
                 <span class="text-brand-gold font-semibold text-sm uppercase tracking-wider">Quick Answer</span>
@@ -245,7 +227,7 @@
 
     <!-- Main Content -->
     <article class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-6 lg:px-8 prose">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8 prose">
 
             <p>
                 At BioGem Lab, we receive the request several times a month: <em>"Can you make a diamond from my father's ashes?"</em> The answer is no — not because we lack the technology, but because the chemistry of cremation and the chemistry of diamond synthesis point in opposite directions. This article explains why, with the actual numbers.
@@ -401,56 +383,56 @@
             <h2>Common Questions</h2>
             <p class="text-gray-500 text-sm mb-4">Click any question to expand the answer.</p>
 
-            <details>
+            <details class="bg-white border border-gray-200 rounded-xl p-4 mb-4">
                 <summary>Q: Can cremated ashes be turned into a diamond by any company?</summary>
                 <div>
                     <p>No. Any company claiming to make diamonds from ashes is either using carbon from another source (industrial graphite, their own feedstock) while treating the ash as a symbolic token, or the ash never enters the process at all. The chemistry of cremation makes carbon extraction from ashes impossible. What remains after cremation is calcium phosphate mineral, not carbon.</p>
                 </div>
             </details>
 
-            <details>
+            <details class="bg-white border border-gray-200 rounded-xl p-4 mb-4">
                 <summary>Q: How much hair is needed for a 1ct memorial diamond?</summary>
                 <div>
                     <p>Approximately <strong>6 grams</strong> of hair or fur is the minimum for a 1-carat memorial diamond. We recommend <strong>10–20 grams</strong> to ensure adequate safety margin for purification. Hair contains 30–40% carbon by weight (keratin), making it a reliable feedstock.</p>
                 </div>
             </details>
 
-            <details>
+            <details class="bg-white border border-gray-200 rounded-xl p-4 mb-4">
                 <summary>Q: Can pet fur be used instead of human hair?</summary>
                 <div>
                     <p>Yes. Pet fur and hair are functionally identical to human hair as carbon feedstock. The same quantity applies: 6g minimum, 10–20g recommended. We have produced memorial diamonds from dog, cat, horse, and rabbit fur. The resulting diamond's physical properties are indistinguishable regardless of biological origin.</p>
                 </div>
             </details>
 
-            <details>
+            <details class="bg-white border border-gray-200 rounded-xl p-4 mb-4">
                 <summary>Q: How long does the complete process take?</summary>
                 <div>
                     <p>Approximately <strong>60 days</strong> from sample receipt to finished diamond: carbon extraction (3–5 days), purification (5–7 days), graphitization (2–3 days), HPHT growth (18–25 days), cutting/polishing (7–10 days), and grading/certification (2–3 days). We do not offer rush or expedited service.</p>
                 </div>
             </details>
 
-            <details>
+            <details class="bg-white border border-gray-200 rounded-xl p-4 mb-4">
                 <summary>Q: Are memorial diamonds real diamonds?</summary>
                 <div>
                     <p>Yes. Memorial diamonds are chemically, physically, and optically identical to natural diamonds. Both are crystalline carbon with sp³ hybridization — the same atomic lattice structure, hardness (10 Mohs), refractive index (2.42), and thermal conductivity. GIA and IGI both certify memorial diamonds using the same 4C grading standards applied to natural diamonds.</p>
                 </div>
             </details>
 
-            <details>
+            <details class="bg-white border border-gray-200 rounded-xl p-4 mb-4">
                 <summary>Q: Can I get a colored memorial diamond?</summary>
                 <div>
                     <p><strong>BioGem Lab does not offer fancy color diamonds.</strong> We produce only E–H colorless/near-colorless stones. While HPHT color science is understood — nitrogen produces yellow, boron produces blue — controlled fancy color production requires specialized equipment configurations outside our current offering.</p>
                 </div>
             </details>
 
-            <details>
+            <details class="bg-white border border-gray-200 rounded-xl p-4 mb-4">
                 <summary>Q: What if I only have ashes and no hair?</summary>
                 <div>
                     <p>Unfortunately, ashes cannot be used as feedstock. We recommend checking for alternative carbon sources: a hairbrush with collected hair, a keepsake envelope from a first haircut, a baby book with a taped-in curl, or even nail clippings. If no biological material is available, a memorial diamond is not technically achievable.</p>
                 </div>
             </details>
 
-            <details>
+            <details class="bg-white border border-gray-200 rounded-xl p-4 mb-4">
                 <summary>Q: How do I ship hair or fur samples?</summary>
                 <div>
                     <p>Hair and fur ship as non-restricted biological material in most jurisdictions. We recommend double-packaging (sealed plastic bag inside rigid container) and shipping via tracked courier (DHL/FedEx). We provide detailed collection kits and shipping instructions to all partners.</p>
