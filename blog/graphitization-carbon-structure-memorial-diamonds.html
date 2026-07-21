@@ -67,6 +67,46 @@
       ]
     }
     </script>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is graphitization and why is it necessary?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Graphitization converts amorphous biological carbon into hexagonal graphite crystals. This crystalline structure is required before HPHT synthesis because diamond's tetrahedral lattice forms from graphite under extreme pressure and temperature—not from amorphous carbon."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does graphitization take?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Standard graphitization requires 7–10 days at 1,200–1,400°C in an oxygen-free environment. Rushing this step produces incomplete crystallization, which leads to inclusions and reduced diamond clarity."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can graphitization be skipped or shortened?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Incomplete graphitization results in carbon that cannot properly transform into diamond lattice structure under HPHT conditions. Labs promising faster timelines typically use lower-quality feedstock or skip validation steps."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What happens if graphitization fails?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Failure is detected through X-ray diffraction analysis. The batch is reprocessed from the purification stage. In our experience, failure rate is <2% with proper carbon source quality control."
+            }
+        }
+    ]
+}
+    </script>
 </head>
 <body class="font-sans text-gray-600 antialiased">
 
@@ -309,7 +349,29 @@
 
     <!-- Footer -->
     
-    <div class="mt-16 p-8 bg-brand-light rounded-2xl flex items-center gap-6">
+    
+    <section class="mt-16 max-w-4xl mx-auto px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-semibold text-brand-dark mb-8">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <details class="bg-white border border-gray-200 rounded-xl p-4">
+          <summary class="font-semibold text-brand-dark cursor-pointer">What is graphitization and why is it necessary?</summary>
+          <p class="text-gray-600 mt-3">Graphitization converts amorphous biological carbon into hexagonal graphite crystals. This crystalline structure is required before HPHT synthesis because diamond's tetrahedral lattice forms from graphite under extreme pressure and temperature—not from amorphous carbon.</p>
+        </details>
+        <details class="bg-white border border-gray-200 rounded-xl p-4">
+          <summary class="font-semibold text-brand-dark cursor-pointer">How long does graphitization take?</summary>
+          <p class="text-gray-600 mt-3">Standard graphitization requires 7–10 days at 1,200–1,400°C in an oxygen-free environment. Rushing this step produces incomplete crystallization, which leads to inclusions and reduced diamond clarity.</p>
+        </details>
+        <details class="bg-white border border-gray-200 rounded-xl p-4">
+          <summary class="font-semibold text-brand-dark cursor-pointer">Can graphitization be skipped or shortened?</summary>
+          <p class="text-gray-600 mt-3">No. Incomplete graphitization results in carbon that cannot properly transform into diamond lattice structure under HPHT conditions. Labs promising faster timelines typically use lower-quality feedstock or skip validation steps.</p>
+        </details>
+        <details class="bg-white border border-gray-200 rounded-xl p-4">
+          <summary class="font-semibold text-brand-dark cursor-pointer">What happens if graphitization fails?</summary>
+          <p class="text-gray-600 mt-3">Failure is detected through X-ray diffraction analysis. The batch is reprocessed from the purification stage. In our experience, failure rate is <2% with proper carbon source quality control.</p>
+        </details>
+      </div>
+    </section>
+<div class="mt-16 p-8 bg-brand-light rounded-2xl flex items-center gap-6">
       <div class="w-16 h-16 rounded-full bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20 flex-shrink-0">
         <i class="fas fa-user text-brand-gold text-xl"></i>
       </div>
