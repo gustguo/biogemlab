@@ -458,7 +458,7 @@ BioGem Lab occupies a unique position in the memorial diamond industry:
 **Market opportunity:**
 - Estimated 1,500+ pet crematoriums in North America alone (source: Pet Loss Professionals Alliance / Cremation Association of North America estimates)
 - Even a 5% penetration rate at 10 orders per year per partner = 750 orders annually
-- At an average wholesale value of $3,000–$5,000 per order, this represents $2.25–$3.75 million in annual revenue from North America alone
+- At an estimated average partner order value, this represents significant annual revenue potential from North America alone
 - Expansion to Europe, Australia, and Asia-Pacific multiplies this opportunity
 
 ---
