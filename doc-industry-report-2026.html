@@ -4,353 +4,233 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memorial Diamond Industry Report 2026 | BioGem Lab</title>
-    <meta name="description" content="Download BioGem Lab's Memorial Diamond Industry Report 2026 — a comprehensive market analysis covering competitive intelligence, pet memorial trends, and B2B partnership opportunities.">
+    <meta name="description" content="BioGem Lab's Memorial Diamond Industry Report 2026: comprehensive market analysis, competitive intelligence, and B2B opportunity assessment for the memorial diamond sector.">
     <link rel="canonical" href="https://www.biogemlab.com/doc-industry-report-2026.html">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💎%3C/text%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-gold': '#C5A059',
+                        'brand-dark': '#0B0F17',
+                        'brand-light': '#F7F8FA',
+                    },
+                    fontFamily: {
+                        'serif': ['Crimson Pro', 'Georgia', 'serif'],
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        :root {
-            --primary: #1a1a2e;
-            --secondary: #16213e;
-            --accent: #0f3460;
-            --highlight: #e94560;
-            --text: #f5f5f5;
-            --text-muted: #a0a0a0;
-            --bg: #0f0f1a;
-            --sidebar-bg: #1a1a2e;
-            --border: #2a2a4a;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            overflow: hidden;
-            height: 100vh;
-        }
-
-        .container {
-            display: flex;
-            height: 100vh;
-        }
-
-        /* Sidebar */
-        .sidebar {
-            width: 380px;
-            background: var(--sidebar-bg);
-            border-right: 1px solid var(--border);
-            display: flex;
-            flex-direction: column;
-            overflow-y: auto;
-            flex-shrink: 0;
-        }
-
-        .sidebar-header {
-            padding: 30px;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .sidebar-header h1 {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: var(--text);
-            line-height: 1.3;
-            margin-bottom: 8px;
-        }
-
-        .sidebar-header .subtitle {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            line-height: 1.5;
-        }
-
-        .sidebar-content {
-            padding: 30px;
-            flex: 1;
-        }
-
-        .file-info {
-            background: var(--secondary);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 24px;
-        }
-
-        .file-info-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 8px 0;
-            border-bottom: 1px solid var(--border);
-            font-size: 0.9rem;
-        }
-
-        .file-info-item:last-child {
-            border-bottom: none;
-        }
-
-        .file-info-label {
-            color: var(--text-muted);
-        }
-
-        .file-info-value {
-            color: var(--text);
-            font-weight: 500;
-        }
-
-        .download-section {
-            margin-bottom: 24px;
-        }
-
-        .download-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            width: 100%;
-            padding: 14px 24px;
-            background: var(--highlight);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .download-btn:hover {
-            background: #d63850;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
-        }
-
-        .download-btn svg {
-            width: 20px;
-            height: 20px;
-        }
-
-        .doc-details {
-            background: var(--secondary);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 24px;
-        }
-
-        .doc-details h3 {
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 16px;
-            color: var(--text);
-        }
-
-        .detail-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-        }
-
-        .detail-item {
-            font-size: 0.85rem;
-        }
-
-        .detail-item .label {
-            color: var(--text-muted);
-            display: block;
-            margin-bottom: 4px;
-            font-size: 0.8rem;
-        }
-
-        .detail-item .value {
-            color: var(--text);
-            font-weight: 500;
-        }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.3s ease;
-            padding: 8px 0;
-        }
-
-        .back-link:hover {
-            color: var(--highlight);
-        }
-
-        /* Main Content */
-        .main-content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
-
-        .viewer-header {
-            padding: 20px 30px;
-            background: var(--secondary);
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .viewer-header h2 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--text);
-        }
-
-        .viewer-header .page-info {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        .pdf-viewer {
-            flex: 1;
-            background: #1a1a1a;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: auto;
-            padding: 20px;
-        }
-
-        .pdf-viewer iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: 4px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-        }
-
-        .pdf-fallback {
-            text-align: center;
-            padding: 40px;
-            color: var(--text-muted);
-        }
-
-        .pdf-fallback a {
-            color: var(--highlight);
-            text-decoration: none;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-
-            .sidebar {
-                width: 100%;
-                height: auto;
-                max-height: 50vh;
-                border-right: none;
-                border-bottom: 1px solid var(--border);
-            }
-
-            .detail-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .pdf-container { background: #E5E5E5; }
+        .pdf-container embed { display: block; margin: 0 auto; }
+        /* Hide scrollbar for sidebar but keep functionality */
+        .sidebar-scroll::-webkit-scrollbar { width: 4px; }
+        .sidebar-scroll::-webkit-scrollbar-thumb { background: #D1D5DB; border-radius: 2px; }
     </style>
 </head>
-<body>
-    <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="sidebar-header">
-                <h1>Memorial Diamond Industry Report 2026</h1>
-                <p class="subtitle">Market Analysis & Competitive Intelligence — B2B Partnership Opportunities in the Memorial Diamond Supply Chain</p>
+<body class="bg-white h-screen flex flex-col overflow-hidden">
+
+    <!-- Header -->
+    <header class="bg-brand-dark border-b border-white/10 flex items-center justify-between px-4 py-3 shrink-0">
+        <div class="flex items-center gap-3">
+            <a href="index.html" class="text-brand-gold hover:text-white transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                </svg>
+            </a>
+            <span class="text-white/90 text-sm font-medium truncate max-w-[200px] sm:max-w-md">Memorial Diamond Industry Report 2026 — Market Analysis & Competitive Intelligence</span>
+        </div>
+        <a href="index.html" class="text-white/60 hover:text-brand-gold transition text-xs">← Back to BioGem Lab</a>
+    </header>
+
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col lg:flex-row overflow-hidden">
+        
+        <!-- PDF Viewer Area -->
+        <div class="pdf-container flex-1 relative overflow-auto">
+            <embed 
+                src="assets/docs/memorial-diamond-industry-report-2026.pdf" 
+                type="application/pdf" 
+                class="w-full h-full min-h-[500px]"
+                style="height: 100vh;"
+            >
+        </div>
+
+        <!-- Right Sidebar -->
+        <aside class="w-full lg:w-80 bg-white border-l border-gray-200 flex flex-col shrink-0 sidebar-scroll overflow-y-auto">
+
+            <!-- Page Title (h1 for SEO) -->
+            <div class="px-6 pt-6 pb-2">
+                <h1 class="text-base font-semibold text-gray-900 leading-snug">Memorial Diamond Industry Report 2026</h1>
+                <p class="text-xs text-gray-500 mt-1">Market Analysis & Competitive Intelligence</p>
             </div>
 
-            <div class="sidebar-content">
-                <div class="file-info">
-                    <div class="file-info-item">
-                        <span class="file-info-label">Document Type</span>
-                        <span class="file-info-value">Industry Report</span>
-                    </div>
-                    <div class="file-info-item">
-                        <span class="file-info-label">Pages</span>
-                        <span class="file-info-value">~22</span>
-                    </div>
-                    <div class="file-info-item">
-                        <span class="file-info-label">File Size</span>
-                        <span class="file-info-value">284 KB</span>
-                    </div>
-                    <div class="file-info-item">
-                        <span class="file-info-label">Format</span>
-                        <span class="file-info-value">PDF</span>
-                    </div>
-                    <div class="file-info-item">
-                        <span class="file-info-label">Category</span>
-                        <span class="file-info-value">Market Analysis</span>
-                    </div>
-                </div>
-
-                <div class="download-section">
-                    <a href="assets/docs/memorial-diamond-industry-report-2026.pdf" download class="download-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            <!-- File Info -->
+            <div class="p-6 border-b border-gray-100">
+                <div class="flex items-start gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center shrink-0">
+                        <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/>
                         </svg>
-                        Download PDF
-                    </a>
-                </div>
-
-                <div class="doc-details">
-                    <h3>Document Details</h3>
-                    <div class="detail-grid">
-                        <div class="detail-item">
-                            <span class="label">Author</span>
-                            <span class="value">BioGem Lab Market Research Team</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="label">Date</span>
-                            <span class="value">Jul 26, 2026</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="label">Category</span>
-                            <span class="value">Industry Intelligence</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="label">Language</span>
-                            <span class="value">English</span>
-                        </div>
+                    </div>
+                    <div class="min-w-0">
+                        <h2 class="text-sm font-semibold text-gray-900 leading-tight break-words">Memorial Diamond Industry Report 2026 — Market Analysis & Competitive Intelligence</h2>
                     </div>
                 </div>
 
-                <a href="/" class="back-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                <div class="space-y-3 text-xs text-gray-500">
+                    <div class="flex justify-between">
+                        <span>Size</span>
+                        <span class="text-gray-700 font-medium">235 KB</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Last updated</span>
+                        <span class="text-gray-700 font-medium">Jul 26, 2026</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Pages</span>
+                        <span class="text-gray-700 font-medium">~20</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Type</span>
+                        <span class="text-gray-700 font-medium">Market Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="p-6 space-y-3">
+                <a href="assets/docs/memorial-diamond-industry-report-2026.pdf" 
+                    download
+                    class="flex items-center justify-center gap-2 w-full px-4 py-2.5 bg-brand-gold hover:bg-brand-gold/90 text-white text-sm font-medium rounded-lg transition"
+                >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
                     </svg>
-                    Back to BioGem Lab
+                    Download
                 </a>
+                
+                <button 
+                    onclick="handlePrint()"
+                    class="flex items-center justify-center gap-2 w-full px-4 py-2.5 border border-gray-200 hover:border-gray-300 text-gray-700 text-sm font-medium rounded-lg transition bg-white"
+                >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+                    </svg>
+                    Print
+                </button>
+            </div>
+
+            <!-- Report Details -->
+            <div class="p-6 border-t border-gray-100 space-y-4">
+                <h3 class="text-xs font-semibold text-gray-900 uppercase tracking-wider">Report Details</h3>
+                
+                <div class="space-y-3 text-xs">
+                    <div>
+                        <span class="text-gray-400 block mb-0.5">Author</span>
+                        <span class="text-gray-700 font-medium">BioGem Lab Market Research Team</span>
+                    </div>
+                    <div>
+                        <span class="text-gray-400 block mb-0.5">Publication Date</span>
+                        <span class="text-gray-700 font-medium">Jul 26, 2026</span>
+                    </div>
+                    <div>
+                        <span class="text-gray-400 block mb-0.5">Category</span>
+                        <span class="text-gray-700 font-medium">Industry Intelligence</span>
+                    </div>
+                    <div>
+                        <span class="text-gray-400 block mb-0.5">Language</span>
+                        <span class="text-gray-700 font-medium">English</span>
+                    </div>
+                    <div>
+                        <span class="text-gray-400 block mb-0.5">Classification</span>
+                        <span class="text-gray-700 font-medium">Confidential — BioGem Lab Partners</span>
+                    </div>
+                    <div>
+                        <span class="text-gray-400 block mb-0.5">Data Sources</span>
+                        <span class="text-gray-700 font-medium">Fortune Business Insights, The Knot, Business Research Company, PitchBook, Verified Market Research</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Sections -->
+            <div class="p-6 border-t border-gray-100 space-y-4">
+                <h3 class="text-xs font-semibold text-gray-900 uppercase tracking-wider">Key Sections</h3>
+                
+                <div class="space-y-2 text-xs text-gray-600">
+                    <div class="flex items-start gap-2">
+                        <span class="text-brand-gold font-medium shrink-0">01</span>
+                        <span>Executive Summary</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <span class="text-brand-gold font-medium shrink-0">02</span>
+                        <span>Market Definition</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <span class="text-brand-gold font-medium shrink-0">03</span>
+                        <span>Market Size & Growth (2025–2030)</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <span class="text-brand-gold font-medium shrink-0">04</span>
+                        <span>North American Pet Memorial Market</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <span class="text-brand-gold font-medium shrink-0">05</span>
+                        <span>Competitive Landscape</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <span class="text-brand-gold font-medium shrink-0">06</span>
+                        <span>Consumer Insights</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <span class="text-brand-gold font-medium shrink-0">07</span>
+                        <span>Technology Trends</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <span class="text-brand-gold font-medium shrink-0">08</span>
+                        <span>Regulatory Environment</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <span class="text-brand-gold font-medium shrink-0">09</span>
+                        <span>Opportunities for B2B Partners</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <span class="text-brand-gold font-medium shrink-0">10</span>
+                        <span>BioGem Lab Market Position</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="p-6 border-t border-gray-100 mt-auto">
+                <div class="flex items-center gap-2 text-xs text-gray-400">
+                    <svg class="w-4 h-4 text-brand-gold" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                    </svg>
+                    For questions or additional data requests
+                </div>
+                <a href="mailto:partners@biogemlab.com" class="text-xs text-brand-gold hover:underline mt-1 inline-block">partners@biogemlab.com →</a>
             </div>
         </aside>
-
-        <!-- Main Content -->
-        <main class="main-content">
-            <div class="viewer-header">
-                <h2>Memorial Diamond Industry Report 2026 — Market Analysis & Competitive Intelligence</h2>
-                <span class="page-info">PDF Viewer</span>
-            </div>
-            <div class="pdf-viewer">
-                <iframe src="assets/docs/memorial-diamond-industry-report-2026.pdf" type="application/pdf" title="Memorial Diamond Industry Report 2026 PDF">
-                    <div class="pdf-fallback">
-                        <p>Your browser does not support PDF embedding.</p>
-                        <p><a href="assets/docs/memorial-diamond-industry-report-2026.pdf" download>Download the PDF</a> to view it.</p>
-                    </div>
-                </iframe>
-            </div>
-        </main>
     </div>
+
+    <script>
+        function handlePrint() {
+            const embed = document.querySelector('embed');
+            if (embed && embed.print) {
+                embed.print();
+            } else {
+                alert('Please use your browser print function (Ctrl+P or Cmd+P) to print this document.');
+            }
+        }
+    </script>
 </body>
 </html>
