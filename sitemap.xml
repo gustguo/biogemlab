@@ -8,6 +8,48 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Glossary -->
+  <url>
+    <loc>https://www.biogemlab.com/glossary.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Resources Center -->
+  <url>
+    <loc>https://www.biogemlab.com/resources.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PDF Document Viewers -->
+  <url>
+    <loc>https://www.biogemlab.com/doc-hpht-technology.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.biogemlab.com/doc-carbon-extraction.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.biogemlab.com/doc-oem-handbook.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.biogemlab.com/doc-industry-report-2026.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Core Pages -->
   <url>
     <loc>https://www.biogemlab.com/technology.html</loc>
