@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Carbon Extraction Guide</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Carbon Extraction Guide</h1>
+</header>
+<h1 id="carbon-extraction-guide">Carbon Extraction Guide</h1>
+<h2 id="from-biological-material-to-graphite">From Biological Material
+to Graphite</h2>
+<h3 id="biogem-lab-technical-manual-version-1.0">BioGem Lab Technical
+Manual — Version 1.0</h3>
+<hr />
+<h2 id="introduction">1. Introduction</h2>
+<h3 id="why-extraction-quality-determines-diamond-quality">1.1 Why
+Extraction Quality Determines Diamond Quality</h3>
+<p>The carbon extracted from biological material is the sole feedstock
+for memorial diamond synthesis. Every inclusion, color defect, and
+growth irregularity in the final diamond can be traced to a flaw in
+extraction, purification, or graphitization. The HPHT press does not
+correct carbon quality — it amplifies it. Poor feedstock produces poor
+diamonds. This guide documents the extraction protocol developed over
+fourteen years of production at BioGem Lab, based on Chinese National
+Invention Patent ZL 201010565778.9.</p>
+<h3 id="patent-background">1.2 Patent Background</h3>
+<p>Chinese National Invention Patent ZL 201010565778.9, granted October
+10, 2012 (Certificate No. 1058820), covers a method for extracting
+carbon from biological raw materials for diamond production. The patent
+describes a multi-stage thermal decomposition and chemical purification
+process that converts keratin-based biological material into high-purity
+carbon suitable for graphitization and subsequent HPHT diamond
+synthesis.</p>
+<p>The patent specifies:</p>
+<ul>
+<li>Source material preparation and pre-treatment protocols</li>
+<li>Controlled-atmosphere thermal decomposition at 800–1,000°C</li>
+<li>Acid leaching for mineral salt removal</li>
+<li>Multiple rinse cycles with deionized water</li>
+<li>Quality verification via elemental analysis</li>
+</ul>
+<p>BioGem Lab’s current protocol extends the patented process with
+additional quality control stages — infrared spectroscopy,
+thermogravimetric analysis (TGA), and automated graphitization parameter
+selection based on source material type.</p>
+<h3 id="scope-of-this-guide">1.3 Scope of This Guide</h3>
+<p>This manual covers:</p>
+<ul>
+<li>Source material preparation and carbon content requirements</li>
+<li>Stage 1: Thermal decomposition (pyrolysis)</li>
+<li>Stage 2: Acid leaching and mineral salt removal</li>
+<li>Stage 3: Quality verification and batch release criteria</li>
+<li>Stage 4: Graphitization (conversion to crystalline graphite)</li>
+<li>Sample handling, storage, and contamination prevention</li>
+<li>Troubleshooting common extraction failures</li>
+</ul>
+<p>This guide does not cover HPHT diamond synthesis, cutting, polishing,
+or grading. Those processes are documented separately.</p>
+<h3 id="minimum-sample-requirements">1.4 Minimum Sample
+Requirements</h3>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 22%" />
+<col style="width: 19%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source Type</th>
+<th>Minimum Submit</th>
+<th>Recommended</th>
+<th>Carbon Content (dry basis)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Human hair / pet fur</td>
+<td>6 g</td>
+<td>10–20 g</td>
+<td>30–40%</td>
+</tr>
+<tr class="even">
+<td>Feathers</td>
+<td>10 g</td>
+<td>20–30 g</td>
+<td>25–35%</td>
+</tr>
+<tr class="odd">
+<td>Plant fiber</td>
+<td>15 g</td>
+<td>30–50 g</td>
+<td>40–50%</td>
+</tr>
+<tr class="even">
+<td>Solid keratin (nails, claws)</td>
+<td>10 g</td>
+<td>20 g</td>
+<td>35–45%</td>
+</tr>
+<tr class="odd">
+<td>Cremated remains</td>
+<td><strong>Not accepted</strong></td>
+<td>—</td>
+<td>&lt;0.1%</td>
+</tr>
+</tbody>
+</table>
+<p>The 6 g minimum for hair/fur includes a safety margin for extraction
+losses. Submitting below 6 g risks insufficient carbon for a 0.5 ct
+diamond after accounting for process yield (35–45% of original carbon
+content reaches final graphite stage).</p>
+<hr />
+<h2 id="source-materials">2. Source Materials</h2>
+<h3 id="keratin-structure-and-carbon-content">2.1 Keratin Structure and
+Carbon Content</h3>
+<p>Hair, fur, feathers, and nails are composed primarily of keratin — a
+fibrous structural protein. Keratin’s amino acid composition determines
+its carbon content and how it decomposes under heat.</p>
+<p>Human hair keratin composition (typical):</p>
+<table>
+<thead>
+<tr class="header">
+<th>Amino Acid</th>
+<th>Weight %</th>
+<th>Carbon Atoms</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cysteine</td>
+<td>17–18%</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Serine</td>
+<td>11–12%</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Glutamic acid</td>
+<td>11–12%</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Threonine</td>
+<td>6–7%</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>Glycine</td>
+<td>6–7%</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>Leucine</td>
+<td>6–7%</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>Valine</td>
+<td>5–6%</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Others</td>
+<td>35–40%</td>
+<td>Variable</td>
+</tr>
+</tbody>
+</table>
+<p>The high cysteine content (17–18%) is significant because cysteine
+contains sulfur. During pyrolysis, sulfur forms hydrogen sulfide (H₂S),
+sulfur dioxide (SO₂), and carbonyl sulfide (COS). These gases require
+scrubbing. The sulfur content also explains why extracted carbon from
+hair has a lower carbon-to-nitrogen ratio than plant-derived carbon.</p>
+<h3 id="carbon-content-by-source-material">2.2 Carbon Content by Source
+Material</h3>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 35%" />
+<col style="width: 22%" />
+<col style="width: 19%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Material</th>
+<th>Carbon Content (dry weight)</th>
+<th>Nitrogen Content</th>
+<th>Sulfur Content</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Human hair</td>
+<td>30–40%</td>
+<td>14–16%</td>
+<td>4–5%</td>
+<td>High cysteine; high sulfur output during pyrolysis</td>
+</tr>
+<tr class="even">
+<td>Dog fur</td>
+<td>30–38%</td>
+<td>14–15%</td>
+<td>3–4%</td>
+<td>Similar to human hair; guard hairs vs. undercoat vary</td>
+</tr>
+<tr class="odd">
+<td>Cat fur</td>
+<td>28–35%</td>
+<td>13–15%</td>
+<td>3–4%</td>
+<td>Finer diameter; faster thermal decomposition</td>
+</tr>
+<tr class="even">
+<td>Horse hair</td>
+<td>35–42%</td>
+<td>12–14%</td>
+<td>2–3%</td>
+<td>Lower sulfur; cleaner pyrolysis</td>
+</tr>
+<tr class="odd">
+<td>Rabbit fur</td>
+<td>25–32%</td>
+<td>14–16%</td>
+<td>4–5%</td>
+<td>Very fine; higher ash content</td>
+</tr>
+<tr class="even">
+<td>Chicken feathers</td>
+<td>25–35%</td>
+<td>13–15%</td>
+<td>2–3%</td>
+<td>High keratin but low bulk density</td>
+</tr>
+<tr class="odd">
+<td>Plant fiber (cotton)</td>
+<td>40–45%</td>
+<td>0.5–1%</td>
+<td>&lt;0.1%</td>
+<td>Low sulfur; different decomposition pathway</td>
+</tr>
+<tr class="even">
+<td>Wood (camphor)</td>
+<td>45–50%</td>
+<td>0.2–0.5%</td>
+<td>&lt;0.1%</td>
+<td>High carbon; lignin-cellulose matrix</td>
+</tr>
+<tr class="odd">
+<td>Nails / claws</td>
+<td>35–45%</td>
+<td>12–14%</td>
+<td>2–3%</td>
+<td>Dense keratin; slower decomposition</td>
+</tr>
+</tbody>
+</table>
+<h3 id="material-collection-protocol">2.3 Material Collection
+Protocol</h3>
+<p><strong>Step 1: Identify contamination risks.</strong></p>
+<p>Environmental contamination is the most common cause of extraction
+failure. Hair and fur collect:</p>
+<ul>
+<li>Skin oils and sebum (organic, manageable)</li>
+<li>Dust and soil particles (silica, aluminosilicates —
+problematic)</li>
+<li>Hair care product residue (silicones, polymers — problematic)</li>
+<li>Flea treatment chemicals (organophosphates — toxic at pyrolysis
+temperatures)</li>
+<li>Dye and bleach residue (metallic salts — problematic)</li>
+</ul>
+<p><strong>Step 2: Pre-collection washing.</strong></p>
+<p>If the sample is visibly dirty or has product residue, wash with mild
+shampoo (no conditioner, no silicone), rinse thoroughly with deionized
+water, and air-dry completely before collection. Do not use heat to dry
+— heat denatures keratin and changes decomposition behavior.</p>
+<p><strong>Step 3: Collection.</strong></p>
+<ul>
+<li>Collect hair/fur by cutting, not pulling. Pulled hairs include root
+bulbs with different composition.</li>
+<li>For pet fur, collect from multiple body areas to average out density
+variation.</li>
+<li>Fill the collection container to at least the 6 g mark for
+hair/fur.</li>
+<li>Do not compress fur tightly — air circulation prevents moisture
+buildup.</li>
+</ul>
+<p><strong>Step 4: Immediate storage.</strong></p>
+<ul>
+<li>Seal in the provided polypropylene bag with desiccant packet.</li>
+<li>Store at room temperature, away from direct sunlight.</li>
+<li>Do not refrigerate or freeze — condensation during thawing
+introduces moisture.</li>
+<li>Ship within 14 days of collection when possible.</li>
+</ul>
+<hr />
+<h2 id="stage-1-thermal-decomposition">3. Stage 1: Thermal
+Decomposition</h2>
+<h3 id="overview">3.1 Overview</h3>
+<p>Thermal decomposition (pyrolysis) converts solid biological material
+into a carbon-rich char by heating in an oxygen-limited atmosphere.
+Volatile elements — hydrogen, oxygen, nitrogen, and sulfur — dissociate
+and exit as gas-phase products. The solid residue is a porous, amorphous
+carbon matrix containing trapped mineral salts.</p>
+<p>Mass reduction during this stage is 85–90%. One gram of dry hair
+yields approximately 100–150 mg of carbon char.</p>
+<h3 id="equipment">3.2 Equipment</h3>
+<ul>
+<li>Tube furnace with programmable temperature controller</li>
+<li>Quartz reaction tube, 50 mm diameter × 800 mm length</li>
+<li>Nitrogen or argon gas supply, 99.99% purity, flow rate 0.5–2.0
+L/min</li>
+<li>Ceramic sample boat, 100 mm × 30 mm × 15 mm</li>
+<li>Gas scrubber (for H₂S/SO₂ removal)</li>
+<li>Exhaust ventilation system</li>
+</ul>
+<h3 id="process-parameters">3.3 Process Parameters</h3>
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 29%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Setting</th>
+<th>Tolerance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Atmosphere</td>
+<td>Nitrogen or argon</td>
+<td>&lt;100 ppm O₂</td>
+</tr>
+<tr class="even">
+<td>Flow rate</td>
+<td>1.0 L/min</td>
+<td>±0.2 L/min</td>
+</tr>
+<tr class="odd">
+<td>Ramp rate</td>
+<td>5°C/min</td>
+<td>±1°C/min</td>
+</tr>
+<tr class="even">
+<td>Hold temperature</td>
+<td>800–1,000°C</td>
+<td>Target: 900°C</td>
+</tr>
+<tr class="odd">
+<td>Hold time</td>
+<td>2–4 hours</td>
+<td>Extend for bulk samples</td>
+</tr>
+<tr class="even">
+<td>Cool-down</td>
+<td>Furnace cool to 200°C in inert atmosphere</td>
+<td>Do not air-quench</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-by-step-procedure">3.4 Step-by-Step Procedure</h3>
+<p><strong>Step 1: Load sample.</strong></p>
+<p>Place the weighed biological sample in a ceramic boat. Record
+starting mass to ±0.01 g. Spread the sample evenly — no clumps thicker
+than 10 mm. Clumped material traps volatiles and produces incomplete
+decomposition.</p>
+<p><strong>Step 2: Position boat.</strong></p>
+<p>Insert the boat into the center of the quartz tube. The sample must
+sit in the uniform-temperature zone (typically the middle 200 mm of the
+tube). Positioning outside this zone produces uneven pyrolysis.</p>
+<p><strong>Step 3: Seal and purge.</strong></p>
+<p>Seal the tube end caps. Begin nitrogen flow at 1.0 L/min. Purge for
+15 minutes at room temperature to displace air. Verify oxygen level at
+exhaust &lt;100 ppm using an O₂ analyzer.</p>
+<p><strong>Step 4: Begin heating.</strong></p>
+<p>Start the furnace controller. Ramp at 5°C/min. Do not exceed 10°C/min
+— rapid heating causes volatile release too quickly, creating pressure
+spikes that can eject sample material from the boat.</p>
+<p><strong>Step 5: Monitor at key temperatures.</strong></p>
+<ul>
+<li>100–150°C: Moisture evolution. Water vapor visible at exhaust.
+Normal.</li>
+<li>200–300°C: Keratin denaturation. Sample shrinks and darkens. Sulfur
+compounds begin releasing. H₂S odor detectable if scrubber is
+inadequate.</li>
+<li>400–500°C: Main decomposition phase. Rapid mass loss. Organic
+volatiles (tars, oils) condense in cooler tube sections downstream.
+These must be collected and disposed of — they condense as sticky brown
+residue.</li>
+<li>600–800°C: Carbonization completes. Remaining hydrogen and oxygen
+exit as H₂O, CO, CO₂. Sample is now black, brittle char.</li>
+<li>800–1,000°C: Final hold. Mineral salts remain. Carbon structure
+stabilizes.</li>
+</ul>
+<p><strong>Step 6: Hold at temperature.</strong></p>
+<p>Hold at 900°C for 2–4 hours. The hold time depends on sample
+mass:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Sample Mass</th>
+<th>Hold Time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>&lt;5 g</td>
+<td>2 hours</td>
+</tr>
+<tr class="even">
+<td>5–15 g</td>
+<td>3 hours</td>
+</tr>
+<tr class="odd">
+<td>&gt;15 g</td>
+<td>4 hours</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 7: Cool down.</strong></p>
+<p>After hold completion, stop heating. Allow furnace to cool to 200°C
+while maintaining nitrogen flow. Do not open the tube until below 200°C
+— pyrophoric carbon can ignite if exposed to air while hot.</p>
+<p><strong>Step 8: Remove and weigh.</strong></p>
+<p>Transfer the char to a weighing dish. Record mass. Expected yield:
+10–15% of starting dry mass for hair/fur.</p>
+<h3 id="expected-outcomes">3.5 Expected Outcomes</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Source Material</th>
+<th>Starting Mass</th>
+<th>Char Yield</th>
+<th>Char Mass</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Human hair</td>
+<td>10 g</td>
+<td>10–15%</td>
+<td>1.0–1.5 g</td>
+</tr>
+<tr class="even">
+<td>Dog fur</td>
+<td>10 g</td>
+<td>10–14%</td>
+<td>1.0–1.4 g</td>
+</tr>
+<tr class="odd">
+<td>Horse hair</td>
+<td>10 g</td>
+<td>12–16%</td>
+<td>1.2–1.6 g</td>
+</tr>
+<tr class="even">
+<td>Plant fiber</td>
+<td>10 g</td>
+<td>12–18%</td>
+<td>1.2–1.8 g</td>
+</tr>
+<tr class="odd">
+<td>Feathers</td>
+<td>10 g</td>
+<td>8–12%</td>
+<td>0.8–1.2 g</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="stage-2-acid-leaching">4. Stage 2: Acid Leaching</h2>
+<h3 id="purpose">4.1 Purpose</h3>
+<p>The carbon char produced by thermal decomposition contains mineral
+salts trapped in the porous carbon matrix. These salts originate
+from:</p>
+<ul>
+<li>Biological minerals (Ca, Na, Mg, K, Fe from tissue)</li>
+<li>Environmental contamination (Si, Al from dust/soil)</li>
+<li>Hair care products (Ti, Zn from sunscreen/pigments)</li>
+</ul>
+<p>If not removed, these minerals contaminate the HPHT synthesis cell.
+They react with the metal catalyst, form non-diamond carbon phases, or
+incorporate into the diamond lattice as color centers.</p>
+<h3 id="equipment-1">4.2 Equipment</h3>
+<ul>
+<li>Fume hood with acid vapor scrubber</li>
+<li>Polypropylene beakers, 250 mL</li>
+<li>Hot plate with magnetic stirrer</li>
+<li>pH meter (calibrated daily)</li>
+<li>Vacuum filtration apparatus with 0.45 μm membrane</li>
+<li>Deionized water (resistivity &gt;18 MΩ·cm)</li>
+<li>Hydrochloric acid (HCl), 37% reagent grade</li>
+<li>Nitric acid (HNO₃), 65% reagent grade (optional, for stubborn
+contamination)</li>
+<li>Safety equipment: face shield, acid-resistant gloves, apron,
+emergency eyewash</li>
+</ul>
+<h3 id="safety-protocol">4.3 Safety Protocol</h3>
+<p>Before beginning acid leaching:</p>
+<ol type="1">
+<li>Verify fume hood airflow indicator is green.</li>
+<li>Locate emergency eyewash and safety shower. Test eyewash
+weekly.</li>
+<li>Wear face shield (not just goggles — acid splashes to the face are a
+real hazard).</li>
+<li>Wear nitrile gloves under acid-resistant neoprene gloves.</li>
+<li>Never add water to concentrated acid. Always add acid to water.</li>
+<li>Keep a container of sodium bicarbonate (baking soda) nearby for
+neutralization of spills.</li>
+</ol>
+<h3 id="acid-leaching-procedure">4.4 Acid Leaching Procedure</h3>
+<p><strong>Step 1: Prepare acid solution.</strong></p>
+<p>Mix HCl with deionized water to make 1 M HCl (approximately 8.3% by
+volume). For 100 mL: add 8.3 mL of 37% HCl to 91.7 mL deionized water.
+Stir with glass rod. Always add acid to water.</p>
+<p><strong>Step 2: Load char into beaker.</strong></p>
+<p>Transfer the carbon char to a 250 mL polypropylene beaker. Add 1 M
+HCl at a 1:20 solid-to-liquid ratio. For 1 g of char, use 20 mL of acid
+solution.</p>
+<p><strong>Step 3: Heat and stir.</strong></p>
+<p>Place on hot plate at 60–80°C. Stir at 300–400 rpm. Maintain
+temperature for 2 hours.</p>
+<p>At this temperature and concentration:</p>
+<ul>
+<li>Calcium carbonate (CaCO₃) dissolves: CaCO₃ + 2HCl → CaCl₂ + H₂O +
+CO₂↑</li>
+<li>Iron oxides dissolve: Fe₂O₃ + 6HCl → 2FeCl₃ + 3H₂O</li>
+<li>Silica (SiO₂) is NOT removed by HCl. Silica requires HF or NaOH —
+see Section 4.6 for alternatives.</li>
+</ul>
+<p>Bubbling (CO₂ evolution) is normal in the first 30 minutes. If
+bubbling continues beyond 1 hour, the sample contains significant
+carbonate content — extend leaching time.</p>
+<p><strong>Step 4: Cool and settle.</strong></p>
+<p>Remove from heat. Allow to cool to room temperature. Let solids
+settle for 15 minutes.</p>
+<p><strong>Step 5: Decant and filter.</strong></p>
+<p>Carefully decant the acid supernatant into a waste container
+(neutralize before disposal). Add fresh deionized water to the beaker.
+Stir and let settle. Decant again.</p>
+<p>Repeat the water wash 5–7 times until the rinse water pH is 6.0–7.0.
+This typically requires 5 washes for hair-derived char, 7+ for
+plant-derived char.</p>
+<p><strong>Step 6: Final filtration.</strong></p>
+<p>Transfer the slurry to a vacuum filtration apparatus with 0.45 μm
+membrane filter. Rinse with deionized water until filtrate pH is
+neutral. Collect the carbon cake.</p>
+<p><strong>Step 7: Dry.</strong></p>
+<p>Transfer the carbon cake to a drying dish. Dry at 105°C for 4 hours
+or until constant mass is achieved. Weigh and record.</p>
+<h3 id="alternative-nitric-acid-leach-for-heavy-metals">4.5 Alternative:
+Nitric Acid Leach (For Heavy Metals)</h3>
+<p>If initial elemental analysis shows elevated heavy metals (Pb, Cd,
+Cr, Ni &gt;50 ppm), perform an additional nitric acid leach:</p>
+<ul>
+<li>Use 0.5 M HNO₃ (dilute 65% HNO₃ 1:20 with deionized water)</li>
+<li>60°C, 1 hour, with stirring</li>
+<li>5× water rinse to neutral pH</li>
+<li>Dry at 105°C</li>
+</ul>
+<p>Nitric acid oxidizes and dissolves metallic contaminants that HCl
+does not touch. Do not skip the HCl step — sequential HCl then HNO₃ is
+more effective than either alone.</p>
+<h3 id="dealing-with-silica-contamination">4.6 Dealing With Silica
+Contamination</h3>
+<p>Silica (SiO₂) is insoluble in HCl and HNO₃. If the source material
+was exposed to soil or dust, silica may persist through acid leaching.
+Two options:</p>
+<p><strong>Option A: Hydrofluoric acid (HF) — effective but
+hazardous.</strong></p>
+<ul>
+<li>5% HF in polypropylene container</li>
+<li>Room temperature, 30 minutes</li>
+<li>Requires calcium gluconate gel for skin exposure emergency</li>
+<li>Requires dedicated HF-rated fume hood</li>
+<li>Not recommended for routine use</li>
+</ul>
+<p><strong>Option B: Sodium hydroxide fusion — safer
+alternative.</strong></p>
+<ul>
+<li>Mix char with NaOH pellets (1:5 mass ratio)</li>
+<li>Heat to 400°C in nickel crucible for 1 hour</li>
+<li>Cool, dissolve in water, filter</li>
+<li>Requires subsequent HCl wash to remove residual Na⁺</li>
+</ul>
+<p>For most memorial diamond feedstock, Option B is adequate. Silica
+levels in properly collected hair/fur are typically low enough that
+standard HCl leaching is sufficient.</p>
+<hr />
+<h2 id="stage-3-quality-verification">5. Stage 3: Quality
+Verification</h2>
+<h3 id="quality-gates">5.1 Quality Gates</h3>
+<p>Every batch of extracted carbon must pass three quality gates before
+proceeding to graphitization:</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 27%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Gate</th>
+<th>Test</th>
+<th>Threshold</th>
+<th>Action if Failed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Visual inspection</td>
+<td>Black, uniform, free-flowing powder</td>
+<td>Re-process if clumped or discolored</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>IR spectroscopy</td>
+<td>No C-H, N-H, O-H peaks above baseline</td>
+<td>Return to pyrolysis if organic residue detected</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>TGA purity</td>
+<td>&gt;99.5% carbon by mass</td>
+<td>Additional acid leach cycles if below threshold</td>
+</tr>
+</tbody>
+</table>
+<h3 id="visual-inspection">5.2 Visual Inspection</h3>
+<p>Spread a small sample on white paper under bright light. Expected
+appearance:</p>
+<ul>
+<li>Color: Deep black, no brown or gray tint</li>
+<li>Texture: Fine powder, free-flowing</li>
+<li>No visible particles: No sand, hair fragments, or shiny specks</li>
+<li>No odor: Should be odorless; any sulfurous smell indicates
+incomplete decomposition</li>
+</ul>
+<p>Common visual defects:</p>
+<table>
+<colgroup>
+<col style="width: 34%" />
+<col style="width: 30%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Defect</th>
+<th>Cause</th>
+<th>Remedy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Brown tint</td>
+<td>Incomplete pyrolysis (temperature too low or hold too short)</td>
+<td>Re-pyrolyze at 950°C for 2 hours</td>
+</tr>
+<tr class="even">
+<td>Gray tint</td>
+<td>High ash content (minerals not leached)</td>
+<td>Repeat acid leach with fresh HCl</td>
+</tr>
+<tr class="odd">
+<td>Clumping</td>
+<td>Moisture absorption or tar residue</td>
+<td>Dry at 150°C; re-pyrolyze if tar present</td>
+</tr>
+<tr class="even">
+<td>Visible fibers</td>
+<td>Incomplete decomposition</td>
+<td>Grind and re-pyrolyze</td>
+</tr>
+<tr class="odd">
+<td>Shiny specks</td>
+<td>Metal contamination</td>
+<td>HNO₃ leach or reject batch</td>
+</tr>
+</tbody>
+</table>
+<h3 id="infrared-ir-spectroscopy">5.3 Infrared (IR) Spectroscopy</h3>
+<p>IR spectroscopy detects residual organic functional groups that
+indicate incomplete decomposition.</p>
+<p><strong>Procedure:</strong></p>
+<ol type="1">
+<li>Mix 1 mg carbon with 100 mg KBr (potassium bromide).</li>
+<li>Grind to fine powder in an agate mortar.</li>
+<li>Press into a translucent pellet using a hydraulic press (10 tons, 2
+minutes).</li>
+<li>Run transmission spectrum from 4,000 to 400 cm⁻¹.</li>
+</ol>
+<p><strong>Expected spectrum for pure carbon:</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Peak Location</th>
+<th>Assignment</th>
+<th>Expected Intensity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>~1,580 cm⁻¹</td>
+<td>C=C aromatic stretch</td>
+<td>Strong, broad</td>
+</tr>
+<tr class="even">
+<td>~1,200 cm⁻¹</td>
+<td>C–C stretch / C–O</td>
+<td>Medium</td>
+</tr>
+<tr class="odd">
+<td>3,400–3,600 cm⁻¹</td>
+<td>O–H stretch (adsorbed water)</td>
+<td>Weak</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Prohibited peaks (indicate incomplete
+decomposition):</strong></p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 33%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Peak Location</th>
+<th>Assignment</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2,800–3,000 cm⁻¹</td>
+<td>C–H stretch (aliphatic)</td>
+<td>Re-pyrolyze</td>
+</tr>
+<tr class="even">
+<td>3,300–3,500 cm⁻¹</td>
+<td>N–H stretch (amine)</td>
+<td>Extend pyrolysis hold time</td>
+</tr>
+<tr class="odd">
+<td>1,650–1,750 cm⁻¹</td>
+<td>C=O stretch (carbonyl)</td>
+<td>Re-pyrolyze + check for product residue</td>
+</tr>
+<tr class="even">
+<td>1,030–1,080 cm⁻¹</td>
+<td>Si–O stretch (silica)</td>
+<td>Consider HF or NaOH treatment</td>
+</tr>
+</tbody>
+</table>
+<p>If any prohibited peak exceeds 5% of the baseline-corrected C=C peak
+intensity, the batch fails Gate 2. Return to pyrolysis.</p>
+<h3 id="thermogravimetric-analysis-tga">5.4 Thermogravimetric Analysis
+(TGA)</h3>
+<p>TGA measures the mass of a sample as a function of temperature. For
+carbon purity verification, TGA in air measures how much of the sample
+burns away as CO₂ (carbon) versus how much remains as ash
+(minerals).</p>
+<p><strong>Procedure:</strong></p>
+<ol type="1">
+<li>Weigh 10.0 ± 0.1 mg of carbon into a platinum pan.</li>
+<li>Load into TGA instrument.</li>
+<li>Run temperature program: 50°C → 10°C/min → 900°C in synthetic air
+(80% N₂ / 20% O₂).</li>
+<li>Hold at 900°C for 30 minutes.</li>
+</ol>
+<p><strong>Analysis:</strong></p>
+<ul>
+<li>Carbon burns to CO₂ between 400–700°C in air.</li>
+<li>Mass remaining at 900°C = ash content (minerals).</li>
+<li>Carbon purity = (Initial mass − Ash mass) / Initial mass ×
+100%.</li>
+</ul>
+<p><strong>Acceptance criteria:</strong></p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 41%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Grade</th>
+<th>Carbon Purity</th>
+<th>Disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Grade A</td>
+<td>≥99.95%</td>
+<td>Proceed to graphitization</td>
+</tr>
+<tr class="even">
+<td>Grade B</td>
+<td>99.5–99.94%</td>
+<td>Proceed with monitoring; flag for process review</td>
+</tr>
+<tr class="odd">
+<td>Grade C</td>
+<td>99.0–99.49%</td>
+<td>Additional acid leach cycle required</td>
+</tr>
+<tr class="even">
+<td>Reject</td>
+<td>&lt;99.0%</td>
+<td>Reject batch; investigate source material or process deviation</td>
+</tr>
+</tbody>
+</table>
+<p>BioGem Lab target: ≥99.95% carbon purity for all batches entering
+graphitization.</p>
+<h3 id="nitrogen-content-measurement">5.5 Nitrogen Content
+Measurement</h3>
+<p>Residual nitrogen from keratin can act as a dopant in HPHT diamond
+synthesis, producing yellow coloration. Nitrogen content is measured by
+elemental analysis (CHNS/O analyzer).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Nitrogen Content</th>
+<th>Diamond Color Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>&lt;100 ppm</td>
+<td>Negligible — E-F color possible</td>
+</tr>
+<tr class="even">
+<td>100–300 ppm</td>
+<td>Light yellow tint — G-H color</td>
+</tr>
+<tr class="odd">
+<td>300–500 ppm</td>
+<td>Noticeable yellow — I-J color</td>
+</tr>
+<tr class="even">
+<td>&gt;500 ppm</td>
+<td>Strong yellow — K+ color</td>
+</tr>
+</tbody>
+</table>
+<p>If nitrogen exceeds 300 ppm, extend graphitization hold time or
+increase peak temperature by 50°C to drive off additional nitrogen.</p>
+<hr />
+<h2 id="graphitization">6. Graphitization</h2>
+<h3 id="overview-1">6.1 Overview</h3>
+<p>Graphitization converts amorphous, disordered carbon into ordered,
+crystalline graphite. HPHT diamond synthesis requires graphite as the
+carbon feedstock because the hexagonal layers of graphite can rearrange
+into diamond’s tetrahedral structure under extreme pressure. Amorphous
+carbon cannot be directly converted to diamond in standard HPHT
+presses.</p>
+<p>BioGem Lab’s graphitization is integrated with the patented carbon
+extraction system, allowing tailored temperature profiles based on the
+specific biological source.</p>
+<h3 id="equipment-2">6.2 Equipment</h3>
+<ul>
+<li>High-temperature graphitization furnace (resistance or induction
+heated)</li>
+<li>Graphite crucible, 30 mm diameter × 50 mm height</li>
+<li>Graphite felt insulation</li>
+<li>Argon supply, 99.999% purity</li>
+<li>Oxygen analyzer (&lt;10 ppm detection limit)</li>
+<li>Programmable temperature controller with ±5°C accuracy at
+3,000°C</li>
+</ul>
+<h3 id="process-parameters-1">6.3 Process Parameters</h3>
+<table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 32%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Setting</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ramp rate</td>
+<td>5–10°C/min</td>
+<td>Prevents thermal shock; allows volatile escape</td>
+</tr>
+<tr class="even">
+<td>Peak temperature</td>
+<td>2,600–3,000°C</td>
+<td>Domain growth and defect annealing</td>
+</tr>
+<tr class="odd">
+<td>Hold time</td>
+<td>12–24 hours</td>
+<td>Complete graphitization; nitrogen removal</td>
+</tr>
+<tr class="even">
+<td>Atmosphere</td>
+<td>Argon, &lt;10 ppm O₂</td>
+<td>Prevents oxidation; maintains carbon yield</td>
+</tr>
+<tr class="odd">
+<td>Cooling rate</td>
+<td>10–20°C/min to 500°C, then furnace cool</td>
+<td>Prevents crucible cracking; reduces residual stress</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-by-step-procedure-1">6.4 Step-by-Step Procedure</h3>
+<p><strong>Step 1: Load carbon.</strong></p>
+<p>Transfer 50–500 mg of purified carbon (depending on target diamond
+size) into a graphite crucible. Tap gently to settle. Do not compress —
+air channels prevent pressure buildup from residual volatiles.</p>
+<p><strong>Step 2: Seal chamber.</strong></p>
+<p>Place crucible in the furnace hot zone. Seal the chamber. Evacuate to
+&lt;1 mbar. Backfill with argon to slight positive pressure (1.05 bar).
+Verify O₂ &lt;10 ppm.</p>
+<p><strong>Step 3: Ramp to graphitization temperature.</strong></p>
+<p>Heat at 5–10°C/min. Between 1,000–1,500°C, small graphitic domains
+(turbostratic carbon) begin to form. These are imperfect: layers are
+parallel but randomly rotated, with interlayer spacing slightly larger
+than ideal graphite.</p>
+<p><strong>Step 4: Hold at peak temperature.</strong></p>
+<p>Maintain 2,600–3,000°C for 12–24 hours. During this hold:</p>
+<ul>
+<li>Turbostratic domains align. Randomly rotated graphitic layers order,
+reducing interlayer spacing toward the ideal 3.354 Å of crystalline
+graphite.</li>
+<li>Domain size grows. Small crystallites merge into larger coherent
+domains. Domain size (La) increases from ~10 nm to &gt;100 nm.</li>
+<li>Defects anneal out. Vacancies, dislocations, and stacking faults
+migrate and cancel.</li>
+<li>Impurities segregate. Non-carbon elements (nitrogen, boron, silicon)
+volatilize or segregate to grain boundaries.</li>
+</ul>
+<p><strong>Step 5: Controlled cool-down.</strong></p>
+<p>Cool at 10–20°C/min to 500°C, then furnace cool to room temperature
+in argon. Rapid cooling causes thermal shock that cracks the graphite
+crucible and stresses the graphitized carbon.</p>
+<p><strong>Step 6: Remove and inspect.</strong></p>
+<p>The graphitized carbon should be:</p>
+<ul>
+<li>Color: Gray-black, metallic luster (not matte black like amorphous
+carbon)</li>
+<li>Texture: Soft, slippery, marks paper like pencil lead</li>
+<li>Form: Sintered solid or soft agglomerate, depending on starting
+mass</li>
+</ul>
+<h3 id="quality-metrics">6.5 Quality Metrics</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Poor</th>
+<th>Acceptable</th>
+<th>Excellent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Crystallite size (La)</td>
+<td>&lt;50 nm</td>
+<td>50–100 nm</td>
+<td>&gt;100 nm</td>
+</tr>
+<tr class="even">
+<td>Degree of graphitization (g)</td>
+<td>&lt;0.60</td>
+<td>0.60–0.85</td>
+<td>&gt;0.85</td>
+</tr>
+<tr class="odd">
+<td>Interlayer spacing (d₀₀₂)</td>
+<td>&gt;3.42 Å</td>
+<td>3.40–3.42 Å</td>
+<td>3.354–3.40 Å</td>
+</tr>
+<tr class="even">
+<td>Appearance</td>
+<td>Black, matte</td>
+<td>Dark gray</td>
+<td>Gray, metallic luster</td>
+</tr>
+</tbody>
+</table>
+<p>Well-graphitized material (g &gt; 0.85, La &gt; 100 nm) dissolves
+readily in metal catalyst solvents during HPHT synthesis and produces
+uniform diamond growth.</p>
+<h3 id="yield">6.6 Yield</h3>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 83%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stage</th>
+<th>Yield (of original carbon content)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pyrolysis (hair → char)</td>
+<td>35–50% of carbon in source</td>
+</tr>
+<tr class="even">
+<td>Acid leaching (char → purified carbon)</td>
+<td>90–95% of char carbon</td>
+</tr>
+<tr class="odd">
+<td>Graphitization (purified carbon → graphite)</td>
+<td>95–99% (negligible loss)</td>
+</tr>
+<tr class="even">
+<td><strong>Overall (hair → graphite)</strong></td>
+<td><strong>35–45%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>For a 1.0 ct diamond (0.2 g carbon):</p>
+<ul>
+<li>Required graphite: ~0.25 g (accounts for synthesis and cutting
+losses)</li>
+<li>Required purified carbon: ~0.26 g</li>
+<li>Required char: ~0.28 g</li>
+<li>Required hair (at 35% carbon): ~0.8 g</li>
+</ul>
+<p>With safety margins: <strong>6 g minimum, 10–20 g
+recommended</strong>.</p>
+<hr />
+<h2 id="sample-handling-and-storage">7. Sample Handling and Storage</h2>
+<h3 id="collection-kit-contents">7.1 Collection Kit Contents</h3>
+<p>BioGem Lab provides the following collection kit to partners:</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 46%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Collection bag</td>
+<td>Polypropylene, zip-seal, 100 × 150 mm</td>
+<td>Primary container</td>
+</tr>
+<tr class="even">
+<td>Desiccant packet</td>
+<td>Silica gel, 2 g, food-grade</td>
+<td>Moisture absorption</td>
+</tr>
+<tr class="odd">
+<td>Instruction card</td>
+<td>Laminated, bilingual</td>
+<td>Collection guidance</td>
+</tr>
+<tr class="even">
+<td>Pre-paid return envelope</td>
+<td>Padded, tear-resistant</td>
+<td>Shipping</td>
+</tr>
+<tr class="odd">
+<td>Barcode label</td>
+<td>Unique ID, waterproof</td>
+<td>Chain of custody</td>
+</tr>
+</tbody>
+</table>
+<h3 id="contamination-prevention-checklist">7.2 Contamination Prevention
+Checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Collection scissors cleaned with
+isopropyl alcohol before use</label></li>
+<li><label><input type="checkbox" />Collection surface is clean (white
+paper recommended)</label></li>
+<li><label><input type="checkbox" />No hand cream or lotion on
+collector’s hands</label></li>
+<li><label><input type="checkbox" />Sample not collected immediately
+after bathing (wet hair traps moisture)</label></li>
+<li><label><input type="checkbox" />No flea/tick treatment applied to
+pet within 7 days</label></li>
+<li><label><input type="checkbox" />Sample not mixed with other pets’
+fur</label></li>
+<li><label><input type="checkbox" />Bag sealed immediately after
+collection</label></li>
+<li><label><input type="checkbox" />Desiccant packet included before
+sealing</label></li>
+<li><label><input type="checkbox" />Barcode label applied to bag and log
+sheet</label></li>
+</ul>
+<h3 id="shipping-requirements">7.3 Shipping Requirements</h3>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Carrier</td>
+<td>DHL Express / FedEx International Priority</td>
+</tr>
+<tr class="even">
+<td>Packaging</td>
+<td>Triple barrier: waterproof label → sealed bag → rigid mailer</td>
+</tr>
+<tr class="odd">
+<td>Label text</td>
+<td>“For in vitro laboratory use only”</td>
+</tr>
+<tr class="even">
+<td>Documentation</td>
+<td>Commercial invoice, species declaration, purpose statement</td>
+</tr>
+<tr class="odd">
+<td>Temperature</td>
+<td>Ambient; do not use cold packs (condensation risk)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="laboratory-receipt-and-logging">7.4 Laboratory Receipt and
+Logging</h3>
+<p>Upon receipt at BioGem Lab:</p>
+<ol type="1">
+<li>Verify package integrity. Photograph any damage.</li>
+<li>Scan barcode into Laboratory Information Management System
+(LIMS).</li>
+<li>Weigh sample (record wet and dry if moisture is suspected).</li>
+<li>Assign unique batch ID: format BGL-YYYY-NNNN.</li>
+<li>Store at 22°C, &lt;40% RH until processing.</li>
+<li>Maximum storage before processing: 90 days.</li>
+</ol>
+<h3 id="chain-of-custody">7.5 Chain of Custody</h3>
+<p>Every sample is tracked through a barcode-linked production
+record:</p>
+<pre><code>Sample Receipt → Extraction (Batch ID) → Graphitization (Lot ID)
+    → HPHT Synthesis (Growth Cell ID) → Cutting (Polisher ID)
+    → Grading (Certificate ID) → Shipping (Tracking ID)</code></pre>
+<p>This chain links the finished diamond to the original source
+material. BioGem Lab provides a CCIC National Traceability Certificate
+that documents this chain.</p>
+<hr />
+<h2 id="troubleshooting">8. Troubleshooting</h2>
+<h3 id="low-carbon-yield">8.1 Low Carbon Yield</h3>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 44%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symptom</th>
+<th>Possible Cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Yield &lt;8% from hair</td>
+<td>Starting material was wet</td>
+<td>Weigh after drying; correct for moisture</td>
+</tr>
+<tr class="even">
+<td>Yield &lt;8% from hair</td>
+<td>Temperature too low</td>
+<td>Verify furnace calibration; check thermocouple placement</td>
+</tr>
+<tr class="odd">
+<td>Yield &lt;8% from hair</td>
+<td>Insufficient hold time</td>
+<td>Extend hold to 4 hours for bulk samples</td>
+</tr>
+<tr class="even">
+<td>Yield &lt;8% from hair</td>
+<td>Sample was mostly non-keratin (dirt, debris)</td>
+<td>Improve collection protocol; wash before submission</td>
+</tr>
+<tr class="odd">
+<td>Yield varies batch-to-batch</td>
+<td>Different hair types mixed</td>
+<td>Segregate by source; adjust parameters per source</td>
+</tr>
+</tbody>
+</table>
+<h3 id="contamination-detected">8.2 Contamination Detected</h3>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 44%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symptom</th>
+<th>Possible Cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>High Si in TGA ash</td>
+<td>Soil/dust contamination</td>
+<td>Wash sample before pyrolysis; improve collection</td>
+</tr>
+<tr class="even">
+<td>High Fe in TGA ash</td>
+<td>Environmental iron</td>
+<td>Check collection tools for rust; use stainless scissors</td>
+</tr>
+<tr class="odd">
+<td>High Ca in TGA ash</td>
+<td>Hard water residue</td>
+<td>Use deionized water for all washes</td>
+</tr>
+<tr class="even">
+<td>Ti detected (XRF)</td>
+<td>Sunscreen/hair product</td>
+<td>Wash sample thoroughly before collection</td>
+</tr>
+<tr class="odd">
+<td>Persistent organic peaks (IR)</td>
+<td>Incomplete pyrolysis</td>
+<td>Increase hold temperature to 950°C; extend hold to 4 hours</td>
+</tr>
+</tbody>
+</table>
+<h3 id="incomplete-decomposition">8.3 Incomplete Decomposition</h3>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 44%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symptom</th>
+<th>Possible Cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Visible fibers in char</td>
+<td>Temperature too low or ramp too fast</td>
+<td>Reduce ramp to 3°C/min; increase hold to 950°C</td>
+</tr>
+<tr class="even">
+<td>Brown/black tar in tube</td>
+<td>Insufficient gas flow</td>
+<td>Increase N₂ flow to 1.5 L/min; check for leaks</td>
+</tr>
+<tr class="odd">
+<td>Sample ejected from boat</td>
+<td>Ramp rate too fast</td>
+<td>Reduce to 3–5°C/min; use deeper boat</td>
+</tr>
+<tr class="even">
+<td>Foul odor after pyrolysis</td>
+<td>Sulfur not fully released</td>
+<td>Extend hold time; verify exhaust scrubber function</td>
+</tr>
+</tbody>
+</table>
+<h3 id="graphitization-failures">8.4 Graphitization Failures</h3>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 44%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symptom</th>
+<th>Possible Cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Black, not gray (poor graphitization)</td>
+<td>Temperature too low</td>
+<td>Verify thermocouple; increase to 2,800°C minimum</td>
+</tr>
+<tr class="even">
+<td>Crucibles cracked</td>
+<td>Cooling too fast</td>
+<td>Reduce cooling rate to &lt;10°C/min below 1,000°C</td>
+</tr>
+<tr class="odd">
+<td>Carbon loss &gt;10%</td>
+<td>Oxygen contamination</td>
+<td>Check argon purity; verify furnace seals</td>
+</tr>
+<tr class="even">
+<td>Sintered lump won’t crush</td>
+<td>Over-graphitization at too high temperature</td>
+<td>Reduce hold temperature by 100°C; reduce hold time</td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-to-reject-a-batch">8.5 When to Reject a Batch</h3>
+<p>Reject the batch and investigate process deviation if:</p>
+<ul>
+<li>Carbon purity &lt;99.0% after two acid leach cycles</li>
+<li>Heavy metals (Pb, Cd, Cr, As) &gt;100 ppm</li>
+<li>Organic IR peaks persist after re-pyrolysis</li>
+<li>Visual inspection shows foreign material (plastic, metal,
+glass)</li>
+<li>Sample mass is &lt;50% of stated submission (suspect tampering or
+loss)</li>
+</ul>
+<hr />
+<h2 id="appendix-a-quick-reference-tables">Appendix A: Quick Reference
+Tables</h2>
+<h3 id="a.1-temperature-conversions">A.1 Temperature Conversions</h3>
+<table>
+<thead>
+<tr class="header">
+<th>°C</th>
+<th>°F</th>
+<th>Application</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>105</td>
+<td>221</td>
+<td>Drying carbon after acid leach</td>
+</tr>
+<tr class="even">
+<td>200</td>
+<td>392</td>
+<td>Safe opening temperature after pyrolysis</td>
+</tr>
+<tr class="odd">
+<td>400</td>
+<td>752</td>
+<td>NaOH fusion for silica removal</td>
+</tr>
+<tr class="even">
+<td>800</td>
+<td>1,472</td>
+<td>Minimum pyrolysis temperature</td>
+</tr>
+<tr class="odd">
+<td>900</td>
+<td>1,652</td>
+<td>Standard pyrolysis hold temperature</td>
+</tr>
+<tr class="even">
+<td>1,000</td>
+<td>1,832</td>
+<td>Maximum pyrolysis temperature</td>
+</tr>
+<tr class="odd">
+<td>2,600</td>
+<td>4,712</td>
+<td>Minimum graphitization temperature</td>
+</tr>
+<tr class="even">
+<td>3,000</td>
+<td>5,432</td>
+<td>Standard graphitization temperature</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a.2-acid-concentrations">A.2 Acid Concentrations</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Acid</th>
+<th>Stock Concentration</th>
+<th>1 M Working Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HCl</td>
+<td>37% (12 M)</td>
+<td>83 mL/L</td>
+</tr>
+<tr class="even">
+<td>HNO₃</td>
+<td>65% (15.6 M)</td>
+<td>64 mL/L</td>
+</tr>
+<tr class="odd">
+<td>H₂SO₄</td>
+<td>98% (18 M)</td>
+<td>56 mL/L</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a.3-unit-conversions">A.3 Unit Conversions</h3>
+<table>
+<thead>
+<tr class="header">
+<th>From</th>
+<th>To</th>
+<th>Multiply By</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Carat (ct)</td>
+<td>Gram (g)</td>
+<td>0.2</td>
+</tr>
+<tr class="even">
+<td>Gram (g)</td>
+<td>Milligram (mg)</td>
+<td>1,000</td>
+</tr>
+<tr class="odd">
+<td>GPa</td>
+<td>Atmospheres</td>
+<td>~10,000</td>
+</tr>
+<tr class="even">
+<td>GPa</td>
+<td>Bar</td>
+<td>10,000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a.4-carbon-content-of-common-source-materials">A.4 Carbon
+Content of Common Source Materials</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Material</th>
+<th>Carbon %</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Human hair</td>
+<td>30–40%</td>
+<td>High sulfur from cysteine</td>
+</tr>
+<tr class="even">
+<td>Dog fur</td>
+<td>30–38%</td>
+<td>Guard hairs higher than undercoat</td>
+</tr>
+<tr class="odd">
+<td>Cat fur</td>
+<td>28–35%</td>
+<td>Very fine; watch for static cling during handling</td>
+</tr>
+<tr class="even">
+<td>Horse hair</td>
+<td>35–42%</td>
+<td>Coarse; lower sulfur</td>
+</tr>
+<tr class="odd">
+<td>Rabbit fur</td>
+<td>25–32%</td>
+<td>High ash; may need extra leaching</td>
+</tr>
+<tr class="even">
+<td>Feathers</td>
+<td>25–35%</td>
+<td>Low bulk density; pack carefully</td>
+</tr>
+<tr class="odd">
+<td>Cotton fiber</td>
+<td>40–45%</td>
+<td>Pure cellulose; no sulfur</td>
+</tr>
+<tr class="even">
+<td>Wood (hardwood)</td>
+<td>45–50%</td>
+<td>Lignin + cellulose; high carbon</td>
+</tr>
+<tr class="odd">
+<td>Nails</td>
+<td>35–45%</td>
+<td>Dense keratin; slow decomposition</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="appendix-b-glossary">Appendix B: Glossary</h2>
+<p><strong>Amorphous carbon</strong> — Carbon with no long-range
+crystalline order. Produced by pyrolysis of organic material. Black,
+powdery, non-conductive.</p>
+<p><strong>Char</strong> — The solid carbon-rich residue remaining after
+pyrolysis. Contains amorphous carbon plus trapped mineral salts.</p>
+<p><strong>Crystallite size (La)</strong> — The average diameter of
+graphitic crystalline domains, measured by X-ray diffraction. Larger La
+indicates better graphitization.</p>
+<p><strong>Degree of graphitization (g)</strong> — A measure of how
+closely a carbon material approaches ideal graphite structure. Ranges
+from 0 (completely amorphous) to 1 (perfect graphite).</p>
+<p><strong>Graphite</strong> — The thermodynamically stable form of
+carbon at ambient conditions. Layered hexagonal crystal structure. Gray,
+electrically conductive along basal planes.</p>
+<p><strong>Graphitization</strong> — The structural transformation of
+carbon from amorphous to crystalline graphite, achieved by heating to
+&gt;2,600°C in an inert atmosphere.</p>
+<p><strong>HPHT</strong> — High-Pressure High-Temperature. The
+industrial process for diamond synthesis that replicates mantle
+conditions (~5 GPa, 1,300–1,600°C).</p>
+<p><strong>Keratin</strong> — A fibrous structural protein found in
+hair, fur, feathers, and nails. Rich in cysteine, which provides
+disulfide cross-links.</p>
+<p><strong>Pyrolysis</strong> — Thermal decomposition of organic
+material in the absence of oxygen. Produces char, volatiles, and
+gases.</p>
+<p><strong>TGA</strong> — Thermogravimetric Analysis. A technique that
+measures mass change as a function of temperature. Used to determine
+carbon purity by combusting carbon and weighing the residual ash.</p>
+<p><strong>Turbostratic carbon</strong> — An intermediate form between
+amorphous carbon and graphite. Layers are parallel but randomly rotated
+relative to each other.</p>
+<hr />
+<p><em>Document Version: 1.0</em> <em>Last Updated: July 26, 2026</em>
+<em>Patent Reference: ZL 201010565778.9</em> <em>Author: BioGem Lab
+Technical Division</em> <em>For internal use and qualified partner
+distribution only.</em></p>
+</body>
+</html>

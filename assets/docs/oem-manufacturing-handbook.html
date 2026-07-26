@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>OEM Manufacturing Handbook</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">OEM Manufacturing Handbook</h1>
+</header>
+<h1 id="biogem-lab-oem-manufacturing-handbook">BioGem Lab OEM
+Manufacturing Handbook</h1>
+<h2 id="partner-operations-guide">Partner Operations Guide</h2>
+<p><strong>Version:</strong> 2026-Q3<br />
+<strong>Effective Date:</strong> July 13, 2026<br />
+<strong>Classification:</strong> Confidential — Authorized Partners
+Only<br />
+<strong>Document Owner:</strong> BioGem Lab / Luoyang BioGem Technology
+Co., Ltd.<br />
+<strong>Last Updated:</strong> July 26, 2026</p>
+<hr />
+<h1 id="section-1-partner-onboarding">Section 1: Partner Onboarding</h1>
+<h2 id="account-setup">1.1 Account Setup</h2>
+<p>BioGem Lab operates a white-label, zero-inventory manufacturing
+model. Every partner relationship begins with the same structured
+onboarding sequence.</p>
+<h3 id="pre-qualification-checklist">Pre-Qualification Checklist</h3>
+<p>Before first contact, verify the following about your business:</p>
+<ul class="task-list">
+<li><label><input type="checkbox" />Your brand targets the premium or
+luxury memorial product market</label></li>
+<li><label><input type="checkbox" />You do not plan to resell BioGem Lab
+wholesale pricing to end consumers</label></li>
+<li><label><input type="checkbox" />You have a registered business
+entity in your operating jurisdiction</label></li>
+<li><label><input type="checkbox" />You understand that BioGem Lab is a
+B2B-only supplier and never sells to end consumers</label></li>
+<li><label><input type="checkbox" />You can commit to a 60-day
+production timeline with no expedited exceptions</label></li>
+</ul>
+<h3 id="initial-contact-protocol">Initial Contact Protocol</h3>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 25%" />
+<col style="width: 22%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Action</th>
+<th>Owner</th>
+<th>Timeline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Send inquiry to partners@biogemlab.com or WhatsApp
++1-310-437-3166</td>
+<td>Partner</td>
+<td>Day 0</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Complete partner qualification questionnaire</td>
+<td>Partner</td>
+<td>Day 1-3</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>BioGem Lab reviews application and responds with terms</td>
+<td>BioGem Lab</td>
+<td>Day 3-5</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Execute NDA and partnership agreement</td>
+<td>Both</td>
+<td>Day 5-10</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Account activation and portal access</td>
+<td>BioGem Lab</td>
+<td>Day 10-12</td>
+</tr>
+</tbody>
+</table>
+<h3 id="required-documentation-from-new-partners">Required Documentation
+from New Partners</h3>
+<ul>
+<li>Business registration certificate</li>
+<li>Tax ID / VAT number</li>
+<li>Primary contact and authorized signatory identification</li>
+<li>Intended market geography (for compliance pre-check)</li>
+</ul>
+<h2 id="first-contact-standards">1.2 First Contact Standards</h2>
+<p>All BioGem Lab partner communications follow these response
+standards:</p>
+<ul>
+<li>Email response time: within 24 business hours</li>
+<li>WhatsApp response time: within 12 business hours</li>
+<li>Production status updates: weekly during active orders</li>
+<li>Invoice and shipping confirmations: same-day upon event</li>
+</ul>
+<h2 id="sample-evaluation">1.3 Sample Evaluation</h2>
+<p>New partners are eligible for one sample diamond evaluation before
+committing to a production order.</p>
+<h3 id="sample-terms">Sample Terms</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sample size</td>
+<td>0.5 ct</td>
+</tr>
+<tr class="even">
+<td>Carbon source</td>
+<td>BioGem Lab internal stock (not customer material)</td>
+</tr>
+<tr class="odd">
+<td>Deposit</td>
+<td>USD 500, fully refundable</td>
+</tr>
+<tr class="even">
+<td>Evaluation period</td>
+<td>14 calendar days</td>
+</tr>
+<tr class="odd">
+<td>Sample marking</td>
+<td>Laser-inscribed “SAMPLE — NOT FOR RESALE”</td>
+</tr>
+<tr class="even">
+<td>Certificate</td>
+<td>Internal QC only — not a grading certificate</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sample-evaluation-checklist">Sample Evaluation Checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Inspect cut quality under 10x
+magnification</label></li>
+<li><label><input type="checkbox" />Verify color grade against provided
+specification</label></li>
+<li><label><input type="checkbox" />Check laser inscription matches
+documentation</label></li>
+<li><label><input type="checkbox" />Evaluate packaging and presentation
+materials</label></li>
+<li><label><input type="checkbox" />Assess certificate layout and
+branding options</label></li>
+<li><label><input type="checkbox" />Test customer-facing materials for
+your market</label></li>
+</ul>
+<h3 id="post-evaluation-paths">Post-Evaluation Paths</h3>
+<ul>
+<li><strong>Satisfied:</strong> Deposit converts to account credit or
+refunded within 5 business days</li>
+<li><strong>Not satisfied:</strong> Full refund within 5 business days,
+sample returned to BioGem Lab at our expense</li>
+<li><strong>Proceed to order:</strong> Deposit applied against first
+production order</li>
+</ul>
+<hr />
+<h1 id="section-2-white-label-service">Section 2: White-Label
+Service</h1>
+<h2 id="what-biogem-lab-hides">2.1 What BioGem Lab Hides</h2>
+<p>Unless the partner explicitly requests otherwise, all customer-facing
+materials are delivered without BioGem Lab branding.</p>
+<h3 id="elements-hidden-by-default">Elements Hidden by Default</h3>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 35%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Element</th>
+<th>Default State</th>
+<th>Partner Override</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BioGem Lab logo</td>
+<td>Removed</td>
+<td>Available on request</td>
+</tr>
+<tr class="even">
+<td>Manufacturer name on certificate</td>
+<td>Replaced with partner brand</td>
+<td>N/A</td>
+</tr>
+<tr class="odd">
+<td>Certificate template layout</td>
+<td>Custom partner design</td>
+<td>Standard templates available</td>
+</tr>
+<tr class="even">
+<td>Packaging exterior branding</td>
+<td>Partner brand only</td>
+<td>Co-branding on request</td>
+</tr>
+<tr class="odd">
+<td>Origin labeling</td>
+<td>Neutral (address only if required by law)</td>
+<td>Partner-controlled</td>
+</tr>
+<tr class="even">
+<td>Shipping documentation</td>
+<td>Partner as shipper</td>
+<td>BioGem Lab as shipper on request</td>
+</tr>
+</tbody>
+</table>
+<h3 id="elements-always-present">Elements Always Present</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Element</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CCIC traceability code</td>
+<td>Required for authentication</td>
+</tr>
+<tr class="even">
+<td>Internal serial number</td>
+<td>Production tracking</td>
+</tr>
+<tr class="odd">
+<td>Material source documentation</td>
+<td>Compliance and customer trust</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-the-partner-brands">2.2 What the Partner Brands</h2>
+<p>The partner has full control over the following:</p>
+<ul>
+<li>Certificate issuer name and logo</li>
+<li>Packaging design, color, and material</li>
+<li>Customer-facing marketing materials</li>
+<li>End-consumer pricing</li>
+<li>Warranty and service terms</li>
+<li>Local customer support channels</li>
+</ul>
+<h2 id="certificates-with-partner-logo">2.3 Certificates with Partner
+Logo</h2>
+<p>BioGem Lab supports partner-branded certificates for the default
+CCIC/ILDA certificate option.</p>
+<h3 id="branded-certificate-requirements">Branded Certificate
+Requirements</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Minimum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Order quantity for first branded certificate run</td>
+<td>5 certificates</td>
+</tr>
+<tr class="even">
+<td>Artwork format</td>
+<td>Vector (AI/EPS/PDF)</td>
+</tr>
+<tr class="odd">
+<td>Logo size</td>
+<td>Minimum 300 DPI for print</td>
+</tr>
+<tr class="even">
+<td>Turnaround for first proof</td>
+<td>5 business days</td>
+</tr>
+<tr class="odd">
+<td>Revision rounds included</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="certificate-upgrade-partner-logo-on-igigia">Certificate Upgrade:
+Partner Logo on IGI/GIA</h3>
+<ul>
+<li>IGI and GIA certificates can display the partner’s brand name in the
+“Retailer” or “Brand” field</li>
+<li>This is handled directly by the grading lab, not by BioGem Lab</li>
+<li>Partner must provide written authorization for IGI/GIA to use their
+brand name</li>
+</ul>
+<hr />
+<h1 id="section-3-product-specifications">Section 3: Product
+Specifications</h1>
+<h2 id="core-sku-table">3.1 Core SKU Table</h2>
+<p>BioGem Lab offers four standard SKUs. No other sizes are standard
+stock.</p>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 10%" />
+<col style="width: 13%" />
+<col style="width: 7%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>SKU</th>
+<th>Weight</th>
+<th>Diameter</th>
+<th>Color</th>
+<th>Clarity</th>
+<th>Cut</th>
+<th>Wholesale Price (USD)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Entry</td>
+<td>0.5 ct</td>
+<td>~5.0 mm</td>
+<td>E–H</td>
+<td>VS</td>
+<td>Ideal</td>
+<td>$1,200</td>
+</tr>
+<tr class="even">
+<td>Core</td>
+<td>1.0 ct</td>
+<td>~6.5 mm</td>
+<td>E–H</td>
+<td>VS</td>
+<td>Ideal</td>
+<td>$1,600</td>
+</tr>
+<tr class="odd">
+<td>Premium</td>
+<td>1.5 ct</td>
+<td>~7.5 mm</td>
+<td>E–H</td>
+<td>VS</td>
+<td>Ideal</td>
+<td>$2,300</td>
+</tr>
+<tr class="even">
+<td>Flagship</td>
+<td>2.0 ct</td>
+<td>~8.2 mm</td>
+<td>E–H</td>
+<td>VS</td>
+<td>Ideal</td>
+<td>$4,999</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sales-strategy-note">Sales Strategy Note</h3>
+<p>The 1.0 ct SKU is the primary recommendation for partner positioning.
+It offers the strongest margin-to-perceived-value ratio and the fastest
+inventory turnover in partner channels.</p>
+<h2 id="raw-material-requirements">3.2 Raw Material Requirements</h2>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Minimum submission</td>
+<td>6 g of pet hair</td>
+</tr>
+<tr class="even">
+<td>Recommended submission</td>
+<td>10–20 g</td>
+</tr>
+<tr class="odd">
+<td>Collection</td>
+<td>Can be gathered over multiple sessions</td>
+</tr>
+<tr class="even">
+<td>Storage</td>
+<td>Dry, sealed, away from direct light</td>
+</tr>
+<tr class="odd">
+<td>Accepted sources</td>
+<td>Pet hair (cat, dog, rabbit, horse), human hair, plant fiber</td>
+</tr>
+<tr class="even">
+<td>Post-purification carbon purity</td>
+<td>99.95%+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sample-sizing-by-carbon-source">Sample Sizing by Carbon
+Source</h3>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 24%" />
+<col style="width: 35%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>Minimum</th>
+<th>Recommended</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Human / pet hair</td>
+<td>6 g</td>
+<td>10–20 g</td>
+<td>1.0 ct equivalent ~6 g</td>
+</tr>
+<tr class="even">
+<td>Feathers</td>
+<td>10 g</td>
+<td>20–30 g</td>
+<td>Lower carbon content</td>
+</tr>
+<tr class="odd">
+<td>Plant fiber</td>
+<td>15 g</td>
+<td>30–50 g</td>
+<td>High variance by species</td>
+</tr>
+<tr class="even">
+<td>Solid keratin (nails, shells)</td>
+<td>10 g</td>
+<td>20 g</td>
+<td>Medium extraction rate</td>
+</tr>
+<tr class="odd">
+<td>Cremated remains</td>
+<td><strong>Not accepted</strong></td>
+<td>—</td>
+<td>Carbon content insufficient</td>
+</tr>
+</tbody>
+</table>
+<h2 id="non-standard-sizes">3.3 Non-Standard Sizes</h2>
+<p>Technically feasible but not standard:</p>
+<ul>
+<li>0.2–0.3 ct: HPHT growth cycle is nearly identical to 0.5 ct (30–35
+days vs. 35–40 days), but fixed costs (certificate, logistics) do not
+scale down. <strong>Not recommended.</strong></li>
+<li>If a partner’s market positioning absolutely requires smaller sizes,
+contact BioGem Lab for a custom quotation.</li>
+</ul>
+<h2 id="cut-options">3.4 Cut Options</h2>
+<p>Default: Round Brilliant, Ideal cut.</p>
+<p>Available alternatives at no significant cost increase: - Cushion -
+Emerald - Oval - Pear - Heart</p>
+<p>Color options: E–H only. BioGem Lab does not produce colored diamonds
+(blue, yellow, green, red, pink, black).</p>
+<hr />
+<h1 id="section-4-pricing-structure">Section 4: Pricing Structure</h1>
+<h2 id="wholesale-price-list">4.1 Wholesale Price List</h2>
+<p>All prices in USD. All prices include international shipping and full
+insurance.</p>
+<table>
+<thead>
+<tr class="header">
+<th>SKU</th>
+<th>Unit Price</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.5 ct</td>
+<td>$1,200</td>
+</tr>
+<tr class="even">
+<td>1.0 ct</td>
+<td>$1,600</td>
+</tr>
+<tr class="odd">
+<td>1.5 ct</td>
+<td>$2,300</td>
+</tr>
+<tr class="even">
+<td>2.0 ct</td>
+<td>$4,999</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pricing-discipline">Pricing Discipline</h3>
+<ul>
+<li>All partners receive the same base unit price.</li>
+<li>No published price list exists. This document is confidential.</li>
+<li>BioGem Lab does not provide suggested retail pricing. End-consumer
+pricing is entirely at the partner’s discretion.</li>
+</ul>
+<h2 id="volume-discounts">4.2 Volume Discounts</h2>
+<p>Volume incentives are delivered through the Annual Rebate Program
+(Section 10), not per-order discounts.</p>
+<h2 id="certificate-upgrade-pricing">4.3 Certificate Upgrade
+Pricing</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Certificate</th>
+<th>Additional Cost</th>
+<th>Added Lead Time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CCIC / ILDA (default)</td>
+<td>Included in wholesale price</td>
+<td>Standard</td>
+</tr>
+<tr class="even">
+<td>IGI</td>
+<td>$100–$300 per stone</td>
+<td>+5–7 days</td>
+</tr>
+<tr class="odd">
+<td>GIA</td>
+<td>$250–$400 per stone</td>
+<td>+10–14 days</td>
+</tr>
+</tbody>
+</table>
+<h2 id="custom-packaging-pricing">4.4 Custom Packaging Pricing</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Custom branded packaging per unit</td>
+<td>$12–$18</td>
+</tr>
+<tr class="even">
+<td>First-order mold/setup fee</td>
+<td>$500 (one-time)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="multi-stone-family-set-discount">4.5 Multi-Stone Family Set
+Discount</h2>
+<p>For multiple stones from the <strong>same carbon source</strong> in a
+single order:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Stone</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1st</td>
+<td>100% of unit price</td>
+</tr>
+<tr class="even">
+<td>2nd and onward</td>
+<td>80% of unit price (20% discount)</td>
+</tr>
+</tbody>
+</table>
+<p>Certificate upgrade fees are charged per stone and do not receive the
+family set discount.</p>
+<h3 id="example-three-0.5-ct-stones-from-one-pet">Example: Three 0.5 ct
+stones from one pet</h3>
+<ul>
+<li>Stone 1: $1,200</li>
+<li>Stone 2: $1,200 × 0.80 = $960</li>
+<li>Stone 3: $1,200 × 0.80 = $960</li>
+<li><strong>Total: $3,120</strong> (vs. $3,600 at list — 13.3%
+savings)</li>
+</ul>
+<hr />
+<h1 id="section-5-packaging-options">Section 5: Packaging Options</h1>
+<h2 id="option-a-branded-logistics-box">5.1 Option A: Branded Logistics
+Box</h2>
+<p>For partners selling directly to end consumers.</p>
+<h3 id="contents">Contents</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Branded outer logistics box (partner
+logo, custom design)</label></li>
+<li><label><input type="checkbox" />Velvet display box</label></li>
+<li><label><input type="checkbox" />Grading certificate (CCIC default;
+IGI/GIA upgrade optional)</label></li>
+<li><label><input type="checkbox" />Internal QC certificate</label></li>
+<li><label><input type="checkbox" />Care and maintenance
+booklet</label></li>
+<li><label><input type="checkbox" />Unique internal barcode</label></li>
+</ul>
+<h3 id="specifications">Specifications</h3>
+<table>
+<colgroup>
+<col style="width: 57%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Minimum order for custom branding</td>
+<td>100 units</td>
+</tr>
+<tr class="even">
+<td>Customization</td>
+<td>Logo, brand color, box shape, interior material</td>
+</tr>
+<tr class="odd">
+<td>Lead time for first branded batch</td>
+<td>+10–14 days after design approval</td>
+</tr>
+<tr class="even">
+<td>Unit cost</td>
+<td>$12–$18 + $500 mold fee (first order only)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="option-b-industrial-minimal-packaging">5.2 Option B: Industrial
+Minimal Packaging</h2>
+<p>For B2B resale, secondary processing, or white-label
+redistribution.</p>
+<h3 id="contents-1">Contents</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Resealable aluminum foil pouch
+(moisture barrier)</label></li>
+<li><label><input type="checkbox" />Compact diamond storage
+box</label></li>
+<li><label><input type="checkbox" />Internal QC certificate</label></li>
+<li><label><input type="checkbox" />Unique internal barcode</label></li>
+<li><label><input type="checkbox" />CCIC traceability
+certificate</label></li>
+</ul>
+<h3 id="specifications-1">Specifications</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Standard unit cost</td>
+<td>Included in wholesale price</td>
+</tr>
+<tr class="even">
+<td>Custom branding</td>
+<td>Available at standard packaging rates</td>
+</tr>
+<tr class="odd">
+<td>Shipping volume</td>
+<td>Optimized for minimal dimensional weight</td>
+</tr>
+<tr class="even">
+<td>Target use case</td>
+<td>Bulk orders, wholesale redistribution,镶嵌前流转</td>
+</tr>
+</tbody>
+</table>
+<h2 id="packaging-decision-matrix">5.3 Packaging Decision Matrix</h2>
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 47%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Partner Type</th>
+<th>Recommended Option</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pet aftercare / funeral home</td>
+<td>A</td>
+<td>End-consumer facing; presentation matters</td>
+</tr>
+<tr class="even">
+<td>Jewelry retailer</td>
+<td>A or B</td>
+<td>Depends on whether they sell loose or mounted</td>
+</tr>
+<tr class="odd">
+<td>Brand agent / distributor</td>
+<td>B</td>
+<td>Cost-optimized for bulk</td>
+</tr>
+<tr class="even">
+<td>Custom brand (C-Type)</td>
+<td>A</td>
+<td>Required for brand positioning</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="section-6-order-workflow">Section 6: Order Workflow</h1>
+<h2 id="standard-production-timeline-60-days">6.1 Standard Production
+Timeline: 60 Days</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 37%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stage</th>
+<th>Duration</th>
+<th>Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Carbon extraction</td>
+<td>3–5 days</td>
+<td>Receive sample, document, begin extraction</td>
+</tr>
+<tr class="even">
+<td>Purification</td>
+<td>5–7 days</td>
+<td>Refine to 99.95%+ carbon purity</td>
+</tr>
+<tr class="odd">
+<td>Graphitization</td>
+<td>2–3 days</td>
+<td>Convert to graphite for HPHT feedstock</td>
+</tr>
+<tr class="even">
+<td>HPHT crystal growth</td>
+<td>18–25 days</td>
+<td>Core production phase</td>
+</tr>
+<tr class="odd">
+<td>Cutting &amp; polishing</td>
+<td>7–10 days</td>
+<td>Transform rough to finished stone</td>
+</tr>
+<tr class="even">
+<td>Grading &amp; certification</td>
+<td>2–3 days</td>
+<td>CCIC default; IGI/GIA if upgraded</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><strong>~60 days</strong></td>
+<td>From sample receipt to dispatch</td>
+</tr>
+</tbody>
+</table>
+<h3 id="variance-notice">Variance Notice</h3>
+<p>HPHT crystal growth is sensitive to temperature stability, pressure
+consistency, and catalyst saturation. A ±5 day variance is normal and
+not grounds for compensation.</p>
+<h2 id="order-workflow-checklist">6.2 Order Workflow Checklist</h2>
+<h3 id="before-order-placement">Before Order Placement</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Partner has completed onboarding and
+account activation</label></li>
+<li><label><input type="checkbox" />Carbon sample is collected, dried,
+and sealed</label></li>
+<li><label><input type="checkbox" />Sample shipping method confirmed
+(FedEx/DHL/UPS recommended; avoid USPS)</label></li>
+<li><label><input type="checkbox" />Order form completed with SKU,
+quantity, certificate choice, packaging choice</label></li>
+<li><label><input type="checkbox" />Payment received (100% prepay for
+new partners)</label></li>
+</ul>
+<h3 id="during-production">During Production</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Week 1: Sample received, extraction
+started</label></li>
+<li><label><input type="checkbox" />Week 2–3: Purification and
+graphitization</label></li>
+<li><label><input type="checkbox" />Week 4–7: HPHT growth (no status
+update during this phase — normal)</label></li>
+<li><label><input type="checkbox" />Week 8: Cutting and polishing
+initiated</label></li>
+<li><label><input type="checkbox" />Week 9: Grading and
+certification</label></li>
+<li><label><input type="checkbox" />Week 9+: Final QC, packaging,
+dispatch</label></li>
+</ul>
+<h3 id="after-dispatch">After Dispatch</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Tracking number sent within 4 hours
+of handoff to courier</label></li>
+<li><label><input type="checkbox" />Commercial invoice and packing list
+included</label></li>
+<li><label><input type="checkbox" />Insurance certificate attached (110%
+of invoice value)</label></li>
+<li><label><input type="checkbox" />Partner confirms receipt within 48
+hours</label></li>
+<li><label><input type="checkbox" />Partner inspects and accepts within
+7 days</label></li>
+</ul>
+<h2 id="milestone-communication-schedule">6.3 Milestone Communication
+Schedule</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Milestone</th>
+<th>Communication Method</th>
+<th>Timing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sample received</td>
+<td>Email</td>
+<td>Same day</td>
+</tr>
+<tr class="even">
+<td>Extraction complete</td>
+<td>Email</td>
+<td>Day 5–7</td>
+</tr>
+<tr class="odd">
+<td>HPHT growth started</td>
+<td>Email</td>
+<td>Day 10–12</td>
+</tr>
+<tr class="even">
+<td>Cutting started</td>
+<td>Email</td>
+<td>Day 45–50</td>
+</tr>
+<tr class="odd">
+<td>Grading complete</td>
+<td>Email + certificate preview</td>
+<td>Day 55–58</td>
+</tr>
+<tr class="even">
+<td>Dispatched</td>
+<td>Email + tracking</td>
+<td>Day 58–60</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="section-7-shipping-logistics">Section 7: Shipping &amp;
+Logistics</h1>
+<h2 id="carrier-and-service-level">7.1 Carrier and Service Level</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Primary carrier</td>
+<td>DHL Express</td>
+</tr>
+<tr class="even">
+<td>Secondary carrier</td>
+<td>FedEx International Priority</td>
+</tr>
+<tr class="odd">
+<td>Service level</td>
+<td>Express / Priority (not economy)</td>
+</tr>
+<tr class="even">
+<td>Insurance</td>
+<td>Full value + 10%, included in wholesale price</td>
+</tr>
+<tr class="odd">
+<td>Tracking</td>
+<td>Door-to-door with signature required</td>
+</tr>
+</tbody>
+</table>
+<h2 id="transit-times">7.2 Transit Times</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Route</th>
+<th>Typical Transit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>China → United States</td>
+<td>5–7 days</td>
+</tr>
+<tr class="even">
+<td>China → Japan</td>
+<td>4–7 days</td>
+</tr>
+<tr class="odd">
+<td>China → Europe</td>
+<td>5–8 days</td>
+</tr>
+<tr class="even">
+<td>China → Australia</td>
+<td>5–7 days</td>
+</tr>
+</tbody>
+</table>
+<h2 id="customs-documentation">7.3 Customs Documentation</h2>
+<p>Every shipment includes:</p>
+<ul class="task-list">
+<li><label><input type="checkbox" />Commercial invoice</label></li>
+<li><label><input type="checkbox" />Packing list</label></li>
+<li><label><input type="checkbox" />Certificate of Origin
+(CO)</label></li>
+<li><label><input type="checkbox" />Material source
+declaration</label></li>
+<li><label><input type="checkbox" />HS classification
+statement</label></li>
+</ul>
+<h3 id="hs-codes">HS Codes</h3>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 40%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>HS Code</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lab-grown diamond (finished)</td>
+<td>7104.90</td>
+<td>China export; no Kimberley Process certificate required</td>
+</tr>
+<tr class="even">
+<td>Pre-purified carbon powder</td>
+<td>3801.10.00.90</td>
+<td>Alternative input method; no special import license needed in
+China</td>
+</tr>
+<tr class="odd">
+<td>Pet hair / human hair sample</td>
+<td>Varies by country</td>
+<td>See Section 8 for country-specific guidance</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sample-shipping-inbound-to-biogem-lab">7.4 Sample Shipping
+(Inbound to BioGem Lab)</h2>
+<h3 id="packaging-standard">Packaging Standard</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Waterproof label on outer
+surface</label></li>
+<li><label><input type="checkbox" />Sealed plastic bag (primary
+barrier)</label></li>
+<li><label><input type="checkbox" />Rigid mailer or padded envelope
+(secondary barrier)</label></li>
+<li><label><input type="checkbox" />Declaration: “For in vitro
+laboratory use only”</label></li>
+</ul>
+<h3 id="country-specific-inbound-notes">Country-Specific Inbound
+Notes</h3>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 33%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Country</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>United States</td>
+<td>✅ Permitted</td>
+<td>Cat/dog hair as laboratory sample; no USDA permit required if
+properly declared</td>
+</tr>
+<tr class="even">
+<td>Japan</td>
+<td>✅ Permitted</td>
+<td>Non-prohibited biological material; usually no special license</td>
+</tr>
+<tr class="odd">
+<td>India</td>
+<td>⚠️ Complex</td>
+<td>Consult DHL India / FedEx India and local customs broker before
+shipping</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="section-8-certification">Section 8: Certification</h1>
+<h2 id="default-certification-ccic">8.1 Default Certification: CCIC</h2>
+<p>All standard orders include a CCIC (China Certification &amp;
+Inspection Group) certificate at no additional cost.</p>
+<h3 id="ccic-certificate-features">CCIC Certificate Features</h3>
+<ul>
+<li>Grading report: color, clarity, cut, carat weight</li>
+<li>Unique traceability QR code</li>
+<li>Partner brand name (if white-label activated)</li>
+<li>Material source documentation</li>
+</ul>
+<h2 id="upgrade-igi-certificate">8.2 Upgrade: IGI Certificate</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cost</td>
+<td>$100–$300 per stone</td>
+</tr>
+<tr class="even">
+<td>Added lead time</td>
+<td>+5–7 days</td>
+</tr>
+<tr class="odd">
+<td>Grading depth</td>
+<td>Full 4C report with proportions diagram</td>
+</tr>
+<tr class="even">
+<td>Partner branding</td>
+<td>Partner name in “Retailer” field</td>
+</tr>
+<tr class="odd">
+<td>Recommended for</td>
+<td>Partners whose end customers recognize IGI</td>
+</tr>
+</tbody>
+</table>
+<h2 id="upgrade-gia-certificate">8.3 Upgrade: GIA Certificate</h2>
+<table>
+<colgroup>
+<col style="width: 57%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cost</td>
+<td>$250–$400 per stone</td>
+</tr>
+<tr class="even">
+<td>Added lead time</td>
+<td>+10–14 days</td>
+</tr>
+<tr class="odd">
+<td>Grading depth</td>
+<td>Full GIA grading report</td>
+</tr>
+<tr class="even">
+<td>Partner branding</td>
+<td>Partner name in “Report Comments” or “Retailer” field</td>
+</tr>
+<tr class="odd">
+<td>Recommended for</td>
+<td>Premium positioning, US market</td>
+</tr>
+</tbody>
+</table>
+<h2 id="certificate-with-partner-brand">8.4 Certificate with Partner
+Brand</h2>
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 45%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Certificate Type</th>
+<th>Partner Logo Possible</th>
+<th>Process</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CCIC / ILDA</td>
+<td>✅ Yes</td>
+<td>BioGem Lab handles design; 5-certificate minimum</td>
+</tr>
+<tr class="even">
+<td>IGI</td>
+<td>✅ Yes</td>
+<td>Partner submits brand authorization to IGI directly</td>
+</tr>
+<tr class="odd">
+<td>GIA</td>
+<td>✅ Yes</td>
+<td>Partner submits brand authorization to GIA directly</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="section-9-payment-terms">Section 9: Payment Terms</h1>
+<h2 id="new-partners">9.1 New Partners</h2>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Payment structure</td>
+<td>100% prepayment</td>
+</tr>
+<tr class="even">
+<td>Payment method</td>
+<td>International wire transfer (T/T)</td>
+</tr>
+<tr class="odd">
+<td>Currency</td>
+<td>USD</td>
+</tr>
+<tr class="even">
+<td>Order entry</td>
+<td>Payment must clear before order enters production queue</td>
+</tr>
+</tbody>
+</table>
+<h3 id="new-partner-payment-workflow">New Partner Payment Workflow</h3>
+<ol type="1">
+<li>Partner submits order form</li>
+<li>BioGem Lab issues pro forma invoice</li>
+<li>Partner initiates wire transfer</li>
+<li>BioGem Lab confirms receipt (typically 2–5 business days)</li>
+<li>Order enters production queue</li>
+</ol>
+<h2 id="established-partners">9.2 Established Partners</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Eligibility</td>
+<td>12+ months of active partnership</td>
+</tr>
+<tr class="even">
+<td>Credit review</td>
+<td>Required; BioGem Lab initiates</td>
+</tr>
+<tr class="odd">
+<td>Payment structure</td>
+<td>Net-30 (monthly settlement)</td>
+</tr>
+<tr class="even">
+<td>Credit limit</td>
+<td>Determined by review</td>
+</tr>
+</tbody>
+</table>
+<h3 id="net-30-workflow">Net-30 Workflow</h3>
+<ol type="1">
+<li>Partner submits order form (no prepayment required)</li>
+<li>Order enters production queue immediately</li>
+<li>Invoice issued upon dispatch</li>
+<li>Payment due within 30 calendar days of invoice date</li>
+<li>Late payment: production hold on new orders until balance
+cleared</li>
+</ol>
+<h2 id="invoice-and-record-keeping">9.3 Invoice and Record Keeping</h2>
+<ul>
+<li>All invoices issued in USD</li>
+<li>Wire transfer fees are the sender’s responsibility</li>
+<li>BioGem Lab provides SWIFT confirmation upon request</li>
+<li>Partners are responsible for their own tax compliance in their
+jurisdiction</li>
+</ul>
+<hr />
+<h1 id="section-10-annual-rebate-program">Section 10: Annual Rebate
+Program</h1>
+<h2 id="rebate-tiers">10.1 Rebate Tiers</h2>
+<p>Rebates are calculated on <strong>calendar-year net sales</strong>
+and issued in the first quarter of the following year.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Tier</th>
+<th>Annual Net Sales (USD)</th>
+<th>Rebate Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tier 1</td>
+<td>$100,000 – $200,000</td>
+<td>5%</td>
+</tr>
+<tr class="even">
+<td>Tier 2</td>
+<td>$200,001 – $400,000</td>
+<td>10%</td>
+</tr>
+<tr class="odd">
+<td>Tier 3</td>
+<td>$400,001 and above</td>
+<td>15%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rebate-mechanism">10.2 Rebate Mechanism</h2>
+<ul>
+<li>Rebates are issued as <strong>invoice credits</strong>, not cash
+refunds</li>
+<li>Credits can be applied against any order in the rebate issuance
+year</li>
+<li>Unused credits expire 12 months after issuance</li>
+<li>Rebate calculation excludes shipping, insurance, taxes, and
+certificate upgrade fees</li>
+</ul>
+<h2 id="rebate-example">10.3 Rebate Example</h2>
+<p>Partner achieves $250,000 in net annual sales:</p>
+<ul>
+<li>Tier 2 applies: 10% rebate</li>
+<li>Rebate credit: $250,000 × 10% = <strong>$25,000</strong></li>
+<li>Issued as credit note in Q1 of following year</li>
+<li>Partner applies credit against new orders over the next 12
+months</li>
+</ul>
+<hr />
+<h1 id="section-11-sample-policy">Section 11: Sample Policy</h1>
+<h2 id="eligibility">11.1 Eligibility</h2>
+<p>Sample evaluation is available to:</p>
+<ul>
+<li>B-Class partners (jewelry/gift retailers)</li>
+<li>C-Class partners (brand agents)</li>
+</ul>
+<p>A-Class partners (pet aftercare) may request samples on a
+case-by-case basis.</p>
+<h2 id="sample-terms-1">11.2 Sample Terms</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sample quantity</td>
+<td>1 stone</td>
+</tr>
+<tr class="even">
+<td>Sample size</td>
+<td>0.5 ct</td>
+</tr>
+<tr class="odd">
+<td>Carbon source</td>
+<td>BioGem Lab internal stock</td>
+</tr>
+<tr class="even">
+<td>Deposit</td>
+<td>USD 500</td>
+</tr>
+<tr class="odd">
+<td>Evaluation period</td>
+<td>14 days</td>
+</tr>
+<tr class="even">
+<td>Refund policy</td>
+<td>Full refund if not satisfied; sample returned</td>
+</tr>
+<tr class="odd">
+<td>Laser marking</td>
+<td>“SAMPLE — NOT FOR RESALE”</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sample-to-order-conversion">11.3 Sample to Order Conversion</h2>
+<ul>
+<li>Satisfied partners may retain the sample as a display piece</li>
+<li>The $500 deposit is applied against the first production order</li>
+<li>If no order is placed within 90 days, the deposit is refunded and
+the sample is recalled</li>
+</ul>
+<hr />
+<h1 id="section-12-support-contacts">Section 12: Support Contacts</h1>
+<h2 id="primary-contact-channels">12.1 Primary Contact Channels</h2>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 34%" />
+<col style="width: 18%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Channel</th>
+<th>Address / Number</th>
+<th>Purpose</th>
+<th>Response Time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Email</td>
+<td>partners@biogemlab.com</td>
+<td>General inquiries, orders, documentation</td>
+<td>24 business hours</td>
+</tr>
+<tr class="even">
+<td>WhatsApp</td>
+<td>+1-310-437-3166</td>
+<td>Urgent issues, quick questions</td>
+<td>12 business hours</td>
+</tr>
+<tr class="odd">
+<td>WeChat</td>
+<td>Available upon request</td>
+<td>Partners in Greater China region</td>
+<td>24 business hours</td>
+</tr>
+</tbody>
+</table>
+<h2 id="escalation-path">12.2 Escalation Path</h2>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 36%" />
+<col style="width: 36%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>Trigger</th>
+<th>Contact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Standard</td>
+<td>All routine matters</td>
+<td>partners@biogemlab.com</td>
+</tr>
+<tr class="even">
+<td>Urgent</td>
+<td>Production delay &gt;5 days past variance</td>
+<td>Same + WhatsApp</td>
+</tr>
+<tr class="odd">
+<td>Critical</td>
+<td>Quality dispute, customs hold, lost shipment</td>
+<td>Direct to operations manager</td>
+</tr>
+</tbody>
+</table>
+<h2 id="operations-entity">12.3 Operations Entity</h2>
+<p><strong>Luoyang BioGem Technology Co., Ltd.</strong><br />
+11F, R&amp;D Building, Zhongke Information Industry Park<br />
+Yibin District, Luoyang, Henan, China</p>
+<p>Business Registration: 91410300MA9KJT0M47</p>
+<h2 id="hours-of-operation">12.4 Hours of Operation</h2>
+<p>BioGem Lab operates on China Standard Time (UTC+8).</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 21%" />
+<col style="width: 34%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Day</th>
+<th>Hours (CST)</th>
+<th>Corresponding EST</th>
+<th>Corresponding PST</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Monday–Friday</td>
+<td>09:00 – 18:00</td>
+<td>20:00 – 05:00 (prev day)</td>
+<td>17:00 – 02:00 (prev day)</td>
+</tr>
+<tr class="even">
+<td>Saturday</td>
+<td>09:00 – 12:00</td>
+<td>20:00 – 23:00 (Fri)</td>
+<td>17:00 – 20:00 (Fri)</td>
+</tr>
+<tr class="odd">
+<td>Sunday</td>
+<td>Closed</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="appendix-a-compliance-and-legal">Appendix A: Compliance and
+Legal</h1>
+<h2 id="a.1-confidentiality">A.1 Confidentiality</h2>
+<p>This handbook and all associated pricing are proprietary and
+confidential. Unauthorized disclosure, distribution, or reproduction is
+prohibited. Partners may not share BioGem Lab wholesale pricing or cost
+structures with end consumers or competitors.</p>
+<h2 id="a.2-quote-validity">A.2 Quote Validity</h2>
+<p>All pricing in this handbook is valid for 90 days from the date of
+issue. BioGem Lab reserves the right to adjust pricing with 30 days’
+written notice.</p>
+<h2 id="a.3-return-policy">A.3 Return Policy</h2>
+<ul>
+<li>Returns accepted only for manufacturing defects</li>
+<li>Transport damage covered by shipment insurance</li>
+<li>Color deviation: if final color grade deviates by more than one full
+grade from specification, BioGem Lab will remake at no charge (same
+60-day timeline)</li>
+</ul>
+<h2 id="a.4-no-expedited-service">A.4 No Expedited Service</h2>
+<p>As of July 1, 2026, BioGem Lab does not offer expedited production.
+All orders follow the standard 60-day timeline. Partners should
+communicate this clearly to their end customers.</p>
+<h2 id="a.5-geographical-scope">A.5 Geographical Scope</h2>
+<p>BioGem Lab currently serves partners in 14+ countries. New market
+entries are evaluated on a case-by-case basis.</p>
+<hr />
+<h1 id="appendix-b-partner-classification">Appendix B: Partner
+Classification</h1>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 25%" />
+<col style="width: 47%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>Description</th>
+<th>Recommended First Order</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A — Pet Aftercare</td>
+<td>Pet cremation, funeral homes, memorial services</td>
+<td>10 stones (0.5 ct and 1.0 ct split)</td>
+<td>End-consumer facing; highest service expectations</td>
+</tr>
+<tr class="even">
+<td>B — Jewelry / Gift</td>
+<td>Independent jewelers, premium pet retailers</td>
+<td>10 stones, full prepayment</td>
+<td>Mix of loose and mounted sales</td>
+</tr>
+<tr class="odd">
+<td>C — Brand Agent</td>
+<td>Independent brand seeking white-label OEM</td>
+<td>50 stones with custom packaging</td>
+<td>Full white-label; highest customization</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="appendix-c-document-control">Appendix C: Document Control</h1>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 25%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2026-Q3</td>
+<td>Jul 13, 2026</td>
+<td>Initial release based on B2B wholesale quote PDF</td>
+</tr>
+<tr class="even">
+<td>2026-Q3.1</td>
+<td>Jul 26, 2026</td>
+<td>Added OEM Manufacturing Handbook format</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>End of Document</em></p>
+</body>
+</html>
