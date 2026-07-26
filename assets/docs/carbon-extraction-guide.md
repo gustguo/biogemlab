@@ -127,7 +127,7 @@ If the sample is visibly dirty or has product residue, wash with mild shampoo (n
 
 Thermal decomposition (pyrolysis) converts solid biological material into a carbon-rich char by heating in an oxygen-limited atmosphere. Volatile elements — hydrogen, oxygen, nitrogen, and sulfur — dissociate and exit as gas-phase products. The solid residue is a porous, amorphous carbon matrix containing trapped mineral salts.
 
-Mass reduction during this stage is 85–90%. One gram of dry hair yields approximately 100–150 mg of carbon char.
+Mass reduction during this stage is 85–90%. One gram of dry hair yields approximately 100–150 mg of carbon char (source: BioGem Lab internal process data, 2021–2025).
 
 ### 3.2 Equipment
 

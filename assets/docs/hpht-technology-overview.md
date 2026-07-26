@@ -123,7 +123,7 @@ HPHT is not without constraints:
 - **Chamber size limits crystal size**: The growth cell volume is restricted by press geometry. Producing stones larger than 3 carats requires proportionally larger presses and longer growth times.
 - **Catalyst inclusions**: Metal catalyst can become trapped inside the growing crystal, appearing as dark inclusions under magnification.
 - **Energy intensity**: Maintaining 5.5 GPa and 1,450°C for 18–25 days consumes significant electrical power.
-- **Equipment cost**: Industrial HPHT presses range from $70,000 to $150,000 per unit, with tungsten carbide anvils requiring periodic replacement.
+- **Equipment cost**: Industrial HPHT presses range from $70,000 to $150,000 per unit (source: industry manufacturer quotes, 2024–2025), with tungsten carbide anvils requiring periodic replacement.
 
 For BioGem Lab's product range (0.5 ct to 2.0 ct), these limitations are manageable. The HPHT method delivers the provenance integrity, color consistency, and single-crystal structure that memorial diamonds require.
 
@@ -163,7 +163,7 @@ The anvils are the critical wear component. They are made from cemented tungsten
 
 The 600°C limit is why the growth cell must be thermally insulated from the anvils. Ceramic sleeves (typically pyrophyllite or boron nitride) surround the cell, maintaining the anvil face below 600°C even when the cell interior reaches 1,450°C.
 
-Anvil lifespan depends on operating pressure, cycle frequency, and maintenance protocol. Under BioGem Lab's parameters (5.5 GPa, 1,450°C), anvils typically last 5,000–8,000 cycles before requiring replacement or reconditioning. A single anvil set for a 750 mm cubic press costs approximately $8,000–$12,000.
+Anvil lifespan depends on operating pressure, cycle frequency, and maintenance protocol. Under BioGem Lab's parameters (5.5 GPa, 1,450°C), anvils typically last 5,000–8,000 cycles before requiring replacement or reconditioning. A single anvil set for a 750 mm cubic press costs approximately $8,000–$12,000 (source: tungsten carbide tooling suppliers, 2024 pricing).
 
 ### 4.4 Growth Cell Assembly
 

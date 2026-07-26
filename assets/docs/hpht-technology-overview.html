@@ -4,8 +4,149 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>HPHT Technology Overview</title>
+  <title>BioGem Lab hpht-technology-overview</title>
   <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -22,12 +163,162 @@
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="/dev/null" />
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">HPHT Technology Overview</h1>
+<h1 class="title">BioGem Lab hpht-technology-overview</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#hpht-technology-overview"
+id="toc-hpht-technology-overview">HPHT Technology Overview</a>
+<ul>
+<li><a href="#memorial-diamond-manufacturing"
+id="toc-memorial-diamond-manufacturing">Memorial Diamond
+Manufacturing</a></li>
+<li><a href="#table-of-contents" id="toc-table-of-contents">Table of
+Contents</a></li>
+<li><a href="#executive-summary" id="toc-executive-summary">1. Executive
+Summary</a></li>
+<li><a href="#what-is-hpht-physics-fundamentals"
+id="toc-what-is-hpht-physics-fundamentals">2. What is HPHT? — Physics
+Fundamentals</a>
+<ul>
+<li><a href="#the-carbon-phase-diagram"
+id="toc-the-carbon-phase-diagram">2.1 The Carbon Phase Diagram</a></li>
+<li><a href="#mantle-conditions" id="toc-mantle-conditions">2.2 Mantle
+Conditions</a></li>
+<li><a href="#the-diamond-stability-field"
+id="toc-the-diamond-stability-field">2.3 The Diamond Stability
+Field</a></li>
+<li><a href="#why-pressure-matters" id="toc-why-pressure-matters">2.4
+Why Pressure Matters</a></li>
+</ul></li>
+<li><a href="#hpht-vs-cvd-why-hpht-for-memorial-diamonds"
+id="toc-hpht-vs-cvd-why-hpht-for-memorial-diamonds">3. HPHT vs CVD — Why
+HPHT for Memorial Diamonds</a>
+<ul>
+<li><a href="#two-growth-methods" id="toc-two-growth-methods">3.1 Two
+Growth Methods</a></li>
+<li><a href="#why-biogem-lab-uses-hpht"
+id="toc-why-biogem-lab-uses-hpht">3.2 Why BioGem Lab Uses HPHT</a></li>
+<li><a href="#limitations-of-hpht" id="toc-limitations-of-hpht">3.3
+Limitations of HPHT</a></li>
+</ul></li>
+<li><a
+href="#equipment-belt-type-presses-cubic-presses-tungsten-carbide-anvils"
+id="toc-equipment-belt-type-presses-cubic-presses-tungsten-carbide-anvils">4.
+Equipment — Belt-Type Presses, Cubic Presses, Tungsten Carbide
+Anvils</a>
+<ul>
+<li><a href="#the-four-main-press-types"
+id="toc-the-four-main-press-types">4.1 The Four Main Press
+Types</a></li>
+<li><a href="#biogem-lab-configuration-cubic-press"
+id="toc-biogem-lab-configuration-cubic-press">4.2 BioGem Lab
+Configuration: Cubic Press</a></li>
+<li><a href="#tungsten-carbide-anvils"
+id="toc-tungsten-carbide-anvils">4.3 Tungsten Carbide Anvils</a></li>
+<li><a href="#growth-cell-assembly" id="toc-growth-cell-assembly">4.4
+Growth Cell Assembly</a></li>
+</ul></li>
+<li><a
+href="#catalyst-systems-ni-mn-co-alloy-dissolution-precipitation-mechanism"
+id="toc-catalyst-systems-ni-mn-co-alloy-dissolution-precipitation-mechanism">5.
+Catalyst Systems — Ni-Mn-Co Alloy, Dissolution-Precipitation
+Mechanism</a>
+<ul>
+<li><a href="#role-of-the-catalyst" id="toc-role-of-the-catalyst">5.1
+Role of the Catalyst</a></li>
+<li><a href="#ni-mn-co-alloy" id="toc-ni-mn-co-alloy">5.2 Ni-Mn-Co
+Alloy</a></li>
+<li><a href="#the-dissolution-precipitation-mechanism"
+id="toc-the-dissolution-precipitation-mechanism">5.3 The
+Dissolution-Precipitation Mechanism</a></li>
+<li><a href="#thermodynamic-analysis"
+id="toc-thermodynamic-analysis">5.4 Thermodynamic Analysis</a></li>
+</ul></li>
+<li><a
+href="#growth-parameters-pressure-5.5-gpa-temperature-1450c-1825-days"
+id="toc-growth-parameters-pressure-5.5-gpa-temperature-1450c-1825-days">6.
+Growth Parameters — Pressure 5.5 GPa, Temperature 1,450°C, 18–25
+Days</a>
+<ul>
+<li><a href="#pressure-5.5-gpa" id="toc-pressure-5.5-gpa">6.1 Pressure:
+5.5 GPa</a></li>
+<li><a href="#temperature-1450c" id="toc-temperature-1450c">6.2
+Temperature: 1,450°C</a></li>
+<li><a href="#duration-1825-days" id="toc-duration-1825-days">6.3
+Duration: 18–25 Days</a></li>
+<li><a href="#the-complete-cycle" id="toc-the-complete-cycle">6.4 The
+Complete Cycle</a></li>
+</ul></li>
+<li><a
+href="#quality-control-in-process-spectroscopy-crystal-monitoring"
+id="toc-quality-control-in-process-spectroscopy-crystal-monitoring">7.
+Quality Control — In-Process Spectroscopy, Crystal Monitoring</a>
+<ul>
+<li><a href="#pre-press-quality-control"
+id="toc-pre-press-quality-control">7.1 Pre-Press Quality
+Control</a></li>
+<li><a href="#in-process-monitoring" id="toc-in-process-monitoring">7.2
+In-Process Monitoring</a></li>
+<li><a href="#post-growth-analysis" id="toc-post-growth-analysis">7.3
+Post-Growth Analysis</a></li>
+<li><a href="#cutting-and-polishing-qc"
+id="toc-cutting-and-polishing-qc">7.4 Cutting and Polishing QC</a></li>
+</ul></li>
+<li><a
+href="#biogem-lab-implementation-our-specific-setup-capacity-batch-processing"
+id="toc-biogem-lab-implementation-our-specific-setup-capacity-batch-processing">8.
+BioGem Lab Implementation — Our Specific Setup, Capacity, Batch
+Processing</a>
+<ul>
+<li><a href="#laboratory-infrastructure"
+id="toc-laboratory-infrastructure">8.1 Laboratory
+Infrastructure</a></li>
+<li><a href="#press-fleet" id="toc-press-fleet">8.2 Press Fleet</a></li>
+<li><a href="#batch-processing-protocol"
+id="toc-batch-processing-protocol">8.3 Batch Processing
+Protocol</a></li>
+<li><a href="#carbon-purity-achievement"
+id="toc-carbon-purity-achievement">8.4 Carbon Purity
+Achievement</a></li>
+<li><a href="#capacity-and-scaling" id="toc-capacity-and-scaling">8.5
+Capacity and Scaling</a></li>
+</ul></li>
+<li><a href="#common-defects-mitigation"
+id="toc-common-defects-mitigation">9. Common Defects &amp;
+Mitigation</a>
+<ul>
+<li><a href="#inclusions" id="toc-inclusions">9.1 Inclusions</a></li>
+<li><a href="#color-control" id="toc-color-control">9.2 Color
+Control</a></li>
+<li><a href="#crack-prevention" id="toc-crack-prevention">9.3 Crack
+Prevention</a></li>
+<li><a href="#growth-irregularities" id="toc-growth-irregularities">9.4
+Growth Irregularities</a></li>
+</ul></li>
+<li><a href="#references-further-reading"
+id="toc-references-further-reading">10. References &amp; Further
+Reading</a>
+<ul>
+<li><a href="#foundational-papers"
+id="toc-foundational-papers">Foundational Papers</a></li>
+<li><a href="#catalysis-and-growth-mechanisms"
+id="toc-catalysis-and-growth-mechanisms">Catalysis and Growth
+Mechanisms</a></li>
+<li><a href="#equipment-and-engineering"
+id="toc-equipment-and-engineering">Equipment and Engineering</a></li>
+<li><a href="#patent-and-technical-documentation"
+id="toc-patent-and-technical-documentation">Patent and Technical
+Documentation</a></li>
+<li><a href="#industry-standards" id="toc-industry-standards">Industry
+Standards</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
 <h1 id="hpht-technology-overview">HPHT Technology Overview</h1>
 <h2 id="memorial-diamond-manufacturing">Memorial Diamond
 Manufacturing</h2>
@@ -250,8 +541,9 @@ magnification.</li>
 <li><strong>Energy intensity</strong>: Maintaining 5.5 GPa and 1,450°C
 for 18–25 days consumes significant electrical power.</li>
 <li><strong>Equipment cost</strong>: Industrial HPHT presses range from
-$70,000 to $150,000 per unit, with tungsten carbide anvils requiring
-periodic replacement.</li>
+$70,000 to $150,000 per unit (source: industry manufacturer quotes,
+2024–2025), with tungsten carbide anvils requiring periodic
+replacement.</li>
 </ul>
 <p>For BioGem Lab’s product range (0.5 ct to 2.0 ct), these limitations
 are manageable. The HPHT method delivers the provenance integrity, color
@@ -326,7 +618,8 @@ when the cell interior reaches 1,450°C.</p>
 maintenance protocol. Under BioGem Lab’s parameters (5.5 GPa, 1,450°C),
 anvils typically last 5,000–8,000 cycles before requiring replacement or
 reconditioning. A single anvil set for a 750 mm cubic press costs
-approximately $8,000–$12,000.</p>
+approximately $8,000–$12,000 (source: tungsten carbide tooling
+suppliers, 2024 pricing).</p>
 <h3 id="growth-cell-assembly">4.4 Growth Cell Assembly</h3>
 <p>The growth cell is the container that holds the sample, catalyst, and
 seed during synthesis. A typical cell assembly includes:</p>

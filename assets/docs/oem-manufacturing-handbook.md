@@ -21,7 +21,7 @@ BioGem Lab operates a white-label, zero-inventory manufacturing model. Every par
 Before first contact, verify the following about your business:
 
 - [ ] Your brand targets the premium or luxury memorial product market
-- [ ] You do not plan to resell BioGem Lab wholesale pricing to end consumers
+- [ ] You do not plan to disclose BioGem Lab commercial terms to end consumers
 - [ ] You have a registered business entity in your operating jurisdiction
 - [ ] You understand that BioGem Lab is a B2B-only supplier and never sells to end consumers
 - [ ] You can commit to a 60-day production timeline with no expedited exceptions
@@ -62,7 +62,7 @@ New partners are eligible for one sample diamond evaluation before committing to
 |-----------|---------------|
 | Sample size | 0.5 ct |
 | Carbon source | BioGem Lab internal stock (not customer material) |
-| Deposit | USD 500, fully refundable |
+| Deposit | Refundable (amount quoted during onboarding) |
 | Evaluation period | 14 calendar days |
 | Sample marking | Laser-inscribed "SAMPLE — NOT FOR RESALE" |
 | Certificate | Internal QC only — not a grading certificate |
@@ -148,12 +148,14 @@ BioGem Lab supports partner-branded certificates for the default CCIC/ILDA certi
 
 BioGem Lab offers four standard SKUs. No other sizes are standard stock.
 
-| SKU | Weight | Diameter | Color | Clarity | Cut | Wholesale Price (USD) |
-|-----|--------|----------|-------|---------|-----|----------------------|
-| Entry | 0.5 ct | ~5.0 mm | E–H | VS | Ideal | $1,200 |
-| Core | 1.0 ct | ~6.5 mm | E–H | VS | Ideal | $1,600 |
-| Premium | 1.5 ct | ~7.5 mm | E–H | VS | Ideal | $2,300 |
-| Flagship | 2.0 ct | ~8.2 mm | E–H | VS | Ideal | $4,999 |
+| SKU | Weight | Diameter | Color | Clarity | Cut |
+|-----|--------|----------|-------|---------|-----|
+| Entry | 0.5 ct | ~5.0 mm | E–H | VS | Ideal |
+| Core | 1.0 ct | ~6.5 mm | E–H | VS | Ideal |
+| Premium | 1.5 ct | ~7.5 mm | E–H | VS | Ideal |
+| Flagship | 2.0 ct | ~8.2 mm | E–H | VS | Ideal |
+
+**Pricing:** Contact partners@biogemlab.com for current partner pricing. All pricing is confidential and provided under NDA.
 
 ### Sales Strategy Note
 
@@ -202,61 +204,40 @@ Color options: E–H only. BioGem Lab does not produce colored diamonds (blue, y
 
 ---
 
-# Section 4: Pricing Structure
+# Section 4: Commercial Terms
 
-## 4.1 Wholesale Price List
+## 4.1 Pricing
 
-All prices in USD. All prices include international shipping and full insurance.
+BioGem Lab does not publish pricing. All partner pricing is provided confidentially under NDA and is subject to periodic review. Pricing includes international shipping and full insurance.
 
-| SKU | Unit Price |
-|-----|-----------|
-| 0.5 ct | $1,200 |
-| 1.0 ct | $1,600 |
-| 1.5 ct | $2,300 |
-| 2.0 ct | $4,999 |
+### Pricing Principles
 
-### Pricing Discipline
-
-- All partners receive the same base unit price.
-- No published price list exists. This document is confidential.
+- All partners receive the same base pricing structure.
+- No published price list exists.
 - BioGem Lab does not provide suggested retail pricing. End-consumer pricing is entirely at the partner's discretion.
+- Pricing is valid for 90 days from the date of issue. BioGem Lab reserves the right to adjust pricing with 30 days' written notice.
 
-## 4.2 Volume Discounts
+## 4.2 Volume Incentives
 
 Volume incentives are delivered through the Annual Rebate Program (Section 10), not per-order discounts.
 
-## 4.3 Certificate Upgrade Pricing
+## 4.3 Certificate Upgrade Options
 
-| Certificate | Additional Cost | Added Lead Time |
-|-------------|-----------------|-----------------|
-| CCIC / ILDA (default) | Included in wholesale price | Standard |
-| IGI | $100–$300 per stone | +5–7 days |
-| GIA | $250–$400 per stone | +10–14 days |
+| Certificate | Added Lead Time |
+|-------------|-----------------|
+| CCIC / ILDA (default) | Standard |
+| IGI | +5–7 days |
+| GIA | +10–14 days |
 
-## 4.4 Custom Packaging Pricing
+Certificate upgrade fees are quoted separately and are subject to grading lab rates.
 
-| Item | Cost |
-|------|------|
-| Custom branded packaging per unit | $12–$18 |
-| First-order mold/setup fee | $500 (one-time) |
+## 4.4 Custom Packaging
 
-## 4.5 Multi-Stone Family Set Discount
+Custom branded packaging is available for partners. First-order setup includes design proofing and mold creation. Contact partners@biogemlab.com for packaging options and lead times.
 
-For multiple stones from the **same carbon source** in a single order:
+## 4.5 Multi-Stone Family Sets
 
-| Stone | Price |
-|-------|-------|
-| 1st | 100% of unit price |
-| 2nd and onward | 80% of unit price (20% discount) |
-
-Certificate upgrade fees are charged per stone and do not receive the family set discount.
-
-### Example: Three 0.5 ct stones from one pet
-
-- Stone 1: $1,200
-- Stone 2: $1,200 × 0.80 = $960
-- Stone 3: $1,200 × 0.80 = $960
-- **Total: $3,120** (vs. $3,600 at list — 13.3% savings)
+For multiple stones from the **same carbon source** in a single order, volume pricing applies from the second stone onward. Contact your account manager for family set pricing.
 
 ---
 
@@ -282,7 +263,7 @@ For partners selling directly to end consumers.
 | Minimum order for custom branding | 100 units |
 | Customization | Logo, brand color, box shape, interior material |
 | Lead time for first branded batch | +10–14 days after design approval |
-| Unit cost | $12–$18 + $500 mold fee (first order only) |
+| Unit cost | Quoted per partner agreement |
 
 ## 5.2 Option B: Industrial Minimal Packaging
 
@@ -300,7 +281,7 @@ For B2B resale, secondary processing, or white-label redistribution.
 
 | Parameter | Detail |
 |-----------|--------|
-| Standard unit cost | Included in wholesale price |
+| Standard unit cost | Included in partner pricing |
 | Custom branding | Available at standard packaging rates |
 | Shipping volume | Optimized for minimal dimensional weight |
 | Target use case | Bulk orders, wholesale redistribution,镶嵌前流转 |
@@ -383,7 +364,7 @@ HPHT crystal growth is sensitive to temperature stability, pressure consistency,
 | Primary carrier | DHL Express |
 | Secondary carrier | FedEx International Priority |
 | Service level | Express / Priority (not economy) |
-| Insurance | Full value + 10%, included in wholesale price |
+| Insurance | Full value + 10%, included in partner pricing |
 | Tracking | Door-to-door with signature required |
 
 ## 7.2 Transit Times
@@ -449,8 +430,8 @@ All standard orders include a CCIC (China Certification & Inspection Group) cert
 
 | Parameter | Detail |
 |-----------|--------|
-| Cost | $100–$300 per stone |
 | Added lead time | +5–7 days |
+| Fee structure | Quoted per grading lab rates |
 | Grading depth | Full 4C report with proportions diagram |
 | Partner branding | Partner name in "Retailer" field |
 | Recommended for | Partners whose end customers recognize IGI |
@@ -459,8 +440,8 @@ All standard orders include a CCIC (China Certification & Inspection Group) cert
 
 | Parameter | Detail |
 |-----------|--------|
-| Cost | $250–$400 per stone |
 | Added lead time | +10–14 days |
+| Fee structure | Quoted per grading lab rates |
 | Grading depth | Full GIA grading report |
 | Partner branding | Partner name in "Report Comments" or "Retailer" field |
 | Recommended for | Premium positioning, US market |
@@ -524,13 +505,13 @@ All standard orders include a CCIC (China Certification & Inspection Group) cert
 
 ## 10.1 Rebate Tiers
 
-Rebates are calculated on **calendar-year net sales** and issued in the first quarter of the following year.
+Rebate tiers and rates are disclosed during partner onboarding under NDA. Rebates are calculated on **calendar-year net sales** and issued in the first quarter of the following year.
 
-| Tier | Annual Net Sales (USD) | Rebate Rate |
-|------|----------------------|-------------|
-| Tier 1 | $100,000 – $200,000 | 5% |
-| Tier 2 | $200,001 – $400,000 | 10% |
-| Tier 3 | $400,001 and above | 15% |
+| Tier | Rebate Rate |
+|------|-------------|
+| Tier 1 | Disclosed under NDA |
+| Tier 2 | Disclosed under NDA |
+| Tier 3 | Disclosed under NDA |
 
 ## 10.2 Rebate Mechanism
 
@@ -541,12 +522,7 @@ Rebates are calculated on **calendar-year net sales** and issued in the first qu
 
 ## 10.3 Rebate Example
 
-Partner achieves $250,000 in net annual sales:
-
-- Tier 2 applies: 10% rebate
-- Rebate credit: $250,000 × 10% = **$25,000**
-- Issued as credit note in Q1 of following year
-- Partner applies credit against new orders over the next 12 months
+Rebate calculations are provided individually to each partner based on their annual volume tier. Contact your account manager for a personalized rebate projection.
 
 ---
 
@@ -568,7 +544,7 @@ A-Class partners (pet aftercare) may request samples on a case-by-case basis.
 | Sample quantity | 1 stone |
 | Sample size | 0.5 ct |
 | Carbon source | BioGem Lab internal stock |
-| Deposit | USD 500 |
+| Deposit | Refundable (amount quoted during onboarding) |
 | Evaluation period | 14 days |
 | Refund policy | Full refund if not satisfied; sample returned |
 | Laser marking | "SAMPLE — NOT FOR RESALE" |
@@ -576,7 +552,7 @@ A-Class partners (pet aftercare) may request samples on a case-by-case basis.
 ## 11.3 Sample to Order Conversion
 
 - Satisfied partners may retain the sample as a display piece
-- The $500 deposit is applied against the first production order
+- The refundable deposit is applied against the first production order
 - If no order is placed within 90 days, the deposit is refunded and the sample is recalled
 
 ---
@@ -623,11 +599,11 @@ BioGem Lab operates on China Standard Time (UTC+8).
 
 ## A.1 Confidentiality
 
-This handbook and all associated pricing are proprietary and confidential. Unauthorized disclosure, distribution, or reproduction is prohibited. Partners may not share BioGem Lab wholesale pricing or cost structures with end consumers or competitors.
+This handbook and all associated commercial terms are proprietary and confidential. Unauthorized disclosure, distribution, or reproduction is prohibited. Partners may not share BioGem Lab commercial terms or pricing with end consumers or competitors.
 
 ## A.2 Quote Validity
 
-All pricing in this handbook is valid for 90 days from the date of issue. BioGem Lab reserves the right to adjust pricing with 30 days' written notice.
+All commercial terms in this handbook are valid for 90 days from the date of issue. BioGem Lab reserves the right to adjust pricing with 30 days' written notice.
 
 ## A.3 Return Policy
 

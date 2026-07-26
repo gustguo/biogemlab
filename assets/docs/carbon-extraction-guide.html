@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Carbon Extraction Guide</title>
+  <title>BioGem Lab carbon-extraction-guide</title>
   <style>
     html {
       color: #1a1a1a;
@@ -166,8 +166,157 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Carbon Extraction Guide</h1>
+<h1 class="title">BioGem Lab carbon-extraction-guide</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#carbon-extraction-guide"
+id="toc-carbon-extraction-guide">Carbon Extraction Guide</a>
+<ul>
+<li><a href="#from-biological-material-to-graphite"
+id="toc-from-biological-material-to-graphite">From Biological Material
+to Graphite</a>
+<ul>
+<li><a href="#biogem-lab-technical-manual-version-1.0"
+id="toc-biogem-lab-technical-manual-version-1.0">BioGem Lab Technical
+Manual — Version 1.0</a></li>
+</ul></li>
+<li><a href="#introduction" id="toc-introduction">1. Introduction</a>
+<ul>
+<li><a href="#why-extraction-quality-determines-diamond-quality"
+id="toc-why-extraction-quality-determines-diamond-quality">1.1 Why
+Extraction Quality Determines Diamond Quality</a></li>
+<li><a href="#patent-background" id="toc-patent-background">1.2 Patent
+Background</a></li>
+<li><a href="#scope-of-this-guide" id="toc-scope-of-this-guide">1.3
+Scope of This Guide</a></li>
+<li><a href="#minimum-sample-requirements"
+id="toc-minimum-sample-requirements">1.4 Minimum Sample
+Requirements</a></li>
+</ul></li>
+<li><a href="#source-materials" id="toc-source-materials">2. Source
+Materials</a>
+<ul>
+<li><a href="#keratin-structure-and-carbon-content"
+id="toc-keratin-structure-and-carbon-content">2.1 Keratin Structure and
+Carbon Content</a></li>
+<li><a href="#carbon-content-by-source-material"
+id="toc-carbon-content-by-source-material">2.2 Carbon Content by Source
+Material</a></li>
+<li><a href="#material-collection-protocol"
+id="toc-material-collection-protocol">2.3 Material Collection
+Protocol</a></li>
+</ul></li>
+<li><a href="#stage-1-thermal-decomposition"
+id="toc-stage-1-thermal-decomposition">3. Stage 1: Thermal
+Decomposition</a>
+<ul>
+<li><a href="#overview" id="toc-overview">3.1 Overview</a></li>
+<li><a href="#equipment" id="toc-equipment">3.2 Equipment</a></li>
+<li><a href="#process-parameters" id="toc-process-parameters">3.3
+Process Parameters</a></li>
+<li><a href="#step-by-step-procedure"
+id="toc-step-by-step-procedure">3.4 Step-by-Step Procedure</a></li>
+<li><a href="#expected-outcomes" id="toc-expected-outcomes">3.5 Expected
+Outcomes</a></li>
+</ul></li>
+<li><a href="#stage-2-acid-leaching" id="toc-stage-2-acid-leaching">4.
+Stage 2: Acid Leaching</a>
+<ul>
+<li><a href="#purpose" id="toc-purpose">4.1 Purpose</a></li>
+<li><a href="#equipment-1" id="toc-equipment-1">4.2 Equipment</a></li>
+<li><a href="#safety-protocol" id="toc-safety-protocol">4.3 Safety
+Protocol</a></li>
+<li><a href="#acid-leaching-procedure"
+id="toc-acid-leaching-procedure">4.4 Acid Leaching Procedure</a></li>
+<li><a href="#alternative-nitric-acid-leach-for-heavy-metals"
+id="toc-alternative-nitric-acid-leach-for-heavy-metals">4.5 Alternative:
+Nitric Acid Leach (For Heavy Metals)</a></li>
+<li><a href="#dealing-with-silica-contamination"
+id="toc-dealing-with-silica-contamination">4.6 Dealing With Silica
+Contamination</a></li>
+</ul></li>
+<li><a href="#stage-3-quality-verification"
+id="toc-stage-3-quality-verification">5. Stage 3: Quality
+Verification</a>
+<ul>
+<li><a href="#quality-gates" id="toc-quality-gates">5.1 Quality
+Gates</a></li>
+<li><a href="#visual-inspection" id="toc-visual-inspection">5.2 Visual
+Inspection</a></li>
+<li><a href="#infrared-ir-spectroscopy"
+id="toc-infrared-ir-spectroscopy">5.3 Infrared (IR)
+Spectroscopy</a></li>
+<li><a href="#thermogravimetric-analysis-tga"
+id="toc-thermogravimetric-analysis-tga">5.4 Thermogravimetric Analysis
+(TGA)</a></li>
+<li><a href="#nitrogen-content-measurement"
+id="toc-nitrogen-content-measurement">5.5 Nitrogen Content
+Measurement</a></li>
+</ul></li>
+<li><a href="#graphitization" id="toc-graphitization">6.
+Graphitization</a>
+<ul>
+<li><a href="#overview-1" id="toc-overview-1">6.1 Overview</a></li>
+<li><a href="#equipment-2" id="toc-equipment-2">6.2 Equipment</a></li>
+<li><a href="#process-parameters-1" id="toc-process-parameters-1">6.3
+Process Parameters</a></li>
+<li><a href="#step-by-step-procedure-1"
+id="toc-step-by-step-procedure-1">6.4 Step-by-Step Procedure</a></li>
+<li><a href="#quality-metrics" id="toc-quality-metrics">6.5 Quality
+Metrics</a></li>
+<li><a href="#yield" id="toc-yield">6.6 Yield</a></li>
+</ul></li>
+<li><a href="#sample-handling-and-storage"
+id="toc-sample-handling-and-storage">7. Sample Handling and Storage</a>
+<ul>
+<li><a href="#collection-kit-contents"
+id="toc-collection-kit-contents">7.1 Collection Kit Contents</a></li>
+<li><a href="#contamination-prevention-checklist"
+id="toc-contamination-prevention-checklist">7.2 Contamination Prevention
+Checklist</a></li>
+<li><a href="#shipping-requirements" id="toc-shipping-requirements">7.3
+Shipping Requirements</a></li>
+<li><a href="#laboratory-receipt-and-logging"
+id="toc-laboratory-receipt-and-logging">7.4 Laboratory Receipt and
+Logging</a></li>
+<li><a href="#chain-of-custody" id="toc-chain-of-custody">7.5 Chain of
+Custody</a></li>
+</ul></li>
+<li><a href="#troubleshooting" id="toc-troubleshooting">8.
+Troubleshooting</a>
+<ul>
+<li><a href="#low-carbon-yield" id="toc-low-carbon-yield">8.1 Low Carbon
+Yield</a></li>
+<li><a href="#contamination-detected"
+id="toc-contamination-detected">8.2 Contamination Detected</a></li>
+<li><a href="#incomplete-decomposition"
+id="toc-incomplete-decomposition">8.3 Incomplete Decomposition</a></li>
+<li><a href="#graphitization-failures"
+id="toc-graphitization-failures">8.4 Graphitization Failures</a></li>
+<li><a href="#when-to-reject-a-batch"
+id="toc-when-to-reject-a-batch">8.5 When to Reject a Batch</a></li>
+</ul></li>
+<li><a href="#appendix-a-quick-reference-tables"
+id="toc-appendix-a-quick-reference-tables">Appendix A: Quick Reference
+Tables</a>
+<ul>
+<li><a href="#a.1-temperature-conversions"
+id="toc-a.1-temperature-conversions">A.1 Temperature
+Conversions</a></li>
+<li><a href="#a.2-acid-concentrations"
+id="toc-a.2-acid-concentrations">A.2 Acid Concentrations</a></li>
+<li><a href="#a.3-unit-conversions" id="toc-a.3-unit-conversions">A.3
+Unit Conversions</a></li>
+<li><a href="#a.4-carbon-content-of-common-source-materials"
+id="toc-a.4-carbon-content-of-common-source-materials">A.4 Carbon
+Content of Common Source Materials</a></li>
+</ul></li>
+<li><a href="#appendix-b-glossary" id="toc-appendix-b-glossary">Appendix
+B: Glossary</a></li>
+</ul></li>
+</ul>
+</nav>
 <h1 id="carbon-extraction-guide">Carbon Extraction Guide</h1>
 <h2 id="from-biological-material-to-graphite">From Biological Material
 to Graphite</h2>
@@ -469,7 +618,8 @@ Volatile elements — hydrogen, oxygen, nitrogen, and sulfur — dissociate
 and exit as gas-phase products. The solid residue is a porous, amorphous
 carbon matrix containing trapped mineral salts.</p>
 <p>Mass reduction during this stage is 85–90%. One gram of dry hair
-yields approximately 100–150 mg of carbon char.</p>
+yields approximately 100–150 mg of carbon char (source: BioGem Lab
+internal process data, 2021–2025).</p>
 <h3 id="equipment">3.2 Equipment</h3>
 <ul>
 <li>Tube furnace with programmable temperature controller</li>

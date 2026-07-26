@@ -65,7 +65,7 @@ Memorial diamonds do not exist in a vacuum. Their market dynamics are shaped by 
 
 According to Fortune Business Insights, the global lab-grown diamond market was valued at **$29.46 billion in 2025** and is projected to reach **$91.85 billion by 2034**, representing a CAGR of **13.4%**. North America accounted for approximately **29.2%** of global sales in 2025, with the U.S. market alone at **$6.59 billion**.
 
-The most striking shift has been in consumer acceptance. The Knot's 2026 Real Weddings Study found that **61% of U.S. couples** who married in 2025 purchased a lab-grown diamond engagement ring — up from 52% in 2024 and representing a **239% increase since 2020**. Lab-grown center stones now account for roughly **48% of all engagement ring purchases** by unit volume.
+The most striking shift has been in consumer acceptance. The Knot's 2026 Real Weddings Study found that **61% of U.S. couples** who married in 2025 purchased a lab-grown diamond engagement ring — up from 52% in 2024 and representing a **239% increase since 2020**. Lab-grown center stones now account for roughly **48% of all engagement ring purchases** by unit volume (source: The Knot Real Weddings Study 2026).
 
 This mainstreaming of lab-grown diamonds has a direct impact on the memorial segment. Five years ago, the most common consumer question was "Is it real?" Today, the question has shifted to "How do I know it's from my pet?" — a sign that the authenticity debate has been settled and traceability has become the new battleground.
 
@@ -91,7 +91,7 @@ The U.S. has **86.9 million pet-owning households** (67% of all households). Ame
 
 **2. Lab-grown diamond price normalization**
 
-The wholesale price of lab-grown diamonds has fallen approximately **95% since 2018**. This is bad news for producers selling into the commoditized bridal market, but it creates a significant margin opportunity for memorial diamond providers who can charge a premium for the emotional and personalization value rather than competing on carat-per-dollar.
+The wholesale price of lab-grown diamonds has fallen approximately **95% since 2018** (source: industry trade data cited in National Jeweler, 2024). This is bad news for producers selling into the commoditized bridal market, but it creates a significant margin opportunity for memorial diamond providers who can charge a premium for the emotional and personalization value rather than competing on carat-per-dollar.
 
 **3. Mainstream awareness**
 
@@ -353,7 +353,7 @@ The EU is debating stricter labeling requirements for lab-grown diamonds. The Eu
 
 ### China
 
-China is the world's largest producer of lab-grown diamonds by volume, accounting for approximately **50% of global HPHT production**. The Chinese government has supported the industry through R&D funding and infrastructure investment. BioGem Lab's manufacturing base in Luoyang, Henan Province, operates within this supportive ecosystem.
+China is the world's largest producer of lab-grown diamonds by volume, accounting for approximately **50% of global HPHT production** (source: National Jeweler industry analysis, 2024). The Chinese government has supported the industry through R&D funding and infrastructure investment. BioGem Lab's manufacturing base in Luoyang, Henan Province, operates within this supportive ecosystem.
 
 ---
 
@@ -456,7 +456,7 @@ BioGem Lab occupies a unique position in the memorial diamond industry:
 - Scaling production while maintaining 60-day timelines will require capacity investment
 
 **Market opportunity:**
-- Estimated 1,500+ pet crematoriums in North America alone
+- Estimated 1,500+ pet crematoriums in North America alone (source: Pet Loss Professionals Alliance / Cremation Association of North America estimates)
 - Even a 5% penetration rate at 10 orders per year per partner = 750 orders annually
 - At an average wholesale value of $3,000–$5,000 per order, this represents $2.25–$3.75 million in annual revenue from North America alone
 - Expansion to Europe, Australia, and Asia-Pacific multiplies this opportunity
