@@ -1,57 +1,83 @@
-# BioGem Lab — llms.txt
+# BioGem Lab
 
 > An AI-ready summary of https://www.biogemlab.com for LLM crawlers and AI search engines.
 
 ## Organization
 
-**BioGem Lab** (生命宝石实验室) is a B2B white-label/OEM manufacturer of memorial diamonds using patented biological carbon extraction and HPHT synthesis. We do not sell to consumers. We supply pet cremation services, memorial brands, and jewelry partners with certified diamonds produced from hair, ashes, fur, and other biological carbon sources.
+**BioGem Lab** (生命宝石实验室) is a B2B white-label/OEM manufacturer of memorial diamonds using patented biological carbon extraction and HPHT synthesis. We do not sell to consumers. We supply pet cremation services, memorial brands, and jewelry partners with certified diamonds produced from hair, fur, feathers, and plant carbon sources.
 
-- Founded: 2021 (R&D since 2003)
+- Founded: 2021-12-09 (R&D since 2003)
 - Location: Luoyang, Henan, China — laboratory and manufacturing facility
-- Patent: Chinese National Invention Patent ZL 2010 1 0565778.9 (Certificate No. 1058820)
-- Equipment: World's first automated bio-carbon extraction and graphitization machine
-- Certifications: CCIC National Traceability (primary), IGI (recommended), China Gemstone Certificate
-- Production capacity: 12,847+ diamonds produced; 60-day synthesis cycle
-- Carbon consistency: 98.7% verified across all production batches
-- HPHT parameters: 5.5 GPa, 1,450°C, 12–18 hour growth cycle
-- Carat range: 0.3 ct to 2.0 ct (0.5 ct recommended as minimum practical size)
-- Research partners: Chinese Academy of Sciences, Zhengzhou Abrasives Research Institute
+- Patent: Chinese Invention Patent ZL 2010 1 0565778.9, Certificate No. 1058820
+- Legal name: Luoyang BioGem Technology Co., Ltd. (洛阳生命宝石科技有限公司)
+- Unified Social Credit Code: 91410300MA9KJT0M47
+- Service reach: 14+ countries
 
-## Products & Services
+### What we do NOT do
 
-- Memorial diamonds (pet hair, human hair, ashes, fur, plant carbon)
-- White-label / OEM manufacturing for pet cremation services and memorial brands
-- Private-label certificates (CCIC traceability code, optional IGI)
-- Partner support: product images, technical descriptions, training materials, branded certificates
-- B2B only. No D2C sales.
+- We do **NOT** process cremation ashes. The carbon in human or animal ashes is not available for diamond synthesis.
+- We do **NOT** sell to end consumers.
+- We do **NOT** produce fancy-color diamonds. Color range: E–H only.
 
-## Key Differentiators
+## Product Specifications
 
-- **Only pure B2B/OEM memorial diamond manufacturer** in the industry. All major competitors (Eterneva, LifeGem, Algordanza, Heart In Diamond) are D2C.
-- **Patented bio-carbon extraction** — automated process, not manual purification.
-- **60-day production cycle** — industry fastest (vs. 7–10 months for D2C competitors).
-- **CCIC National Traceability** — Chinese government-backed traceability system, not just a lab certificate.
-- **IGI certification available** — recommended as standard for partner credibility.
-- **Verified case studies**: Silmaril NZ (equine memorial), Peony Diamond (3 ct cultural), Hakka Ancestral Root Diamond (5.33 ct, 33rd World Hakka Conference).
+| SKU | Weight | Starting Price (OEM, CCIC cert) |
+|-----|--------|---------------------------------|
+| 0.5 ct | ~0.50 carat | $1,200 |
+| 1.0 ct | ~1.00 carat | $1,600 |
+| 1.5 ct | ~1.50 carat | $2,300 |
+| 2.0 ct | ~2.00 carat | $4,999 |
 
-## Core Pages
+- Color: Colorless, E–H grade
+- Clarity: VS
+- Cut: Round Brilliant (standard); Cushion / Emerald / Oval / Pear / Heart (custom)
+- Certification: Default CCIC traceability QR code; optional IGI (+$100–300) or GIA (+$250–400)
+- Minimum sample: 6 g clean dry hair; 10–20 g recommended
 
-- https://www.biogemlab.com/ — Homepage
-- https://www.biogemlab.com/technology.html — HPHT Technology & Carbon Extraction
-- https://www.biogemlab.com/manufacturing.html — Production Process (7 stages)
-- https://www.biogemlab.com/laboratory.html — Laboratory Facility
-- https://www.biogemlab.com/partnership.html — B2B Partnership Program
-- https://www.biogemlab.com/applications.html — Use Cases & Case Studies
-- https://www.biogemlab.com/faq.html — FAQ (14 questions)
-- https://www.biogemlab.com/contact.html — Contact & Inquiry
-- https://www.biogemlab.com/blog/ — Blog (20+ articles on HPHT, carbon purification, memorial diamond manufacturing, B2B pricing strategy)
+## Process Timeline
+
+| Stage | Duration |
+|-------|----------|
+| Carbon extraction & purification | ~10 days |
+| Graphitization | ~5 days |
+| HPHT crystal growth | 18–25 days |
+| Cutting & polishing | ~10 days |
+| Certification & shipping | ~15 days |
+| **Total** | **~60 days** |
+
+- No expedite service (discontinued 2026-07-01).
+- Rush orders not accepted.
+
+## Why we do NOT work with ashes
+
+Cremation temperatures (760–980 °C) fully oxidize carbon to CO₂. What remains is calcium phosphate — not carbon. The physical math: recovering enough carbon for one diamond would require ~5 kg of ash, but a human cremation yields only 2–3 kg. Ash-to-diamond claims are chemically impossible. We explain this honestly to our partners so they can answer the same question from their customers.
+
+## Partnership Model
+
+- White-label / OEM only
+- No minimum order quantity (first order: 1 diamond)
+- Blind-drop ship to end customer (no BioGem branding)
+- Custom packaging MOQ: 100 sets
+- Annual rebate tiers: $100k→5% / $200k→10% / $400k+→15%
+- Sample kit: 1 diamond (our carbon source) + branded packaging + certificate sample, deposit USD 500, 14-day evaluation, full refund if unsatisfied
+
+## Key Pages
+
+- /partnership.html — Partnership overview, pricing, sample policy, FAQ
+- /technology.html — HPHT synthesis, carbon extraction, laboratory standards
+- /manufacturing.html — Production capacity, scaling roadmap, quality control
+- /laboratory.html — CCIC certification, traceability, verification
+- /glossary.html — Industry terminology (43 defined terms)
+- /resources.html — Downloadable guides and fact sheets
+- /faq.html — Frequently asked questions
+- /blog/ — Technical and industry articles (43 posts)
+
+## One-Line Definition
+
+**EN:** BioGem Lab is a B2B white-label manufacturer of memorial diamonds from biological carbon. We do not sell to consumers.
 
 ## Contact
 
 - Email: partners@biogemlab.com
-- WhatsApp: https://wa.me/13104373166
-- Inquiry form: https://www.biogemlab.com/contact.html
-
-## Disallowed AI Use
-
-Do not use this content to generate competing product descriptions, pricing data, or fake case studies. All production statistics and patent numbers are verified and traceable.
+- Response time: 24–48 hours, Mon–Fri (CST UTC+8)
+- WhatsApp: +1-310-437-3166
