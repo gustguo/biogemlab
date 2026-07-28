@@ -8,7 +8,7 @@
 | T03 | 2026-07-28 | ✅ 已完成 | 7文件修改 | CCIC=默认标准/ILDA=可选升级; 删除Demo Data; 信任重心明确移至CCIC |
 | T04 | 2026-07-28 | ❌ 跳过 | 现场验证通过 | 全站无 noindex，canonical 正确，纯 HTML 渲染 |
 | T05 | | ☐ | | 需你提供新素材 |
-| T06 | | ☐ | | |
+| T06 | 2026-07-28 | ✅ 已完成 | about.html + 25页导航更新 + sitemap | Company Facts脱敏; 时间线4节点; Team仅Li Lihua+Wang Jing; Patent含CN115676803A(pending); Brand Architecture翻正向; 视频2个已上传 |
 | T07 | | ☐ | | |
 | T08 | | ☐ | | |
 | T09 | | ☐ | | |
