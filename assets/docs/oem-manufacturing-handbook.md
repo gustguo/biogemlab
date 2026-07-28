@@ -122,7 +122,7 @@ The partner has full control over the following:
 
 ## 2.3 Certificates with Partner Logo
 
-BioGem Lab supports partner-branded certificates for the default CCIC/ILDA certificate option.
+BioGem Lab supports partner-branded certificates for the default CCIC certificate option (ILDA upgrade available).
 
 ### Branded Certificate Requirements
 
@@ -224,7 +224,7 @@ Volume incentives are delivered through the Annual Rebate Program (Section 10), 
 
 | Certificate | Added Lead Time |
 |-------------|-----------------|
-| CCIC / ILDA (default) | Standard |
+| CCIC (default), ILDA optional | Standard |
 | IGI | +5–7 days |
 | GIA | +10–14 days |
 
@@ -449,7 +449,7 @@ All standard orders include a CCIC (China Certification & Inspection Group) cert
 
 | Certificate Type | Partner Logo Possible | Process |
 |-----------------|----------------------|---------|
-| CCIC / ILDA | ✅ Yes | BioGem Lab handles design; 5-certificate minimum |
+| CCIC (default), ILDA optional | ✅ Yes | BioGem Lab handles design; 5-certificate minimum |
 | IGI | ✅ Yes | Partner submits brand authorization to IGI directly |
 | GIA | ✅ Yes | Partner submits brand authorization to GIA directly |
 

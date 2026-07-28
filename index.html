@@ -290,19 +290,19 @@
                 <div>
                     <span class="text-brand-gold text-sm font-semibold tracking-[0.2em] uppercase">Chain of Custody</span>
                     <h2 class="font-serif text-4xl md:text-5xl font-semibold text-white mt-5 mb-6 leading-tight">
-                        Every Diamond Has<br>a Story to Tell
+                        Verified by CCIC.<br>Optional ILDA Upgrade.
                     </h2>
                     <p class="text-gray-400 text-lg leading-relaxed mb-8">
-                        Trace the complete journey of your memorial diamond — from biological carbon source to certified gemstone. Our proprietary chain-of-custody system, registered with the International Life Diamond Association, provides full transparency at every stage.
+                        Every memorial diamond ships with a <strong class="text-white">CCIC traceability certificate</strong> as standard — independently issued by China Certification &amp; Inspection Group, a national-level inspection body. For partners who want an additional industry-layer attestation, <strong class="text-white">ILDA provenance upgrade</strong> is available.
                     </p>
                     <div class="space-y-4 mb-10">
                         <div class="flex items-start gap-4">
                             <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20 flex-shrink-0 mt-0.5">
-                                <i class="fas fa-fingerprint text-brand-gold text-sm"></i>
+                                <i class="fas fa-certificate text-brand-gold text-sm"></i>
                             </div>
                             <div>
-                                <p class="text-white font-semibold text-sm">Unique Dossier Number</p>
-                                <p class="text-gray-500 text-sm">Each diamond receives a globally unique ILDA identifier for lifetime verification.</p>
+                                <p class="text-white font-semibold text-sm">CCIC National Traceability</p>
+                                <p class="text-gray-500 text-sm">National-level inspection and certification. Every diamond carries a unique CCIC verification QR code linking to full production records.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
@@ -311,38 +311,63 @@
                             </div>
                             <div>
                                 <p class="text-white font-semibold text-sm">QR Code Verification</p>
-                                <p class="text-gray-500 text-sm">Scan any BioGem Lab certificate to instantly view the full provenance timeline.</p>
+                                <p class="text-gray-500 text-sm">Scan the CCIC traceability code to access the complete chain-of-custody timeline — from sample intake to certified gem.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
                             <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20 flex-shrink-0 mt-0.5">
-                                <i class="fas fa-shield-alt text-brand-gold text-sm"></i>
+                                <i class="fas fa-layer-group text-brand-gold text-sm"></i>
                             </div>
                             <div>
-                                <p class="text-white font-semibold text-sm">Third-Party Registry</p>
-                                <p class="text-gray-500 text-sm">All records are independently stored and verified by ILDA — not controlled by BioGem Lab.</p>
+                                <p class="text-white font-semibold text-sm">ILDA Provenance (Optional)</p>
+                                <p class="text-gray-500 text-sm">International Life Diamond Association membership adds a cross-border, mutually recognized provenance layer. Available as an upgrade for partners who need dual attestation.</p>
                             </div>
                         </div>
                     </div>
-                    <button onclick="openTraceModal()" class="inline-flex items-center gap-3 px-8 py-4 bg-brand-gold text-brand-dark font-semibold rounded-xl hover:bg-white transition shadow-xl shadow-brand-gold/20 tracking-wide">
-                        <i class="fas fa-search"></i>
-                        Trace a Diamond
-                    </button>
+                    <a href="laboratory.html" class="inline-flex items-center gap-3 px-8 py-4 bg-brand-gold text-brand-dark font-semibold rounded-xl hover:bg-white transition shadow-xl shadow-brand-gold/20 tracking-wide">
+                        <i class="fas fa-flask"></i>
+                        See Laboratory Standards
+                    </a>
                 </div>
-                <!-- Right: Real ILDA Certificate Preview -->
-                <div class="relative self-start">
-                    <div class="relative rounded-2xl overflow-hidden border border-white/10 bg-brand-slate/50 backdrop-blur-sm shadow-2xl shadow-brand-gold/5 max-h-[580px]">
-                        <img src="assets/images/ilda-certificate-demo.png" alt="ILDA Provenance Certificate — Real demo data from International Life Diamond Association" class="w-full h-full object-contain" loading="lazy">
-                        <!-- Demo badge overlay -->
-                        <div class="absolute top-4 right-4 px-3 py-1 bg-brand-dark/80 backdrop-blur-sm rounded-full border border-brand-gold/30">
-                            <span class="text-brand-gold text-[10px] font-semibold uppercase tracking-wider">Demo Data</span>
+                <!-- Right: CCIC + ILDA Comparison -->
+                <div class="relative self-start space-y-6">
+                    <!-- CCIC Card -->
+                    <div class="bg-brand-slate/50 backdrop-blur-sm rounded-2xl border border-white/10 p-8">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20">
+                                <i class="fas fa-shield-alt text-brand-gold"></i>
+                            </div>
+                            <div>
+                                <p class="text-white font-semibold">CCIC — Standard</p>
+                                <p class="text-brand-gold text-xs uppercase tracking-wider">Included with every diamond</p>
+                            </div>
                         </div>
+                        <ul class="space-y-3 text-gray-400 text-sm">
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-brand-gold text-xs mt-1"></i> National inspection body certificate</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-brand-gold text-xs mt-1"></i> Unique QR traceability code</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-brand-gold text-xs mt-1"></i> Chain-of-custody documentation</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-brand-gold text-xs mt-1"></i> Production batch linkage</li>
+                        </ul>
                     </div>
-                    <!-- Decorative elements -->
-                    <div class="absolute -top-4 -right-4 w-24 h-24 border border-brand-gold/10 rounded-full"></div>
-                    <div class="absolute -bottom-6 -left-6 w-32 h-32 border border-brand-gold/5 rounded-full"></div>
+                    <!-- ILDA Card -->
+                    <div class="bg-brand-slate/30 backdrop-blur-sm rounded-2xl border border-white/5 p-8">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center border border-white/10">
+                                <i class="fas fa-award text-gray-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-white font-semibold">ILDA — Optional Upgrade</p>
+                                <p class="text-gray-500 text-xs uppercase tracking-wider">Industry association attestation</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-gray-400 text-sm">
+                            <li class="flex items-start gap-2"><i class="fas fa-plus text-gray-500 text-xs mt-1"></i> Cross-border mutual recognition</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-plus text-gray-500 text-xs mt-1"></i> Industry standard alignment</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-plus text-gray-500 text-xs mt-1"></i> Additional verification layer</li>
+                        </ul>
+                    </div>
                     <!-- Caption -->
-                    <p class="text-center text-gray-500 text-xs mt-4">Scan the QR code or click "Trace a Diamond" to verify</p>
+                    <p class="text-center text-gray-500 text-xs">CCIC certificates are verifiable through the CCIC digital platform. ILDA upgrades available upon request.</p>
                 </div>
             </div>
         </div>
