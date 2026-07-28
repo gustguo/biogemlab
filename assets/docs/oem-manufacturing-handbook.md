@@ -186,8 +186,7 @@ The 1.0 ct SKU is the primary recommendation for partner positioning. It offers 
 
 Technically feasible but not standard:
 
-- 0.2–0.3 ct: HPHT growth cycle is nearly identical to 0.5 ct (30–35 days vs. 35–40 days), but fixed costs (certificate, logistics) do not scale down. **Not recommended.**
-- If a partner's market positioning absolutely requires smaller sizes, contact BioGem Lab for a custom quotation.
+- Sub-0.5 ct sizes are not part of the standard SKU lineup. If a partner's market positioning absolutely requires smaller sizes, contact BioGem Lab for a custom quotation.
 
 ## 3.4 Cut Options
 
