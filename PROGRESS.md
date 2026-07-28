@@ -9,8 +9,8 @@
 | T04 | 2026-07-28 | ❌ 跳过 | 现场验证通过 | 全站无 noindex，canonical 正确，纯 HTML 渲染 |
 | T05 | | ☐ | | 需你提供新素材 |
 | T06 | 2026-07-28 | ✅ 已完成 | about.html + 25页导航更新 + sitemap | Company Facts脱敏; 时间线4节点; Team仅Li Lihua+Wang Jing; Patent含CN115676803A(pending); Brand Architecture翻正向; 视频2个已上传 |
-| T07 | | ☐ | | |
-| T08 | | ☐ | | |
+| T07 | 2026-07-28 | ✅ 已完成 | case-studies.html + 新建子页 | 新增客家柏财钻案例(5.33ct/emerald/33rd World Hakka Conference)；case-studies卡片含可验证指标；严禁虚构合规 |
+| T08 | 2026-07-28 | ✅ 已完成 | index.html 重写 | 首页语言改造+角色选择器；Hero改为"Your Brand. Our Science. Zero Inventory."；6角色选择器卡片；技术参数下移至第二屏；Trust Bar精简为6核心指标 |
 | T09 | | ☐ | | |
 | T10 | 2026-07-28 | 🔄 轻量执行 | 英文版文章已存在 | 只需加首页/Partnership 引用入口 |
 | T11 | | ☐ | | |
