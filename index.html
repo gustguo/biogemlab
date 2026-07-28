@@ -388,85 +388,63 @@
         </div>
     </section>
 
-    <!-- TRACEABILITY / PROVENANCE VERIFICATION -->
-    <section class="py-20 bg-brand-dark border-y border-white/5 relative overflow-hidden" id="traceability">
-        <div class="absolute inset-0 opacity-5">
-            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgba(197,160,89,0.3) 1px, transparent 0); background-size: 40px 40px;"></div>
-        </div>
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <!-- Left: Text content -->
-                <div>
-                    <span class="text-brand-gold text-sm font-semibold tracking-[0.2em] uppercase">Chain of Custody</span>
-                    <h2 class="font-serif text-4xl md:text-5xl font-semibold text-white mt-5 mb-6 leading-tight">
-                        Verified by CCIC.<br>Optional ILDA Upgrade.
-                    </h2>
-                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
-                        Every memorial diamond ships with a <strong class="text-white">CCIC traceability certificate</strong> as standard — independently issued by China Certification &amp; Inspection Group, a national-level inspection body. For partners who want an additional industry-layer attestation, <strong class="text-white">ILDA provenance upgrade</strong> is available.
+    <!-- TRACEABILITY / PROVENANCE — Dual-Card Design -->
+    <section class="py-24 bg-brand-dark border-y border-white/5 relative overflow-hidden" id="traceability">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-14">
+                <span class="text-brand-gold/70 text-xs font-semibold tracking-[0.25em] uppercase">Chain of Custody</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-semibold text-white mt-4 leading-tight">
+                    Verified by CCIC. Optional ILDA upgrade.
+                </h2>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-6">
+                <!-- CCIC Card — Light -->
+                <div class="bg-brand-light rounded-2xl p-8 lg:p-10 border border-gray-200">
+                    <span class="inline-block text-[10px] font-semibold tracking-[0.2em] uppercase text-brand-dark/60 bg-brand-gold/15 px-3 py-1 rounded-full mb-6">Standard · Included</span>
+                    <h3 class="font-serif text-2xl font-semibold text-brand-dark mb-4">CCIC National Traceability</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Every memorial diamond ships with a CCIC traceability certificate as standard — independently issued by China Certification &amp; Inspection Group, a national-level inspection body.
                     </p>
-                    <div class="space-y-4 mb-10">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20 flex-shrink-0 mt-0.5">
-                                <i class="fas fa-certificate text-brand-gold text-sm"></i>
-                            </div>
-                            <div>
-                                <p class="text-white font-semibold text-sm">CCIC National Traceability</p>
-                                <p class="text-gray-500 text-sm">National-level inspection and certification. Every diamond carries a unique CCIC verification QR code linking to full production records.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20 flex-shrink-0 mt-0.5">
-                                <i class="fas fa-qrcode text-brand-gold text-sm"></i>
-                            </div>
-                            <div>
-                                <p class="text-white font-semibold text-sm">QR Code Verification</p>
-                                <p class="text-gray-500 text-sm">Scan the CCIC traceability code to access the complete chain-of-custody timeline — from sample intake to certified gem.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20 flex-shrink-0 mt-0.5">
-                                <i class="fas fa-layer-group text-brand-gold text-sm"></i>
-                            </div>
-                            <div>
-                                <p class="text-white font-semibold text-sm">ILDA Provenance (Optional)</p>
-                                <p class="text-gray-500 text-sm">International Life Diamond Association membership adds a cross-border, mutually recognized provenance layer. Available as an upgrade for partners who need dual attestation.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="laboratory.html" class="inline-flex items-center gap-3 px-8 py-4 bg-brand-gold text-brand-dark font-semibold rounded-xl hover:bg-white transition shadow-xl shadow-brand-gold/20 tracking-wide">
-                        <i class="fas fa-flask"></i>
-                        See Laboratory Standards
-                    </a>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-gold mt-0.5"><i class="fas fa-check text-xs"></i></span>
+                            <span>Unique CCIC verification QR code</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-gold mt-0.5"><i class="fas fa-check text-xs"></i></span>
+                            <span>Full chain-of-custody timeline</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-gold mt-0.5"><i class="fas fa-check text-xs"></i></span>
+                            <span>National-level inspection and certification</span>
+                        </li>
+                    </ul>
                 </div>
-                <!-- Right: CCIC + ILDA Comparison -->
-                <div class="relative self-start">
-                    <div class="bg-brand-slate/50 backdrop-blur-sm rounded-2xl border border-white/10 p-6">
-                        <table class="w-full text-sm">
-                            <thead>
-                                <tr class="border-b border-white/10">
-                                    <th class="text-left py-3 pr-4 text-white font-semibold"><i class="fas fa-shield-alt text-brand-gold mr-2"></i>CCIC — Standard</th>
-                                    <th class="text-left py-3 pl-4 text-white font-semibold border-l border-white/10"><i class="fas fa-award text-gray-400 mr-2"></i>ILDA — Optional</th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-gray-400">
-                                <tr class="border-b border-white/5">
-                                    <td class="py-3 pr-4">National inspection body certificate</td>
-                                    <td class="py-3 pl-4 border-l border-white/5">Cross-border mutual recognition</td>
-                                </tr>
-                                <tr class="border-b border-white/5">
-                                    <td class="py-3 pr-4">Unique QR traceability code</td>
-                                    <td class="py-3 pl-4 border-l border-white/5">Industry standard alignment</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-3 pr-4">Chain-of-custody documentation</td>
-                                    <td class="py-3 pl-4 border-l border-white/5">Additional verification layer</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p class="text-center text-gray-500 text-xs mt-4">CCIC included with every diamond. ILDA upgrades available upon request.</p>
-                    </div>
+                <!-- ILDA Card — Dark -->
+                <div class="bg-brand-slate rounded-2xl p-8 lg:p-10 border border-white/10">
+                    <span class="inline-block text-[10px] font-semibold tracking-[0.2em] uppercase text-brand-gold/80 bg-brand-gold/10 px-3 py-1 rounded-full mb-6 border border-brand-gold/20">Optional · Upgrade</span>
+                    <h3 class="font-serif text-2xl font-semibold text-white mb-4">ILDA Provenance</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        International Life Diamond Association membership adds a cross-border, mutually recognized provenance layer — available as an upgrade for partners who need dual attestation.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-gold mt-0.5"><i class="fas fa-check text-xs"></i></span>
+                            <span>Cross-border mutual recognition</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-gold mt-0.5"><i class="fas fa-check text-xs"></i></span>
+                            <span>Industry standard alignment</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-gold mt-0.5"><i class="fas fa-check text-xs"></i></span>
+                            <span>Additional verification layer on request</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
+    </section>
         </div>
     </section>
 
