@@ -63,14 +63,24 @@ Cremation temperatures (760–980 °C) fully oxidize carbon to CO₂. What remai
 
 ## Key Pages
 
+- / — Homepage: Partnership model, product specs, company facts
 - /partnership.html — Partnership overview, pricing, sample policy, FAQ
+- /partnership-faq.html — Partnership-specific FAQ
 - /technology.html — HPHT synthesis, carbon extraction, laboratory standards
 - /manufacturing.html — Production capacity, scaling roadmap, quality control
 - /laboratory.html — CCIC certification, traceability, verification
+- /technology-patents.html — Patent portfolio and IP overview
+- /patent-viewer.html — Interactive patent document viewer
+- /applications.html — Use cases and customer segments
+- /case-studies.html — Partner case studies and verification data
+- /memorial-diamond-b2b-guide.html — B2B buyer's guide
 - /glossary.html — Industry terminology (43 defined terms)
 - /resources.html — Downloadable guides and fact sheets
 - /faq.html — Frequently asked questions
+- /contact.html — Inquiry form, contact details, WhatsApp
+- /privacy.html / /terms.html — Legal
 - /blog/ — Technical and industry articles (43 posts)
+- /blog/author-lilihua.html — Author page (Chief Scientist / Patent Inventor)
 
 ## One-Line Definition
 
