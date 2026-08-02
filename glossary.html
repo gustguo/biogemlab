@@ -226,7 +226,7 @@
 </div>
 </header>
 <!-- Alphabetical Navigation -->
-<div class="sticky top-20 z-40 bg-brand-slate/95 backdrop-blur-xl border-y border-white/5">
+<div class="sticky top-16 z-40 bg-brand-slate/95 backdrop-blur-xl border-y border-white/5">
 <div class="max-w-4xl mx-auto px-6 lg:px-8">
 <div class="py-3">
 <div class="relative max-w-md mx-auto">
@@ -2044,33 +2044,7 @@ function filterGlossary() {
         
         terms.forEach(function(term, index) {
             const termText = term.textContent.toLowerCase();
-            const defText = definitions[index] ? definitions[index,
-        { "@type": "DefinedTerm", "name": "Bio-Carbon Source Compatibility", "description": "BioGem Lab's practical knowledge base of which biological materials yield usable carbon for memorial diamond synthesis, accumulated from processing 50..." },
-        { "@type": "DefinedTerm", "name": "Multi-Stone Family Set Policy", "description": "BioGem Lab's pricing structure for orders where a single biological sample is used to create multiple diamonds — typically for family members who each..." },
-        { "@type": "DefinedTerm", "name": "Pre-Carbonization Options (Three-Tier System)", "description": "BioGem Lab's three-tier framework for handling biological samples that arrive with varying degrees of pre-processing. " },
-        { "@type": "DefinedTerm", "name": "Six-Sided Press (六面顶压机)", "description": "The primary type of high-pressure apparatus used at BioGem Lab's Luoyang facility for HPHT diamond synthesis. Unlike belt-type presses (common in earl..." },
-        { "@type": "DefinedTerm", "name": "White-Label Packaging Protocol", "description": "BioGem Lab's standardized procedure for delivering memorial diamonds to end customers without revealing the manufacturer's identity. The protocol incl..." },
-{"@type": "DefinedTerm", "name": "Allotrope", "description": "Different structural forms of the same chemical element, including diamond, graphite, and amorphous carbon."},
-{"@type": "DefinedTerm", "name": "Amorphous Carbon", "description": "Carbon without crystalline structure, produced as an intermediate during biological carbon extraction."},
-{"@type": "DefinedTerm", "name": "Annealing", "description": "Controlled heat-treatment process applied to synthetic diamonds after HPHT growth."},
-{"@type": "DefinedTerm", "name": "Carbon Footprint / LCA", "description": "Life Cycle Assessment analyzing environmental impacts across a product's entire life cycle."},
-{"@type": "DefinedTerm", "name": "Clarity", "description": "Gemological grading parameter describing internal inclusions and external blemishes in a diamond."},
-{"@type": "DefinedTerm", "name": "Color", "description": "Grading parameter describing presence or absence of color in a diamond."},
-{"@type": "DefinedTerm", "name": "Culet", "description": "The small facet at the bottom tip of a round brilliant diamond."},
-{"@type": "DefinedTerm", "name": "Cut", "description": "Quality of a diamond's proportions, symmetry, and polish determining light reflection."},
-{"@type": "DefinedTerm", "name": "Fluorescence", "description": "Emission of visible light by a diamond when exposed to ultraviolet radiation."},
-{"@type": "DefinedTerm", "name": "Girdle", "description": "The outer edge of a diamond where crown meets pavilion."},
-{"@type": "DefinedTerm", "name": "HPHT vs CVD Comparison", "description": "Comparison of High Pressure High Temperature and Chemical Vapor Deposition diamond synthesis methods."},
-{"@type": "DefinedTerm", "name": "Irradiation (Color Treatment)", "description": "Color-enhancement process exposing diamonds to high-energy radiation."},
-{"@type": "DefinedTerm", "name": "Kimberley Process Exemption", "description": "Lab-grown diamonds are exempt from the Kimberley Process Certification Scheme."},
-{"@type": "DefinedTerm", "name": "Memorial Jewelry Types", "description": "Categories of jewelry designed to commemorate a deceased loved one or pet."},
-{"@type": "DefinedTerm", "name": "Natural Diamond vs Synthetic", "description": "Comparison of natural and laboratory-grown diamonds."},
-{"@type": "DefinedTerm", "name": "Near-colorless", "description": "GIA color grade range G-J showing faint warmth."},
-{"@type": "DefinedTerm", "name": "Pet Cremation Market Overview", "description": "The pet aftercare industry encompassing cremation, burial, and memorial products."},
-{"@type": "DefinedTerm", "name": "Territory Exclusivity", "description": "Commercial arrangement granting sole distribution rights within a geographic region."},
-{"@type": "DefinedTerm", "name": "Thermal Gradient", "description": "Temperature difference between carbon source and diamond seed in HPHT growth cell."},
-{"@type": "DefinedTerm", "name": "Traceability QR", "description": "QR code linking to secure online record of memorial diamond production history."},
-{"@type": "DefinedTerm", "name": "White-label Packaging Kit", "description": "Complete packaging system customized to display partner's brand."}].textContent.toLowerCase() : '';
+            const defText = definitions[index] ? definitions[index].textContent.toLowerCase() : '';
             const parent = term.closest('.border-l-4');
             
             if (termText.includes(filter) || defText.includes(filter)) {
