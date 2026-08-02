@@ -60,6 +60,44 @@
   ]
 }
 </script>
+    <style>
+        .rows{ border-top:1px solid var(--line); list-style:none; padding:0; margin:0; }
+        .row{
+            position:relative;
+            display:grid;
+            grid-template-columns:70px minmax(180px,.9fr) minmax(0,1.6fr) minmax(150px,.8fr) 40px;
+            gap:24px; align-items:baseline;
+            padding:26px 10px 26px 0;
+            border-bottom:1px solid var(--line-soft);
+            transition:background .3s, padding .3s;
+            cursor:pointer; text-decoration:none; color:inherit;
+        }
+        .row::before{
+            content:""; position:absolute; left:-14px; top:34px;
+            width:7px; height:7px; border-radius:50%; background:var(--signal);
+            transform:scale(0); transition:transform .25s;
+        }
+        .row:hover{ background:var(--paper-hi); padding-left:18px; }
+        .row:hover::before{ transform:scale(1); }
+        .row .idx{ font-family:var(--mono); font-size:11px; color:var(--graphite); }
+        .row .name{ font-weight:600; font-size:clamp(16px,1.4vw,20px); letter-spacing:-.01em; }
+        .row .desc{ color:var(--ink-soft); font-size:14.5px; max-width:56ch; }
+        .row .fit{
+            font-family:var(--mono); font-size:11px; line-height:1.6;
+            color:var(--graphite); text-align:right;
+        }
+        .row .fit b{ color:var(--ink); font-weight:500; }
+        .row .go{
+            font-family:var(--mono); font-size:14px; justify-self:end;
+            transition:transform .3s, color .3s;
+        }
+        .row:hover .go{ transform:translateX(6px); color:var(--signal); }
+        @media (max-width:880px){
+            .row{ grid-template-columns:44px 1fr 28px; }
+            .row .desc{ grid-column:2; }
+            .row .fit{ display:none; }
+        }
+    </style>
 </head>
 <body class="font-sans text-gray-600 antialiased">
 <div class="lab-gridlines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
@@ -131,676 +169,311 @@
         </div>
     </section>
 
-    <!-- ARTICLES GRID -->
+    <!-- ARTICLES LIST -->
     <section class="section-spacing bg-white relative">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div style="padding:0 var(--gutter);max-width:none;">
+            <ul class="rows">
+                <li class="rv"><a class="row" href="memorial-diamond-oem-partnerships-cross-border-deals.html">
+                    <span class="idx">/02</span>
+                    <span class="name">Memorial Diamond OEM Partnerships: What Three Cross-Border Deals Taught Us</span>
+                    <span class="desc">Cross-border B2B memorial diamond partnerships fail when manufacturers and partners operate on different assumptions. Real cases from Japan, Europe, and India.</span>
+                    <span class="fit">B2B<br><b>August 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
 
-                <!-- Article 42 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-clipboard-check text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Industry</span>
-                            <span class="text-gray-400 text-xs">July 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">How Pet Cremation Services Evaluate Memorial Diamond Suppliers: A 2026 Buyer's Guide</h2>
-                        <p class="text-gray-500 text-sm mb-4">A data-driven procurement guide for pet cremation and aftercare providers evaluating memorial diamond manufacturers. Six criteria — timeline, provenance, color, white-label, certification, and partner policies — with industry benchmarks and red flags.</p>
-                        <a href="pet-cremation-services-evaluate-memorial-diamond-suppliers-guide.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 40 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-atom text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Technology</span>
-                            <span class="text-gray-400 text-xs">July 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Synthetic Diamond Engineering: Doping and Color Control</h2>
-                        <p class="text-gray-500 text-sm mb-4">Engineering analysis of intentional doping and color control in synthetic diamond manufacturing. Nitrogen, boron, and phosphorus doping mechanisms for memorial diamonds.</p>
-                        <a href="synthetic-diamond-engineering-doping-color-control.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-atom text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Technology</span>
-                            <span class="text-gray-400 text-xs">July 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Crystal Lattice Stability Under Extreme Pressure in HPHT Synthesis</h2>
-                        <p class="text-gray-500 text-sm mb-4">A technical analysis of diamond crystal lattice stability under HPHT conditions: phase transitions, defect mechanisms, non-hydrostatic stress management, and quality control protocols for memorial diamond manufacturing.</p>
-                        <a href="crystal-lattice-stability-extreme-pressure.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 38 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-flask text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Technology</span>
-                            <span class="text-gray-400 text-xs">July 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Metal Catalyst Solvents in HPHT: Ni-Mn-Co Alloy Performance</h2>
-                        <p class="text-gray-500 text-sm mb-4">Technical analysis of Ni-Mn-Co alloy catalyst performance in HPHT diamond synthesis. Solvent composition, carbon solubility, growth rate optimization, and quality control for industrial memorial diamond production.</p>
-                        <a href="metal-catalyst-solvents-hpht-ni-mn-co-alloy-performance.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 37 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-leaf text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Industry</span>
-                            <span class="text-gray-400 text-xs">July 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Sustainable Diamond Manufacturing: Environmental Impact Assessment</h2>
-                        <p class="text-gray-500 text-sm mb-4">Environmental impact assessment of laboratory-grown diamond manufacturing vs. mined diamonds. Energy consumption, carbon footprint, water usage, and waste analysis for memorial diamond production.</p>
-                        <a href="sustainable-diamond-manufacturing-environmental-impact.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 36 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-question-circle text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Educational</span>
-                            <span class="text-gray-400 text-xs">July 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">How Much Ash for a Memorial Diamond? 7 Questions Answered</h2>
-                        <p class="text-gray-500 text-sm mb-4">A technical FAQ covering feedstock requirements, synthesis timelines, certification, and what happens to remaining ashes. Data from industrial HPHT production.</p>
-                        <a href="how-much-ash-for-memorial-diamond.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 35 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-seedling text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Technology</span>
-                            <span class="text-gray-400 text-xs">July 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Diamond Seed Crystal Selection and Preparation for HPHT Memorial Diamond Synthesis</h2>
-                        <p class="text-gray-500 text-sm mb-4">A technical guide to diamond seed crystal selection and preparation for HPHT memorial diamond synthesis. Seed quality criteria, crystallographic orientation, surface treatment, and growth initiation protocols.</p>
-                        <a href="diamond-seed-crystal-selection-hpht-memorial-diamonds.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 33 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-vial text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Technology</span>
-                            <span class="text-gray-400 text-xs">July 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Carbon Extraction Yield: Human Hair vs Pet Fur vs Botanical Sources</h2>
-                        <p class="text-gray-500 text-sm mb-4">Comparative technical analysis of carbon extraction yield across human hair, pet fur, and botanical sources. Sample sizing data, manufacturing implications, and quality control for memorial diamond production.</p>
-                        <a href="carbon-extraction-yield-hair-pet-fur-botanical.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 34 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-gem text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Technology</span>
-                            <span class="text-gray-400 text-xs">July 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Cutting Proportions for Memorial Diamonds: Maximizing Brilliance</h2>
-                        <p class="text-gray-500 text-sm mb-4">Technical guide to diamond cutting proportions for memorial diamonds. How table size, crown angle, and pavilion depth optimize brilliance in HPHT-synthesized stones.</p>
-                        <a href="cutting-proportions-memorial-diamonds-brilliance.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 32 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-gem text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Technology</span>
-                            <span class="text-gray-400 text-xs">July 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Diamond Clarity Grading for Memorial Diamonds: Inclusion Types</h2>
-                        <p class="text-gray-500 text-sm mb-4">A technical guide to diamond clarity grading for memorial diamonds. How inclusion types, crystal defects, and microscopic evaluation determine clarity grades in HPHT-synthesized diamonds.</p>
-                        <a href="diamond-clarity-grading-memorial-diamonds-inclusion-types.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-fire text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Technology</span>
-                            <span class="text-gray-400 text-xs">July 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">HPHT Synthesis Temperature and Pressure Optimization</h2>
-                        <p class="text-gray-500 text-sm mb-4">A technical guide to temperature and pressure optimization in HPHT memorial diamond synthesis. Growth cell dynamics, catalyst behavior, supersaturation control, and process validation for B2B partners.</p>
-                        <a href="hpht-synthesis-temperature-pressure-optimization.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-microscope text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Technology</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Memorial Diamond Color Science: Nitrogen, Boron, and Lattice Defects</h2>
-                        <p class="text-gray-500 text-sm mb-4">A technical guide to memorial diamond color science. How nitrogen, boron, and lattice defects influence color formation during HPHT synthesis, and what manufacturers and partners should know.</p>
-                        <a href="memorial-diamond-color-science-nitrogen-boron-lattice-defects.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-chart-line text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Industry</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Memorial Diamond Industry Trends: 2026 Market Analysis</h2>
-                        <p class="text-gray-500 text-sm mb-4">A market analysis of the memorial diamond industry in 2026. Examining growth drivers, competitive landscape, supply chain shifts, and technology trends.</p>
-                        <a href="memorial-diamond-industry-trends-2026-market-analysis.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-globe text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">B2B</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">International Distribution for Memorial Diamond Partners</h2>
-                        <p class="text-gray-500 text-sm mb-4">A technical guide to the logistics, customs, insurance, and infrastructure required for reliable international memorial diamond distribution. Built for B2B partners managing cross-border supply chains.</p>
-                        <a href="international-distribution-support-memorial-diamond-partners.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 27 (NEW) -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-shipping-fast text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">B2B</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Global Memorial Diamond Supply Chains Explained</h2>
-                        <p class="text-gray-500 text-sm mb-4">A technical map of how memorial diamonds move from biological sample to certified gemstone: raw material logistics, manufacturing clusters, quality control protocols, and international distribution networks.</p>
-                        <a href="global-memorial-diamond-supply-chains.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 26 (NEW) -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-undo text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">B2B</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Memorial Diamond Returns and Remakes: Partner Policies That Work</h2>
-                        <p class="text-gray-500 text-sm mb-4">A structured B2B policy framework for handling memorial diamond returns and remakes. Defect classification, cost allocation, warranty architecture, and client communication protocols for OEM partners.</p>
-                        <a href="memorial-diamond-returns-remakes-partner-policies.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 25 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-bullhorn text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">B2B</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Memorial Diamond Marketing: Messaging for Pet Owners</h2>
-                        <p class="text-gray-500 text-sm mb-4">A technical framework for B2B partners on marketing memorial diamonds to pet owners. Messaging hierarchies, channel strategies, pricing communication, and compliance standards.</p>
-                        <a href="memorial-diamond-marketing-messaging-pet-owners.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 24 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-shield-alt text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">B2B</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Memorial Diamond Sales: Building Trust Through Transparency</h2>
-                        <p class="text-gray-500 text-sm mb-4">A technical guide for B2B partners on establishing credibility in memorial diamond sales. Laboratory verification, certification standards, and client communication protocols.</p>
-                        <a href="memorial-diamond-sales-transparency-strategies.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 23 (NEW) -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-ruler text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Educational</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Memorial Diamond Size Guide: Carat Weight by Sample Type</h2>
-                        <p class="text-gray-500 text-sm mb-4">Technical reference for understanding how carbon source type and sample quantity determine achievable memorial diamond carat weight. Essential for B2B partners setting client expectations.</p>
-                        <a href="memorial-diamond-size-guide-carat-weight.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 22 (NEW) -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-handshake text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">B2B</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Cross-Selling Memorial Diamonds into Funeral Services: A Revenue Guide</h2>
-                        <p class="text-gray-500 text-sm mb-4">A practical framework for funeral homes, pet cremation services, and memorial businesses to add memorial diamonds to their service portfolio. Implementation steps, margin analysis, and supplier qualification.</p>
-                        <a href="cross-selling-memorial-diamonds-funeral-services.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 21 (NEW) -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-dollar-sign text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">B2B</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Memorial Diamond Wholesale Pricing: What Pet Cremation Services Need to Know</h2>
-                        <p class="text-gray-500 text-sm mb-4">A practical margin guide for pet cremation services and memorial businesses selling memorial diamonds: wholesale costs, retail pricing, profit margins, and pricing strategies.</p>
-                        <a href="memorial-diamond-wholesale-pricing-margin-guide.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 20 (NEW) -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-gem text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Educational</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Pet Memorial Diamond Buying Guide: Technical Criteria & Quality Standards</h2>
-                        <p class="text-gray-500 text-sm mb-4">A technical evaluation framework for selecting pet memorial diamonds: carat specifications, color grading, clarity standards, cut quality, certification requirements, and supplier qualification criteria.</p>
-                        <a href="pet-memorial-diamond-buying-guide.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 19 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-atom text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Educational</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Diamond Manufacturing Science: A Materials Engineering Guide</h2>
-                        <p class="text-gray-500 text-sm mb-4">A technical analysis of HPHT diamond synthesis from a materials engineering perspective: phase stability, catalyst transport, crystal nucleation, defect structures, and industrial process control.</p>
-                        <a href="diamond-manufacturing-science-materials-engineering.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 18 (NEW) -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-vial text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Educational</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Carbon Purity Requirements for Memorial Diamond Synthesis</h2>
-                        <p class="text-gray-500 text-sm mb-4">Technical specifications for carbon feedstock purity in HPHT memorial diamond manufacturing: extraction yield, contamination thresholds, graphitization standards, and quality control protocols.</p>
-                        <a href="carbon-purity-requirements-memorial-diamond-synthesis.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 17 (NEW) -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-flask text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Educational</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Biological Carbon Extraction: From Hair to Graphite</h2>
-                        <p class="text-gray-500 text-sm mb-4">The industrial pipeline converting biological samples into purified graphite for HPHT memorial diamond synthesis. Carbon extraction, purification, and graphitization for B2B partners.</p>
-                        <a href="biological-carbon-extraction-hair-to-graphite.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 16 (NEW) -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-shield-alt text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Educational</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">How Long Does a Memorial Diamond Last? Durability and Care</h2>
-                        <p class="text-gray-500 text-sm mb-4">An industrial materials science analysis of memorial diamond longevity: hardness, thermal stability, chemical resistance, and structural integrity. Written for B2B partners and memorial service providers.</p>
-                        <a href="how-long-does-memorial-diamond-last.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 15 (NEW) -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-industry text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Educational</span>
-                            <span class="text-gray-400 text-xs">May 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Lab-Grown Diamond Manufacturing: Industrial Process Explained</h2>
-                        <p class="text-gray-500 text-sm mb-4">A complete technical guide to industrial lab-grown diamond manufacturing — from carbon purification through HPHT synthesis, crystal growth, cutting, and quality validation for B2B partners.</p>
-                        <a href="lab-grown-diamond-manufacturing-process.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 14 (NEW) -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-fire text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Educational</span>
-                            <span class="text-gray-400 text-xs">May 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">What Is HPHT Diamond Growth? A Technical Overview</h2>
-                        <p class="text-gray-500 text-sm mb-4">Pressure fields, temperature gradients, metal catalyst transport, and crystal nucleation mechanics in industrial memorial diamond manufacturing. A technical deep-dive for B2B partners.</p>
-                        <a href="what-is-hpht-diamond-growth.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 13 (NEW) -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-gem text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Educational</span>
-                            <span class="text-gray-400 text-xs">May 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Memorial Diamond Cost Breakdown: What Drives the Price</h2>
-                        <p class="text-gray-500 text-sm mb-4">Line-by-line cost analysis from carbon extraction to final certification. Understanding why wholesale B2B pricing differs from retail consumer pricing.</p>
-                        <a href="memorial-diamond-cost-breakdown.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 12 (NEW) -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-chart-line text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">B2B / OEM</span>
-                            <span class="text-gray-400 text-xs">May 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">How Pet Cremation Services Increase Revenue with Memorial Diamonds</h2>
-                        <p class="text-gray-500 text-sm mb-4">A revenue analysis for pet cremation businesses considering memorial diamond integration. White-label supply model, margin analysis, and zero-inventory implementation guide.</p>
-                        <a href="pet-cremation-services-revenue-memorial-diamonds.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 1 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-atom text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Technology</span>
-                            <span class="text-gray-400 text-xs">May 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">HPHT vs CVD: How Memorial Diamond Manufacturers Should Choose</h2>
-                        <p class="text-gray-500 text-sm mb-4">A technical comparison of HPHT and CVD diamond growth methods — pressure, temperature, timeline, and quality outcomes for B2B partners.</p>
-                        <a href="hpht-vs-cvd-memorial-diamonds.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 2 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-flask text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Science</span>
-                            <span class="text-gray-400 text-xs">May 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Carbon Source Purity and Its Impact on Final Diamond Quality</h2>
-                        <p class="text-gray-500 text-sm mb-4">How biological carbon extraction and purification determine memorial diamond color, clarity, and consistency.</p>
-                        <a href="carbon-source-purity-diamond-quality.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 3 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-industry text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Manufacturing</span>
-                            <span class="text-gray-400 text-xs">May 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Understanding the Memorial Diamond Production Cycle</h2>
-                        <p class="text-gray-500 text-sm mb-4">From carbon receipt to certified gem: the complete 60-day production timeline for B2B partners and memorial service providers.</p>
-                        <a href="memorial-diamond-production-cycle.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 4 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-handshake text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Partnership</span>
-                            <span class="text-gray-400 text-xs">May 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">White-Label Memorial Diamonds: A Strategic Guide</h2>
-                        <p class="text-gray-500 text-sm mb-4">How pet cremation services, veterinary clinics, and memorial businesses can add memorial diamonds without capex or inventory.</p>
-                        <a href="white-label-memorial-diamonds-guide.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 5 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-dna text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Science</span>
-                            <span class="text-gray-400 text-xs">May 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Bio-Carbon Memorial Diamonds: The Science of Transforming Life into Light</h2>
-                        <p class="text-gray-500 text-sm mb-4">How biological carbon from hair, fur, nails, and botanical material becomes a genuine diamond — chemistry, physics, and engineering explained.</p>
-                        <a href="bio-carbon-memorial-diamonds-science.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 6 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-cut text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Educational</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">From Hair to Diamond: The Complete Memorial Diamond Process</h2>
-                        <p class="text-gray-500 text-sm mb-4">A step-by-step breakdown of how hair becomes a genuine memorial diamond — from sample collection through carbon extraction, graphitization, HPHT synthesis, cutting, and certification.</p>
-                        <a href="hair-to-diamond-process.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 7 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-industry text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">B2B Partnership</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">OEM Memorial Diamond Manufacturing: A Guide for B2B Partners</h2>
-                        <p class="text-gray-500 text-sm mb-4">How pet cremation services, veterinary clinics, and memorial brands can add memorial diamonds through white-label OEM manufacturing — zero capex, full brand control.</p>
-                        <a href="oem-memorial-diamond-manufacturing.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 8 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-clipboard-check text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">B2B Decision Guide</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">How to Choose a Memorial Diamond Supplier</h2>
-                        <p class="text-gray-500 text-sm mb-4">Eight essential criteria for evaluating memorial diamond manufacturing partners — from production capability and certification quality to traceability systems and pricing transparency.</p>
-                        <a href="choosing-memorial-diamond-supplier.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 9 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-fire text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Technology</span>
-                            <span class="text-gray-400 text-xs">June 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Graphitization in Memorial Diamond Manufacturing</h2>
-                        <p class="text-gray-500 text-sm mb-4">Why the conversion of amorphous bio-carbon into crystalline graphite is the hidden quality gate that determines diamond clarity, color, and growth rate.</p>
-                        <a href="graphitization-carbon-structure-memorial-diamonds.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 10 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-atom text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Educational</span>
-                            <span class="text-gray-400 text-xs">May 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">How Carbon Becomes Diamond: The Complete Transformation</h2>
-                        <p class="text-gray-500 text-sm mb-4">A materials engineering guide to carbon-to-diamond transformation: atomic structure, HPHT synthesis mechanics, crystal formation kinetics, and industrial process validation.</p>
-                        <a href="how-carbon-becomes-diamond.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 11 -->
-                <article class="card-lift bg-brand-light rounded-2xl border border-gray-100 overflow-hidden">
-                    <div class="h-48 bg-gradient-to-br from-brand-accent to-brand-dark flex items-center justify-center">
-                        <i class="fas fa-clock text-brand-gold/30 text-5xl"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="px-3 py-1 bg-brand-gold/10 text-brand-gold text-xs font-medium rounded-full">Educational</span>
-                            <span class="text-gray-400 text-xs">May 2026</span>
-                        </div>
-                        <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Memorial Diamond Production Timeline: A 60-Day Field Report</h2>
-                        <p class="text-gray-500 text-sm mb-4">A week-by-week breakdown of what actually happens during 60 days of memorial diamond production — from sample intake through HPHT synthesis, cutting, and certification.</p>
-                        <a href="memorial-diamond-production-timeline.html" class="text-brand-gold font-medium text-sm hover:text-brand-dark transition">Read article →</a>
-                    </div>
-                </article>
-
-                <!-- Article 12: CTA -->
-                <article class="card-lift bg-brand-gold/10 rounded-2xl border border-brand-gold/20 overflow-hidden flex flex-col justify-center items-center p-8 text-center">
-                    <div class="w-16 h-16 rounded-full bg-brand-gold/20 flex items-center justify-center mb-4">
-                        <i class="fas fa-arrow-right text-brand-gold text-2xl"></i>
-                    </div>
-                    <h2 class="font-serif text-xl font-semibold text-brand-dark mb-3">Ready to Partner?</h2>
-                    <p class="text-gray-600 text-sm mb-6">Learn about our white-label memorial diamond manufacturing program, sample terms, and partnership models.</p>
-                    <a href="../partnership.html" class="px-6 py-3 bg-brand-gold text-brand-dark font-semibold rounded-xl hover:bg-brand-dark hover:text-white transition">Explore Partnership</a>
-                </article>
-            </div>
+                <li class="rv"><a class="row" href="pet-cremation-services-evaluate-memorial-diamond-suppliers-guide.html">
+                    <span class="idx">/01</span>
+                    <span class="name">How Pet Cremation Services Evaluate Memorial Diamond Suppliers: A 2026 Buyer's Guide</span>
+                    <span class="desc">A data-driven procurement guide for pet cremation and aftercare providers evaluating memorial diamond manufacturers. Six criteria — timeline, provenance, color, white-label, certification, and partner policies — with industry benchmarks and red flags.</span>
+                    <span class="fit">Industry<br><b>July 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="synthetic-diamond-engineering-doping-color-control.html">
+                    <span class="idx">/03</span>
+                    <span class="name">Synthetic Diamond Engineering: Doping and Color Control</span>
+                    <span class="desc">Engineering analysis of intentional doping and color control in synthetic diamond manufacturing. Nitrogen, boron, and phosphorus doping mechanisms for memorial diamonds.</span>
+                    <span class="fit">Technology<br><b>July 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="crystal-lattice-stability-extreme-pressure.html">
+                    <span class="idx">/04</span>
+                    <span class="name">Crystal Lattice Stability Under Extreme Pressure in HPHT Synthesis</span>
+                    <span class="desc">A technical analysis of diamond crystal lattice stability under HPHT conditions: phase transitions, defect mechanisms, non-hydrostatic stress management, and quality control protocols for memorial diamond manufacturing.</span>
+                    <span class="fit">Technology<br><b>July 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="metal-catalyst-solvents-hpht-ni-mn-co-alloy-performance.html">
+                    <span class="idx">/05</span>
+                    <span class="name">Metal Catalyst Solvents in HPHT: Ni-Mn-Co Alloy Performance</span>
+                    <span class="desc">Technical analysis of Ni-Mn-Co alloy catalyst performance in HPHT diamond synthesis. Solvent composition, carbon solubility, growth rate optimization, and quality control for industrial memorial diamond production.</span>
+                    <span class="fit">Technology<br><b>July 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="sustainable-diamond-manufacturing-environmental-impact.html">
+                    <span class="idx">/06</span>
+                    <span class="name">Sustainable Diamond Manufacturing: Environmental Impact Assessment</span>
+                    <span class="desc">Environmental impact assessment of laboratory-grown diamond manufacturing vs. mined diamonds. Energy consumption, carbon footprint, water usage, and waste analysis for memorial diamond production.</span>
+                    <span class="fit">Industry<br><b>July 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="how-much-ash-for-memorial-diamond.html">
+                    <span class="idx">/07</span>
+                    <span class="name">How Much Ash for a Memorial Diamond? 7 Questions Answered</span>
+                    <span class="desc">A technical FAQ covering feedstock requirements, synthesis timelines, certification, and what happens to remaining ashes. Data from industrial HPHT production.</span>
+                    <span class="fit">Educational<br><b>July 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="diamond-seed-crystal-selection-hpht-memorial-diamonds.html">
+                    <span class="idx">/08</span>
+                    <span class="name">Diamond Seed Crystal Selection and Preparation for HPHT Memorial Diamond Synthesis</span>
+                    <span class="desc">A technical guide to diamond seed crystal selection and preparation for HPHT memorial diamond synthesis. Seed quality criteria, crystallographic orientation, surface treatment, and growth initiation protocols.</span>
+                    <span class="fit">Technology<br><b>July 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="carbon-extraction-yield-hair-pet-fur-botanical.html">
+                    <span class="idx">/09</span>
+                    <span class="name">Carbon Extraction Yield: Human Hair vs Pet Fur vs Botanical Sources</span>
+                    <span class="desc">Comparative technical analysis of carbon extraction yield across human hair, pet fur, and botanical sources. Sample sizing data, manufacturing implications, and quality control for memorial diamond production.</span>
+                    <span class="fit">Technology<br><b>July 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="cutting-proportions-memorial-diamonds-brilliance.html">
+                    <span class="idx">/10</span>
+                    <span class="name">Cutting Proportions for Memorial Diamonds: Maximizing Brilliance</span>
+                    <span class="desc">Technical guide to diamond cutting proportions for memorial diamonds. How table size, crown angle, and pavilion depth optimize brilliance in HPHT-synthesized stones.</span>
+                    <span class="fit">Technology<br><b>July 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="diamond-clarity-grading-memorial-diamonds-inclusion-types.html">
+                    <span class="idx">/11</span>
+                    <span class="name">Diamond Clarity Grading for Memorial Diamonds: Inclusion Types</span>
+                    <span class="desc">A technical guide to diamond clarity grading for memorial diamonds. How inclusion types, crystal defects, and microscopic evaluation determine clarity grades in HPHT-synthesized diamonds.</span>
+                    <span class="fit">Technology<br><b>July 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="hpht-synthesis-temperature-pressure-optimization.html">
+                    <span class="idx">/12</span>
+                    <span class="name">HPHT Synthesis Temperature and Pressure Optimization</span>
+                    <span class="desc">A technical guide to temperature and pressure optimization in HPHT memorial diamond synthesis. Growth cell dynamics, catalyst behavior, supersaturation control, and process validation for B2B partners.</span>
+                    <span class="fit">Technology<br><b>July 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="memorial-diamond-color-science-nitrogen-boron-lattice-defects.html">
+                    <span class="idx">/13</span>
+                    <span class="name">Memorial Diamond Color Science: Nitrogen, Boron, and Lattice Defects</span>
+                    <span class="desc">A technical guide to memorial diamond color science. How nitrogen, boron, and lattice defects influence color formation during HPHT synthesis, and what manufacturers and partners should know.</span>
+                    <span class="fit">Technology<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="memorial-diamond-industry-trends-2026-market-analysis.html">
+                    <span class="idx">/14</span>
+                    <span class="name">Memorial Diamond Industry Trends: 2026 Market Analysis</span>
+                    <span class="desc">A market analysis of the memorial diamond industry in 2026. Examining growth drivers, competitive landscape, supply chain shifts, and technology trends.</span>
+                    <span class="fit">Industry<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="international-distribution-support-memorial-diamond-partners.html">
+                    <span class="idx">/15</span>
+                    <span class="name">International Distribution for Memorial Diamond Partners</span>
+                    <span class="desc">A technical guide to the logistics, customs, insurance, and infrastructure required for reliable international memorial diamond distribution. Built for B2B partners managing cross-border supply chains.</span>
+                    <span class="fit">B2B<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="global-memorial-diamond-supply-chains.html">
+                    <span class="idx">/16</span>
+                    <span class="name">Global Memorial Diamond Supply Chains Explained</span>
+                    <span class="desc">A technical map of how memorial diamonds move from biological sample to certified gemstone: raw material logistics, manufacturing clusters, quality control protocols, and international distribution networks.</span>
+                    <span class="fit">B2B<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="memorial-diamond-returns-remakes-partner-policies.html">
+                    <span class="idx">/17</span>
+                    <span class="name">Memorial Diamond Returns and Remakes: Partner Policies That Work</span>
+                    <span class="desc">A structured B2B policy framework for handling memorial diamond returns and remakes. Defect classification, cost allocation, warranty architecture, and client communication protocols for OEM partners.</span>
+                    <span class="fit">B2B<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="memorial-diamond-marketing-messaging-pet-owners.html">
+                    <span class="idx">/18</span>
+                    <span class="name">Memorial Diamond Marketing: Messaging for Pet Owners</span>
+                    <span class="desc">A technical framework for B2B partners on marketing memorial diamonds to pet owners. Messaging hierarchies, channel strategies, pricing communication, and compliance standards.</span>
+                    <span class="fit">B2B<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="memorial-diamond-sales-transparency-strategies.html">
+                    <span class="idx">/19</span>
+                    <span class="name">Memorial Diamond Sales: Building Trust Through Transparency</span>
+                    <span class="desc">A technical guide for B2B partners on establishing credibility in memorial diamond sales. Laboratory verification, certification standards, and client communication protocols.</span>
+                    <span class="fit">B2B<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="memorial-diamond-size-guide-carat-weight.html">
+                    <span class="idx">/20</span>
+                    <span class="name">Memorial Diamond Size Guide: Carat Weight by Sample Type</span>
+                    <span class="desc">Technical reference for understanding how carbon source type and sample quantity determine achievable memorial diamond carat weight. Essential for B2B partners setting client expectations.</span>
+                    <span class="fit">Educational<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="cross-selling-memorial-diamonds-funeral-services.html">
+                    <span class="idx">/21</span>
+                    <span class="name">Cross-Selling Memorial Diamonds into Funeral Services: A Revenue Guide</span>
+                    <span class="desc">A practical framework for funeral homes, pet cremation services, and memorial businesses to add memorial diamonds to their service portfolio. Implementation steps, margin analysis, and supplier qualification.</span>
+                    <span class="fit">B2B<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="memorial-diamond-wholesale-pricing-margin-guide.html">
+                    <span class="idx">/22</span>
+                    <span class="name">Memorial Diamond Wholesale Pricing: What Pet Cremation Services Need to Know</span>
+                    <span class="desc">A practical margin guide for pet cremation services and memorial businesses selling memorial diamonds: wholesale costs, retail pricing, profit margins, and pricing strategies.</span>
+                    <span class="fit">B2B<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="pet-memorial-diamond-buying-guide.html">
+                    <span class="idx">/23</span>
+                    <span class="name">Pet Memorial Diamond Buying Guide: Technical Criteria & Quality Standards</span>
+                    <span class="desc">A technical evaluation framework for selecting pet memorial diamonds: carat specifications, color grading, clarity standards, cut quality, certification requirements, and supplier qualification criteria.</span>
+                    <span class="fit">Educational<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="diamond-manufacturing-science-materials-engineering.html">
+                    <span class="idx">/24</span>
+                    <span class="name">Diamond Manufacturing Science: A Materials Engineering Guide</span>
+                    <span class="desc">A technical analysis of HPHT diamond synthesis from a materials engineering perspective: phase stability, catalyst transport, crystal nucleation, defect structures, and industrial process control.</span>
+                    <span class="fit">Educational<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="carbon-purity-requirements-memorial-diamond-synthesis.html">
+                    <span class="idx">/25</span>
+                    <span class="name">Carbon Purity Requirements for Memorial Diamond Synthesis</span>
+                    <span class="desc">Technical specifications for carbon feedstock purity in HPHT memorial diamond manufacturing: extraction yield, contamination thresholds, graphitization standards, and quality control protocols.</span>
+                    <span class="fit">Educational<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="biological-carbon-extraction-hair-to-graphite.html">
+                    <span class="idx">/26</span>
+                    <span class="name">Biological Carbon Extraction: From Hair to Graphite</span>
+                    <span class="desc">The industrial pipeline converting biological samples into purified graphite for HPHT memorial diamond synthesis. Carbon extraction, purification, and graphitization for B2B partners.</span>
+                    <span class="fit">Educational<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="how-long-does-memorial-diamond-last.html">
+                    <span class="idx">/27</span>
+                    <span class="name">How Long Does a Memorial Diamond Last? Durability and Care</span>
+                    <span class="desc">An industrial materials science analysis of memorial diamond longevity: hardness, thermal stability, chemical resistance, and structural integrity. Written for B2B partners and memorial service providers.</span>
+                    <span class="fit">Educational<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="lab-grown-diamond-manufacturing-process.html">
+                    <span class="idx">/28</span>
+                    <span class="name">Lab-Grown Diamond Manufacturing: Industrial Process Explained</span>
+                    <span class="desc">A complete technical guide to industrial lab-grown diamond manufacturing — from carbon purification through HPHT synthesis, crystal growth, cutting, and quality validation for B2B partners.</span>
+                    <span class="fit">Educational<br><b>May 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="what-is-hpht-diamond-growth.html">
+                    <span class="idx">/29</span>
+                    <span class="name">What Is HPHT Diamond Growth? A Technical Overview</span>
+                    <span class="desc">Pressure fields, temperature gradients, metal catalyst transport, and crystal nucleation mechanics in industrial memorial diamond manufacturing. A technical deep-dive for B2B partners.</span>
+                    <span class="fit">Educational<br><b>May 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="memorial-diamond-cost-breakdown.html">
+                    <span class="idx">/30</span>
+                    <span class="name">Memorial Diamond Cost Breakdown: What Drives the Price</span>
+                    <span class="desc">Line-by-line cost analysis from carbon extraction to final certification. Understanding why wholesale B2B pricing differs from retail consumer pricing.</span>
+                    <span class="fit">Educational<br><b>May 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="pet-cremation-services-revenue-memorial-diamonds.html">
+                    <span class="idx">/31</span>
+                    <span class="name">How Pet Cremation Services Increase Revenue with Memorial Diamonds</span>
+                    <span class="desc">A revenue analysis for pet cremation businesses considering memorial diamond integration. White-label supply model, margin analysis, and zero-inventory implementation guide.</span>
+                    <span class="fit">B2B / OEM<br><b>May 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="hpht-vs-cvd-memorial-diamonds.html">
+                    <span class="idx">/32</span>
+                    <span class="name">HPHT vs CVD: How Memorial Diamond Manufacturers Should Choose</span>
+                    <span class="desc">A technical comparison of HPHT and CVD diamond growth methods — pressure, temperature, timeline, and quality outcomes for B2B partners.</span>
+                    <span class="fit">Technology<br><b>May 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="carbon-source-purity-diamond-quality.html">
+                    <span class="idx">/33</span>
+                    <span class="name">Carbon Source Purity and Its Impact on Final Diamond Quality</span>
+                    <span class="desc">How biological carbon extraction and purification determine memorial diamond color, clarity, and consistency.</span>
+                    <span class="fit">Science<br><b>May 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="memorial-diamond-production-cycle.html">
+                    <span class="idx">/34</span>
+                    <span class="name">Understanding the Memorial Diamond Production Cycle</span>
+                    <span class="desc">From carbon receipt to certified gem: the complete 60-day production timeline for B2B partners and memorial service providers.</span>
+                    <span class="fit">Manufacturing<br><b>May 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="white-label-memorial-diamonds-guide.html">
+                    <span class="idx">/35</span>
+                    <span class="name">White-Label Memorial Diamonds: A Strategic Guide</span>
+                    <span class="desc">How pet cremation services, veterinary clinics, and memorial businesses can add memorial diamonds without capex or inventory.</span>
+                    <span class="fit">Partnership<br><b>May 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="bio-carbon-memorial-diamonds-science.html">
+                    <span class="idx">/36</span>
+                    <span class="name">Bio-Carbon Memorial Diamonds: The Science of Transforming Life into Light</span>
+                    <span class="desc">How biological carbon from hair, fur, nails, and botanical material becomes a genuine diamond — chemistry, physics, and engineering explained.</span>
+                    <span class="fit">Science<br><b>May 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="hair-to-diamond-process.html">
+                    <span class="idx">/37</span>
+                    <span class="name">From Hair to Diamond: The Complete Memorial Diamond Process</span>
+                    <span class="desc">A step-by-step breakdown of how hair becomes a genuine memorial diamond — from sample collection through carbon extraction, graphitization, HPHT synthesis, cutting, and certification.</span>
+                    <span class="fit">Educational<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="oem-memorial-diamond-manufacturing.html">
+                    <span class="idx">/38</span>
+                    <span class="name">OEM Memorial Diamond Manufacturing: A Guide for B2B Partners</span>
+                    <span class="desc">How pet cremation services, veterinary clinics, and memorial brands can add memorial diamonds through white-label OEM manufacturing — zero capex, full brand control.</span>
+                    <span class="fit">B2B Partnership<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="choosing-memorial-diamond-supplier.html">
+                    <span class="idx">/39</span>
+                    <span class="name">How to Choose a Memorial Diamond Supplier</span>
+                    <span class="desc">Eight essential criteria for evaluating memorial diamond manufacturing partners — from production capability and certification quality to traceability systems and pricing transparency.</span>
+                    <span class="fit">B2B Decision Guide<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="graphitization-carbon-structure-memorial-diamonds.html">
+                    <span class="idx">/40</span>
+                    <span class="name">Graphitization in Memorial Diamond Manufacturing</span>
+                    <span class="desc">Why the conversion of amorphous bio-carbon into crystalline graphite is the hidden quality gate that determines diamond clarity, color, and growth rate.</span>
+                    <span class="fit">Technology<br><b>June 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="how-carbon-becomes-diamond.html">
+                    <span class="idx">/41</span>
+                    <span class="name">How Carbon Becomes Diamond: The Complete Transformation</span>
+                    <span class="desc">A materials engineering guide to carbon-to-diamond transformation: atomic structure, HPHT synthesis mechanics, crystal formation kinetics, and industrial process validation.</span>
+                    <span class="fit">Educational<br><b>May 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+                <li class="rv"><a class="row" href="memorial-diamond-production-timeline.html">
+                    <span class="idx">/42</span>
+                    <span class="name">Memorial Diamond Production Timeline: A 60-Day Field Report</span>
+                    <span class="desc">A week-by-week breakdown of what actually happens during 60 days of memorial diamond production — from sample intake through HPHT synthesis, cutting, and certification.</span>
+                    <span class="fit">Educational<br><b>May 2026</b></span>
+                    <span class="go">&rarr;</span>
+                </a></li>
+            </ul>
         </div>
     </section>
 
     <!-- NEWSLETTER CTA -->
+
     <section class="section-spacing bg-brand-dark molecule-pattern">
         <div class="max-w-2xl mx-auto px-6 lg:px-8 text-center">
             <h2 class="font-serif text-3xl font-semibold text-white mb-4">Stay Informed</h2>
