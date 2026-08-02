@@ -1,0 +1,374 @@
+/* ============================================================
+   BIOGEM LAB — site-wide redesign layer
+   System: drafting-sheet material · serif/sans/mono tri-type
+   Applied over legacy Tailwind pages: remaps palette, corners,
+   kickers, panels + provides new header/footer chrome.
+   Load AFTER main.css.
+   ============================================================ */
+:root{
+  --paper:      #F2EFE7;
+  --paper-hi:   #FAF8F2;
+  --ink:        #171409;
+  --ink-soft:   #4B463A;
+  --graphite:   #837D6F;
+  --line:       rgba(23,20,9,.16);
+  --line-soft:  rgba(23,20,9,.08);
+  --signal:     #1F51FF;
+  --dark:       #14120B;
+  --dark-hi:    #1C1910;
+  --dark-text:  #EDE9DC;
+  --dark-soft:  #9A937F;
+  --dark-line:  rgba(237,233,220,.16);
+  --dark-line-soft: rgba(237,233,220,.08);
+  --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --sans:  "Instrument Sans", -apple-system, "Helvetica Neue", "PingFang SC", sans-serif;
+  --mono:  "Geist Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+  --gutter: clamp(20px, 4vw, 64px);
+}
+
+html{ scroll-behavior:smooth; }
+/* 锚点跳转时为固定导航条留出空间，避免目标区块标题被遮住 */
+section[id], header[id], div[id], article[id]{ scroll-margin-top:84px; }
+body{
+  background:var(--paper);
+  font-family:var(--sans) !important;
+}
+::selection{ background:var(--ink); color:var(--paper); }
+
+/* drafting grid — fixed hairlines behind content */
+.lab-gridlines{
+  position:fixed; inset:0; pointer-events:none; z-index:0;
+  display:flex; justify-content:space-between;
+  padding:0 var(--gutter);
+}
+.lab-gridlines i{ width:1px; height:100%; background:var(--line-soft); }
+.lab-gridlines i:nth-child(even){ background:transparent; }
+
+/* ============================================================
+   HEADER (scoped)
+   ============================================================ */
+.lab-head{
+  position:fixed; top:0; left:0; right:0; z-index:50;
+  display:flex; align-items:stretch; justify-content:space-between;
+  height:64px;
+  background:color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+  font-family:var(--sans);
+}
+.lab-brand{
+  display:flex; align-items:center; gap:14px;
+  padding:0 var(--gutter);
+  border-right:1px solid var(--line);
+  color:var(--ink); text-decoration:none;
+}
+.lab-brand-mark{ width:26px; height:26px; flex:none; }
+.lab-brand-name{ font-weight:700; font-size:15px; letter-spacing:.01em; display:block; line-height:1.2; }
+.lab-brand-sub{
+  font-family:var(--mono); font-size:9px; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--graphite); display:block; margin-top:2px;
+}
+.lab-nav{ display:flex; align-items:stretch; }
+.lab-nav a{
+  display:flex; align-items:center; padding:0 15px;
+  font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--ink-soft); text-decoration:none;
+  transition:color .25s, background .25s;
+}
+.lab-nav a:hover{ color:var(--ink) !important; background:var(--paper-hi); }
+.lab-nav a.lab-active{ color:var(--ink) !important; box-shadow:inset 0 -2px 0 var(--ink); }
+.lab-head-right{ display:flex; align-items:stretch; }
+.lab-patent-chip{
+  display:flex; align-items:center; padding:0 18px;
+  font-family:var(--mono); font-size:10.5px; letter-spacing:.06em;
+  color:var(--graphite); border-left:1px solid var(--line);
+}
+.lab-patent-chip b{ color:var(--ink); font-weight:500; margin-left:6px; }
+.lab-head-cta{
+  display:flex; align-items:center; padding:0 22px;
+  background:var(--ink); color:var(--paper) !important;
+  font-family:var(--mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase;
+  text-decoration:none; transition:background .25s;
+}
+.lab-head-cta:hover{ background:#000; color:#fff !important; }
+.lab-burger{
+  display:none; align-items:center; justify-content:center;
+  width:52px; background:none; border:0; border-left:1px solid var(--line);
+  cursor:pointer; color:var(--ink);
+}
+.lab-burger svg{ width:20px; height:20px; }
+.lab-mobile-menu{
+  display:none; position:fixed; top:64px; left:0; right:0; z-index:49;
+  background:var(--paper-hi); border-bottom:1px solid var(--line);
+  padding:10px var(--gutter) 18px;
+}
+.lab-mobile-menu.open{ display:block; }
+.lab-mobile-menu a{
+  display:flex; justify-content:space-between; align-items:baseline;
+  padding:13px 0; border-bottom:1px solid var(--line-soft);
+  font-family:var(--mono); font-size:12px; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--ink-soft); text-decoration:none;
+}
+.lab-mobile-menu a:last-child{ border-bottom:0; }
+.lab-mobile-menu a:hover{ color:var(--ink); }
+.lab-mobile-menu a .arr{ color:var(--graphite); }
+
+/* offset for 64px fixed header (legacy pages assumed 80px) */
+body{ padding-top:0; }
+
+/* ============================================================
+   FOOTER (scoped)
+   ============================================================ */
+.lab-foot{
+  background:var(--dark) !important; color:var(--dark-soft);
+  border-top:1px solid var(--dark-line);
+  padding:clamp(48px,6vw,80px) var(--gutter) 32px;
+  position:relative; z-index:1;
+  font-family:var(--sans);
+}
+.lab-foot a{ text-decoration:none; }
+.lab-foot-grid{
+  display:grid; grid-template-columns:1.8fr 1fr 1fr 1fr 1fr;
+  gap:clamp(28px,3.4vw,56px); margin-bottom:56px;
+}
+.lab-foot-grid h5{
+  font-family:var(--mono); font-size:10px; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--dark-text); margin:0 0 16px; font-weight:500;
+}
+.lab-foot-grid a{ display:block; padding:5px 0; font-size:13.5px; color:var(--dark-soft); transition:color .2s; }
+.lab-foot-grid a:hover{ color:var(--dark-text); }
+.lab-foot-brand p{ font-size:13.5px; line-height:1.7; max-width:38ch; margin:16px 0 0; color:var(--dark-soft); }
+.lab-foot-brand .lab-brand{ border:0; padding:0; color:var(--dark-text); }
+.lab-foot-brand .lab-brand-sub{ color:var(--dark-soft); }
+.lab-foot-base{
+  display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap;
+  padding-top:24px; border-top:1px solid var(--dark-line-soft);
+  font-family:var(--mono); font-size:10.5px; letter-spacing:.06em;
+}
+.lab-foot-base a{ color:var(--dark-soft); text-decoration:underline; text-underline-offset:3px; }
+.lab-foot-base a:hover{ color:var(--dark-text); }
+
+/* ============================================================
+   LEGACY REMAP — old Tailwind patterns -> drafting-sheet system
+   ============================================================ */
+
+/* squared corners everywhere (drafting material has no fillets) */
+[class*="rounded-"]:not([class*="rounded-full"]){ border-radius:0 !important; }
+[class*="rounded"]:not([class*="rounded-"]):not([class*="rounded-full"]){ border-radius:0 !important; }
+
+/* hairline borders instead of soft greys */
+.border-gray-100, .border-gray-200{ border-color:var(--line-soft) !important; }
+.border-white\/10, .border-white\/5{ border-color:var(--dark-line-soft) !important; }
+
+/* kickers: small uppercase tracked labels -> mono */
+[class*="tracking-[0.2em]"], [class*="tracking-[0.25em]"],
+[class*="tracking-widest"]{
+  font-family:var(--mono) !important;
+}
+
+/* glass panels -> flat hairline panels */
+.glass-panel{
+  background:rgba(255,255,255,0.03) !important;
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
+  border:1px solid var(--dark-line-soft) !important;
+}
+
+/* gold flourish -> neutral drafting line */
+.gold-line{
+  background:linear-gradient(90deg, transparent, var(--line), transparent) !important;
+}
+
+/* gold gradient headline text -> inherit surrounding ink tone */
+.gradient-text{
+  background:none !important;
+  -webkit-background-clip:initial !important;
+  background-clip:initial !important;
+  -webkit-text-fill-color:currentColor !important;
+  color:inherit !important;
+}
+
+/* molecule dots -> drafting registration dots */
+.molecule-pattern{
+  background-image:radial-gradient(circle at 2px 2px, rgba(237,233,220,.06) 1px, transparent 0) !important;
+  background-size:40px 40px !important;
+}
+
+/* soft shadows read as smudges on paper — flatten */
+[class*="shadow-"]{ box-shadow:none !important; }
+
+/* legacy hover color references gold; remap handled by palette,
+   but hover:text-brand-gold still compiles — signal blue via config. */
+
+/* serif headline weight: Instrument Serif ships a single weight (400).
+   Legacy font-semibold/bold on it produced distorted faux-bold — pin to 400. */
+.font-serif{ font-family:var(--serif) !important; font-weight:400 !important; }
+h1, h2, h3, h4{ letter-spacing:-.005em; }
+
+/* article body headings: switch to text sans for comfortable reading —
+   display serif is reserved for page titles / section titles */
+.prose h1, .prose h2, .prose h3, .prose h4,
+.prose-custom h1, .prose-custom h2, .prose-custom h3, .prose-custom h4,
+.prose-content h1, .prose-content h2, .prose-content h3, .prose-content h4{
+  font-family:var(--sans) !important;
+  font-weight:600 !important;
+  letter-spacing:-.01em;
+  line-height:1.3;
+}
+
+/* article inline links: monochrome ink, underline carries the affordance */
+.prose a, .prose-custom a, .prose-content a{ color:inherit !important; }
+
+/* buttons with gold bg get squared mono treatment via palette + corners;
+   keep FA icons monochrome where they sit in gold/10 chips (now signal/10) */
+
+/* forms on paper */
+input, textarea, select{ font-family:var(--sans) !important; }
+
+/* legacy amber callout boxes -> drafting paper callouts */
+.bg-amber-50{ background-color:var(--paper-hi) !important; }
+.border-amber-200{ border-color:var(--line) !important; }
+.text-amber-800{ color:var(--ink) !important; }
+.text-amber-900{ color:var(--ink-soft) !important; }
+
+/* stray tailwind blue utilities -> graphite/paper (no blue outside homepage) */
+.bg-blue-50{ background-color:var(--paper-hi) !important; }
+.bg-blue-400{ background-color:var(--graphite) !important; }
+.text-blue-300{ color:var(--dark-soft) !important; }
+.text-blue-500, .text-blue-600, .text-blue-700{ color:var(--ink-soft) !important; }
+.border-blue-200, .border-blue-100{ border-color:var(--line) !important; }
+
+/* ============================================================
+   UNIFIED PAGE HERO — every secondary page gets the same first
+   screen: flat dark drafting sheet, registration dots, same
+   height/padding, left-aligned serif title. No photo heroes.
+   ============================================================ */
+.lab-mobile-menu + section[class*="bg-brand"],
+.lab-mobile-menu + header[class*="bg-brand"]{
+  background:var(--dark) !important;
+  min-height:400px;
+  display:flex !important;
+  flex-direction:column;
+  justify-content:center;
+  padding:120px var(--gutter) 72px !important;
+  position:relative;
+  overflow:hidden;
+}
+
+/* remove photo/gradient background layers (except pages that opt into a photo hero) */
+.lab-mobile-menu + section[class*="bg-brand"]:not([data-hero-photo]) > div[class*="absolute"][class*="inset-0"],
+.lab-mobile-menu + header[class*="bg-brand"]:not([data-hero-photo]) > div[class*="absolute"][class*="inset-0"]{
+  display:none !important;
+}
+
+/* photo heroes — the 8 main nav pages keep a real photo at one
+   uniform transparency/brightness, whatever the source image */
+.lab-mobile-menu + section[data-hero-photo] .hero-photo,
+.lab-mobile-menu + header[data-hero-photo] .hero-photo{
+  display:block !important;
+  background-size:cover;
+  background-position:center;
+  opacity:.92;
+  filter:saturate(.85) brightness(1.02) contrast(1.02);
+}
+.lab-mobile-menu + section[data-hero-photo] .hero-veil,
+.lab-mobile-menu + header[data-hero-photo] .hero-veil{
+  display:block !important;
+  background:linear-gradient(180deg, rgba(14,12,8,.34) 0%, rgba(14,12,8,.55) 100%);
+}
+/* keep foreground text readable on the brighter photos */
+.lab-mobile-menu + section[data-hero-photo] h1,
+.lab-mobile-menu + header[data-hero-photo] h1{
+  text-shadow:0 1px 14px rgba(0,0,0,.5);
+}
+.lab-mobile-menu + section[data-hero-photo][class*="bg-brand"] h1 + p,
+.lab-mobile-menu + header[data-hero-photo][class*="bg-brand"] h1 + p{
+  color:#EDE9DC !important;
+}
+.lab-mobile-menu + section[data-hero-photo] p,
+.lab-mobile-menu + header[data-hero-photo] p,
+.lab-mobile-menu + section[data-hero-photo] span,
+.lab-mobile-menu + header[data-hero-photo] span{
+  text-shadow:0 1px 8px rgba(0,0,0,.45);
+}
+
+/* uniform registration dots */
+.lab-mobile-menu + section[class*="bg-brand"]::before,
+.lab-mobile-menu + header[class*="bg-brand"]::before{
+  content:"";
+  position:absolute; inset:0;
+  background-image:radial-gradient(circle at 2px 2px, rgba(237,233,220,.07) 1px, transparent 0);
+  background-size:40px 40px;
+  pointer-events:none;
+}
+
+/* keep content above the dot layer, align to the gutter grid */
+.lab-mobile-menu + section[class*="bg-brand"] > div:not([class*="absolute"]),
+.lab-mobile-menu + header[class*="bg-brand"] > div:not([class*="absolute"]){
+  position:relative;
+  z-index:1;
+  max-width:none !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
+/* left-align previously centered heroes */
+.lab-mobile-menu + section[class*="bg-brand"] [class*="text-center"],
+.lab-mobile-menu + header[class*="bg-brand"] [class*="text-center"]{
+  text-align:left !important;
+}
+.lab-mobile-menu + section[class*="bg-brand"] [class*="text-center"] [class*="mx-auto"],
+.lab-mobile-menu + header[class*="bg-brand"] [class*="text-center"] [class*="mx-auto"]{
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
+/* uniform title + subtitle typography */
+.lab-mobile-menu + section[class*="bg-brand"] h1,
+.lab-mobile-menu + header[class*="bg-brand"] h1{
+  font-family:var(--serif) !important;
+  font-weight:400 !important;
+  font-size:clamp(34px, 4.2vw, 56px) !important;
+  line-height:1.12 !important;
+  letter-spacing:-.01em;
+  color:var(--dark-text);
+  max-width:20ch;
+}
+.lab-mobile-menu + section[class*="bg-brand"] h1 + p,
+.lab-mobile-menu + header[class*="bg-brand"] h1 + p{
+  color:var(--dark-soft) !important;
+  max-width:64ch;
+}
+
+@media (max-width:880px){
+  .lab-mobile-menu + section[class*="bg-brand"],
+  .lab-mobile-menu + header[class*="bg-brand"]{
+    min-height:300px;
+    padding:104px 20px 56px !important;
+  }
+}
+
+/* graphite accent is too dim on dark photo heroes —
+   lift accent text one ladder step within the same palette family */
+.bg-brand-dark [class*="text-brand-gold"],
+.bg-brand-slate [class*="text-brand-gold"],
+.bg-brand-accent [class*="text-brand-gold"],
+[class*="from-brand-dark"] [class*="text-brand-gold"]{
+  color:#B4AD99 !important;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width:1100px){
+  .lab-nav{ display:none; }
+  .lab-burger{ display:flex; }
+}
+@media (max-width:880px){
+  .lab-foot-grid{ grid-template-columns:1fr 1fr; }
+  .lab-patent-chip{ display:none; }
+}
+@media (prefers-reduced-motion:reduce){
+  html{ scroll-behavior:auto; }
+}

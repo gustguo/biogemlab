@@ -24,18 +24,19 @@
     <meta name="twitter:title" content="Become a Memorial Diamond Partner | BioGem Lab">
     <meta name="twitter:description" content="White-label memorial diamond manufacturing. Full OEM/ODM supply.">
 
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💎%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Cpath d='M13 1 L23 9 L13 25 L3 9 Z' stroke='%23171409' stroke-width='1.6' fill='none'/%3E%3Cpath d='M3 9 H23 M13 1 L8.5 9 L13 25 M13 1 L17.5 9 L13 25' stroke='%23171409' stroke-width='1' fill='none'/%3E%3C/svg%3E">
 
     <script src="https://cdn.tailwindcss.com"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/lab.css">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Inter','sans-serif'], serif: ['Crimson Pro','serif'] },
-                    colors: { brand: { gold: '#C5A059', dark: '#0B0F17', slate: '#151B26', light: '#F7F8FA', accent: '#1A2744' }}
+                    fontFamily: { sans: ['"Instrument Sans"','-apple-system','"PingFang SC"','sans-serif'], serif: ['"Instrument Serif"','Georgia','serif'], mono: ['"Geist Mono"','Menlo','monospace'] },
+                    colors: { brand: { gold: '#837D6F', dark: '#14120B', slate: '#1C1910', light: '#F2EFE7', accent: '#1C1910' }}
                 }
             }
         }
@@ -110,71 +111,64 @@
 </script>
 </head>
 <body class="font-sans text-gray-600 antialiased">
+<div class="lab-gridlines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-brand-dark/90 backdrop-blur-xl border-b border-white/5" role="navigation" aria-label="Main navigation">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <a href="/" class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20">
-                        <i class="fas fa-atom text-brand-gold"></i>
-                    </div>
-                    <div>
-                        <span class="font-serif text-xl font-semibold text-white tracking-wide">BioGem Lab</span>
-                        <p class="text-[10px] text-brand-gold/60 tracking-[0.2em] uppercase">Memorial Diamond Laboratory</p>
-                    </div>
-                </a>
-                <div class="hidden lg:flex items-center gap-8">
-                    <a href="/" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Home</a>
-                    <a href="technology.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Technology</a>
-                    <a href="manufacturing.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Manufacturing</a>
-                    <a href="applications.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Applications</a>
-                    <a href="partnership.html" class="text-brand-gold text-sm font-medium">Partnership</a>
-                    <a href="laboratory.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">Laboratory</a>
-                    <a class="text-gray-300 text-sm font-medium hover:text-brand-gold transition" href="resources.html">Resources</a>
-                    <a class="text-gray-300 text-sm font-medium hover:text-brand-gold transition" href="glossary.html">Glossary</a>
-                    <a href="faq.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold transition">FAQ</a>
-                    <a href="contact.html" class="px-5 py-2.5 bg-brand-gold text-brand-dark text-sm font-semibold rounded-lg hover:bg-white transition">Contact</a>
-                </div>
-                <button class="lg:hidden text-white" onclick="toggleMobileMenu()" aria-label="Toggle menu">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
-            </div>
-            <div id="mobile-menu" class="hidden lg:hidden pb-6">
-                <div class="flex flex-col gap-4">
-                    <a href="/" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Home</a>
-                    <a href="technology.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Technology</a>
-                    <a href="manufacturing.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Manufacturing</a>
-                    <a href="applications.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Applications</a>
-                    <a href="partnership.html" class="text-brand-gold text-sm font-medium">Partnership</a>
-                    <a href="laboratory.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">Laboratory</a>
-                    <a class="text-gray-300 text-sm font-medium hover:text-brand-gold transition" href="resources.html">Resources</a>
-                    <a class="text-gray-300 text-sm font-medium hover:text-brand-gold transition" href="glossary.html">Glossary</a>
-                    <a href="faq.html" class="text-gray-300 text-sm font-medium hover:text-brand-gold">FAQ</a>
-                    <a href="contact.html" class="px-5 py-2.5 bg-brand-gold text-brand-dark text-sm font-semibold rounded-lg text-center">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <header class="lab-head" role="banner">
+  <a class="lab-brand" href="index.html">
+    <svg class="lab-brand-mark" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+      <path d="M13 1 L23 9 L13 25 L3 9 Z" stroke="currentColor" stroke-width="1.4" fill="none"/>
+      <path d="M3 9 H23 M13 1 L8.5 9 L13 25 M13 1 L17.5 9 L13 25" stroke="currentColor" stroke-width="1" fill="none"/>
+    </svg>
+    <span>
+      <span class="lab-brand-name">BioGem Lab</span>
+      <span class="lab-brand-sub">Memorial Diamond Laboratory</span>
+    </span>
+  </a>
+  <nav class="lab-nav" role="navigation" aria-label="Main navigation">
+    <a href="technology.html">Technology</a>
+    <a href="manufacturing.html">Manufacturing</a>
+    <a href="applications.html">Applications</a>
+    <a href="partnership.html" class="lab-active">Partnership</a>
+    <a href="laboratory.html">Laboratory</a>
+    <a href="resources.html">Resources</a>
+    <a href="glossary.html">Glossary</a>
+    <a href="blog/">Blog</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+  <div class="lab-head-right">
+    <a class="lab-head-cta" href="contact.html">Start Partnership</a>
+    <button class="lab-burger" id="labBurger" onclick="labToggleMenu()" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 5h16M2 10h16M2 15h16"/></svg>
+    </button>
+  </div>
+</header>
+<div class="lab-mobile-menu" id="labMobileMenu">
+  <a href="technology.html">Technology <span class="arr">→</span></a>
+  <a href="manufacturing.html">Manufacturing <span class="arr">→</span></a>
+  <a href="applications.html">Applications <span class="arr">→</span></a>
+  <a href="partnership.html">Partnership <span class="arr">→</span></a>
+  <a href="laboratory.html">Laboratory <span class="arr">→</span></a>
+  <a href="resources.html">Resources <span class="arr">→</span></a>
+  <a href="glossary.html">Glossary <span class="arr">→</span></a>
+  <a href="blog/">Blog <span class="arr">→</span></a>
+  <a href="faq.html">FAQ <span class="arr">→</span></a>
+</div>
 
     <!-- HERO — New background: hpht-pressurization-diamond-growth.jpg, no Chinese text -->
-    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-brand-dark overflow-hidden">
-        <div class="absolute inset-0 bg-[url('assets/images/lab/hpht-equipment-array-panorama.webp')] bg-cover bg-center opacity-80"></div>
-        <div class="absolute inset-0 bg-brand-dark/30"></div>
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-brand-dark overflow-hidden" data-hero-photo>
+        <div class="absolute inset-0 hero-photo" style="background-image:url('assets/images/manufacturing/hpht-press-fleet-panorama.jpg')"></div>
+        <div class="absolute inset-0 hero-veil"></div>
         <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
             <div class="max-w-3xl">
                 <p class="text-brand-gold/80 text-sm font-semibold tracking-[0.25em] uppercase mb-6">White-Label Memorial Diamond Manufacturing</p>
                 <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-6">
-                    White Label Memorial Diamonds<br>for Your Business.<br><span class="text-brand-gold">No Lab. No Inventory. No Risk.</span>
+                    White-Label Memorial Diamonds<br>for Your Business.
                 </h1>
                 <p class="text-gray-300 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl">
-                    BioGem Lab is a memorial diamond OEM partner for pet service brands, jewelers, and funeral homes. We manufacture lab-grown diamonds from pet hair under your brand — you sell, we produce and ship directly to your customer. Full white-label documentation, certificates, and packaging included. Start a memorial diamond OEM partnership with zero inventory investment.
+                    BioGem Lab is a memorial diamond OEM partner. We manufacture lab-grown diamonds from pet hair under your brand — you sell, we produce and ship directly to your customer. No lab. No inventory. No risk.
                 </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#how-it-works" class="px-8 py-4 bg-brand-gold text-brand-dark font-semibold rounded-xl hover:bg-white transition shadow-xl shadow-brand-gold/20 tracking-wide text-center">See How It Works</a>
-                    <a href="case-studies.html" class="px-8 py-4 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition tracking-wide text-center">View Case Studies</a>
-                </div>
-                <div class="mt-8 flex items-center gap-6 text-sm text-gray-400">
+                <div class="mt-10 flex items-center gap-6 text-sm text-gray-400">
                     <span class="flex items-center gap-2"><i class="fas fa-check-circle text-brand-gold/60"></i> ~60-day production</span>
                     <span class="flex items-center gap-2"><i class="fas fa-check-circle text-brand-gold/60"></i> Your brand, every touchpoint</span>
                     <span class="flex items-center gap-2"><i class="fas fa-check-circle text-brand-gold/60"></i> No minimum order</span>
@@ -184,37 +178,37 @@
     </section>
 
     <!-- WHY PARTNER — 3 hard-hitting advantages (was 6, now 3) -->
-    <section class="section-spacing bg-brand-slate relative molecule-pattern">
+    <section class="section-spacing bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-12 reveal">
                 <span class="text-brand-gold text-sm font-semibold tracking-[0.2em] uppercase">The Partner Advantage</span>
-                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-white mt-4 mb-4 leading-tight">What You Get — What You Don't</h2>
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-brand-dark mt-4 mb-4 leading-tight">What You Get — What You Don't</h2>
             </div>
             <div class="grid lg:grid-cols-3 gap-8 reveal">
-                <div class="glass-panel p-8 rounded-2xl border border-white/10">
+                <div class="bg-brand-light p-8 rounded-2xl border border-gray-100">
                     <div class="w-12 h-12 rounded-full bg-brand-gold/10 flex items-center justify-center mb-5"><i class="fas fa-tag text-brand-gold text-xl"></i></div>
-                    <h3 class="font-serif text-xl font-semibold text-white mb-3">Your Brand, Everywhere</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Certificates, packaging, documentation, and even the QR traceability app — all branded with your logo. Your customer never sees our name.</p>
+                    <h3 class="font-serif text-xl font-semibold text-brand-dark mb-3">Your Brand, Everywhere</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Certificates, packaging, documentation, and even the QR traceability app — all branded with your logo. Your customer never sees our name.</p>
                     <ul class="space-y-2 text-sm text-gray-500">
                         <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold/60 text-xs"></i> Branded gemological certs</li>
                         <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold/60 text-xs"></i> Custom packaging design</li>
                         <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold/60 text-xs"></i> White-label traceability app</li>
                     </ul>
                 </div>
-                <div class="glass-panel p-8 rounded-2xl border border-white/10">
+                <div class="bg-brand-light p-8 rounded-2xl border border-gray-100">
                     <div class="w-12 h-12 rounded-full bg-brand-gold/10 flex items-center justify-center mb-5"><i class="fas fa-box-open text-brand-gold text-xl"></i></div>
-                    <h3 class="font-serif text-xl font-semibold text-white mb-3">Zero Inventory, Zero Risk</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Manufacture-on-demand. You only pay when your customer places an order. No stock, no lab, no capex — just a reliable manufacturing backbone.</p>
+                    <h3 class="font-serif text-xl font-semibold text-brand-dark mb-3">Zero Inventory, Zero Risk</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Manufacture-on-demand. You only pay when your customer places an order. No stock, no lab, no capex — just a reliable manufacturing backbone.</p>
                     <ul class="space-y-2 text-sm text-gray-500">
                         <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold/60 text-xs"></i> No minimum order quantity</li>
                         <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold/60 text-xs"></i> Direct-to-customer shipping</li>
                         <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold/60 text-xs"></i> You never touch the product</li>
                     </ul>
                 </div>
-                <div class="glass-panel p-8 rounded-2xl border border-white/10">
+                <div class="bg-brand-light p-8 rounded-2xl border border-gray-100">
                     <div class="w-12 h-12 rounded-full bg-brand-gold/10 flex items-center justify-center mb-5"><i class="fas fa-rocket text-brand-gold text-xl"></i></div>
-                    <h3 class="font-serif text-xl font-semibold text-white mb-3">~60-Day Production</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">One of the fastest memorial diamond cycles in the industry. Your customers wait less, you close faster, reviews come sooner.</p>
+                    <h3 class="font-serif text-xl font-semibold text-brand-dark mb-3">~60-Day Production</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">One of the fastest memorial diamond cycles in the industry. Your customers wait less, you close faster, reviews come sooner.</p>
                     <ul class="space-y-2 text-sm text-gray-500">
                         <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold/60 text-xs"></i> HPHT synthesis + precision cutting</li>
                         <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold/60 text-xs"></i> Real-time order tracking</li>
@@ -868,7 +862,7 @@
                 Why we say no to ash — and what we do instead.
             </h2>
             <p class="text-gray-400 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-                Cremation destroys the carbon. The math is simple: you need ~5 kg of ash to extract enough carbon for one diamond. A human body produces 2–3 kg. We are the only manufacturer honest enough to say this out loud.
+                Cremation destroys the carbon. The math is simple: a human body produces 2–3 kg of ash holding ~0.3% carbon — 6–9 grams locked in bone-mineral carbonate, mostly derived from the furnace fuel. We are the only manufacturer honest enough to say this out loud.
             </p>
             <a href="blog/how-much-ash-for-memorial-diamond.html" class="inline-flex items-center gap-2 px-6 py-3 border border-brand-gold/30 text-brand-gold rounded-xl hover:bg-brand-gold/10 transition">
                 Read the full analysis <i class="fas fa-arrow-right text-sm"></i>
@@ -990,61 +984,57 @@
     </script>
 
     <!-- Footer -->
-    <footer class="bg-brand-dark border-t border-white/5 pt-16 pb-8">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-10 mb-12">
-                <div>
-                    <div class="flex items-center gap-3 mb-5">
-                        <div class="w-9 h-9 rounded-lg bg-brand-gold/10 flex items-center justify-center border border-brand-gold/20">
-                            <i class="fas fa-atom text-brand-gold text-sm"></i>
-                        </div>
-                        <div>
-                            <span class="font-serif text-lg font-semibold text-white tracking-wide">BioGem Lab</span>
-                            <p class="text-[10px] text-brand-gold/60 tracking-[0.2em] uppercase">Memorial Diamond Laboratory</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-500 text-sm leading-relaxed">
-                        White-label memorial diamond production for pet services and memorial businesses. Patent-backed carbon extraction. ~60-day turnaround. Global partner network.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Explore</h4>
-                    <ul class="space-y-2.5 text-sm">
-                        <li><a href="technology.html" class="text-gray-400 hover:text-brand-gold transition">Technology</a></li>
-                        <li><a href="manufacturing.html" class="text-gray-400 hover:text-brand-gold transition">Manufacturing</a></li>
-                        <li><a href="applications.html" class="text-gray-400 hover:text-brand-gold transition">Case Studies</a></li>
-                        <li><a href="partnership.html" class="text-gray-400 hover:text-brand-gold transition">Partnership</a></li>
-                        <li><a href="resources.html" class="text-gray-400 hover:text-brand-gold transition">Resources</a></li>
-                        <li><a href="glossary.html" class="text-gray-400 hover:text-brand-gold transition">Glossary</a></li>
-                        <li><a href="blog/" class="text-gray-400 hover:text-brand-gold transition">Blog</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
-                    <ul class="space-y-2.5 text-sm">
-                        <li><a href="mailto:partners@biogemlab.com" class="text-gray-400 hover:text-brand-gold transition">partners@biogemlab.com</a></li>
-                        <li><a href="https://wa.me/13104373166?text=Hello%20BioGem%20Lab%2C%20I%20am%20interested%20in%20your%20memorial%20diamond%20manufacturing%20services%20and%20would%20like%20to%20discuss%20partnership%20opportunities." target="_blank" class="text-gray-400 hover:text-brand-gold transition">WhatsApp</a></li>
-                        <li><a href="contact.html" class="text-gray-400 hover:text-brand-gold transition">Contact Form</a></li>
-                    </ul>
-                    <p class="mt-4 text-gray-500 text-sm inline-flex items-center gap-2">
-                        <i class="fas fa-map-marker-alt text-brand-gold/40 text-xs"></i> Luoyang, Henan, China
-                    </p>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Legal</h4>
-                    <ul class="space-y-2.5 text-sm">
-                        <li><a href="about.html" class="text-gray-400 hover:text-brand-gold transition">About</a></li>
-                        <li><a href="privacy.html" class="text-gray-400 hover:text-brand-gold transition">Privacy Policy</a></li>
-                        <li><a href="terms.html" class="text-gray-400 hover:text-brand-gold transition">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-white/5 pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
-                <p class="text-gray-600 text-xs">BioGem Lab. Laboratory-grown diamond manufacturing. B2B white-label supply only.</p>
-                <p class="text-gray-600 text-xs"><a href="patent-viewer.html" target="_blank" rel="noopener noreferrer" class="hover:text-brand-gold transition underline underline-offset-2">Patent No. ZL 201010565778.9</a> · Since 2012.</p>
-            </div>
-        </div>
-    </footer>
+    <footer class="lab-foot">
+  <div class="lab-foot-grid">
+    <div class="lab-foot-brand">
+      <a class="lab-brand" href="index.html">
+        <svg class="lab-brand-mark" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+      <path d="M13 1 L23 9 L13 25 L3 9 Z" stroke="currentColor" stroke-width="1.4" fill="none"/>
+      <path d="M3 9 H23 M13 1 L8.5 9 L13 25 M13 1 L17.5 9 L13 25" stroke="currentColor" stroke-width="1" fill="none"/>
+    </svg>
+        <span>
+          <span class="lab-brand-name">BioGem Lab</span>
+          <span class="lab-brand-sub">Memorial Diamond Laboratory</span>
+        </span>
+      </a>
+      <p>White-label memorial diamond production for pet services and memorial businesses. Patent-backed carbon extraction. ~60-day turnaround. Global partner network.</p>
+    </div>
+    <div>
+      <h5>Explore</h5>
+      <a href="technology.html">Technology</a>
+      <a href="manufacturing.html">Manufacturing</a>
+      <a href="applications.html">Case studies</a>
+      <a href="partnership.html">Partnership</a>
+      <a href="resources.html">Resources</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="blog/">Blog</a>
+    </div>
+    <div>
+      <h5>Knowledge hub</h5>
+      <a href="memorial-diamond-b2b-guide.html">B2B guide</a>
+      <a href="faq.html">FAQ</a>
+      <a href="partnership-faq.html">Partnership FAQ</a>
+      <a href="technology-patents.html">Patents</a>
+      <a href="laboratory.html">Laboratory</a>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <a href="mailto:partners@biogemlab.com">partners@biogemlab.com</a>
+      <a href="https://wa.me/13104373166?text=Hello%20BioGem%20Lab%2C%20I%20am%20interested%20in%20your%20memorial%20diamond%20manufacturing%20services%20and%20would%20like%20to%20discuss%20partnership%20opportunities." target="_blank" rel="noopener">WhatsApp</a>
+      <a href="contact.html">Contact form</a>
+    </div>
+    <div>
+      <h5>Legal</h5>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of service</a>
+    </div>
+  </div>
+  <div class="lab-foot-base">
+    <span>BIOGEM LAB · LABORATORY-GROWN DIAMOND MANUFACTURING · B2B WHITE-LABEL SUPPLY ONLY</span>
+    <span><a href="patent-viewer.html" target="_blank" rel="noopener noreferrer">PATENT NO. ZL 201010565778.9</a> · SINCE 2012</span>
+  </div>
+</footer>
 
     <script src="assets/js/main.js"></script>
     <script type="application/ld+json">
