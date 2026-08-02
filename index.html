@@ -12,44 +12,82 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "BioGem Lab",
-  "description": "Carbon engineering laboratory manufacturing white-label memorial diamonds from biological carbon via HPHT synthesis.",
-  "url": "https://www.biogemlab.com/",
-  "alternateName": "生命宝石实验室",
-  "logo": "https://www.biogemlab.com/assets/images/redesign/diamond-macro.jpg",
-  "foundingDate": "2012",
-  "email": "partners@biogemlab.com",
-  "sameAs": ["https://wa.me/13104373166"],
-  "address": { "@type": "PostalAddress", "addressLocality": "Luoyang", "addressRegion": "Henan", "addressCountry": "CN" },
-  "knowsAbout": ["memorial diamonds", "HPHT synthesis", "bio-carbon purification", "white-label diamond manufacturing", "CCIC traceability"],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "sales",
-    "email": "partners@biogemlab.com",
-    "telephone": "+1-310-437-3166",
-    "availableLanguage": ["en"]
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "BioGem Lab",
-  "url": "https://www.biogemlab.com/"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "BioGem Lab — Memorial Diamond Manufacturer · B2B OEM White-Label",
-  "url": "https://www.biogemlab.com/",
-  "description": "White-label memorial diamond manufacturing from biological carbon. Patent-backed HPHT synthesis, CCIC national traceability, ~60-day turnaround, OEM supply to 14 global markets.",
-  "isPartOf": { "@type": "WebSite", "name": "BioGem Lab", "url": "https://www.biogemlab.com/" },
-  "about": { "@type": "Organization", "name": "BioGem Lab" },
-  "inLanguage": "en"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.biogemlab.com/#organization",
+      "name": "BioGem Lab",
+      "alternateName": "生命宝石实验室",
+      "url": "https://www.biogemlab.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.biogemlab.com/assets/images/redesign/diamond-macro.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "description": "Carbon engineering laboratory manufacturing white-label memorial diamonds from biological carbon via HPHT synthesis. Patent-backed carbon extraction since 2012, CCIC national traceability, ~60-day turnaround.",
+      "email": "partners@biogemlab.com",
+      "foundingDate": "2012",
+      "address": { "@type": "PostalAddress", "addressLocality": "Luoyang", "addressRegion": "Henan", "addressCountry": "CN" },
+      "areaServed": { "@type": "Place", "name": "Global" },
+      "knowsAbout": [
+        "memorial diamonds",
+        "HPHT synthesis",
+        "bio-carbon purification",
+        "white-label diamond manufacturing",
+        "CCIC traceability"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Partnership Inquiries",
+        "email": "partners@biogemlab.com",
+        "availableLanguage": ["en"]
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Memorial Diamond Manufacturing Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Memorial Diamond Manufacturing",
+              "description": "HPHT memorial diamond production from biological carbon sources (hair, fur, nails, botanical material)",
+              "material": "Carbon",
+              "productionDate": "60 days",
+              "offers": {
+                "@type": "AggregateOffer",
+                "lowPrice": "1000",
+                "highPrice": "8000",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "offerCount": "4"
+              }
+            }
+          }
+        ]
+      },
+      "sameAs": ["https://wa.me/13104373166"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.biogemlab.com/#website",
+      "url": "https://www.biogemlab.com/",
+      "name": "BioGem Lab",
+      "publisher": { "@id": "https://www.biogemlab.com/#organization" },
+      "inLanguage": ["en", "zh"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.biogemlab.com/#webpage",
+      "url": "https://www.biogemlab.com/",
+      "name": "BioGem Lab — Memorial Diamond Manufacturer · B2B OEM White-Label",
+      "isPartOf": { "@id": "https://www.biogemlab.com/#website" },
+      "about": { "@id": "https://www.biogemlab.com/#organization" },
+      "description": "White-label memorial diamond manufacturing from biological carbon. Patent-backed HPHT synthesis, CCIC national traceability, ~60-day turnaround, OEM supply to 14 global markets.",
+      "inLanguage": "en"
+    }
+  ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
