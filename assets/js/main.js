@@ -31,6 +31,23 @@ function toggleMobileMenu() {
     }
 }
 
+// Redesign header mobile menu (lab.css chrome)
+function labToggleMenu() {
+    const menu = document.getElementById('labMobileMenu');
+    const btn = document.getElementById('labBurger');
+    if (menu) {
+        const open = menu.classList.toggle('open');
+        if (btn) btn.setAttribute('aria-expanded', String(open));
+    }
+}
+document.addEventListener('DOMContentLoaded', () => {
+    const menu = document.getElementById('labMobileMenu');
+    if (menu) {
+        menu.querySelectorAll('a').forEach(a =>
+            a.addEventListener('click', () => menu.classList.remove('open')));
+    }
+});
+
 // Form validation helper
 function validateEmail(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
