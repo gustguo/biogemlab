@@ -80,8 +80,67 @@ Cremation temperatures (760–980 °C) fully oxidize carbon to CO₂. What remai
 - /faq.html — Frequently asked questions
 - /contact.html — Inquiry form, contact details, WhatsApp
 - /privacy.html / /terms.html — Legal
-- /blog/ — Technical and industry articles (43 posts)
+- /blog/ — Technical and industry articles (42 posts)
 - /blog/author-lilihua.html — Author page (Chief Scientist / Patent Inventor)
+
+## Full Content Index
+
+### Case studies
+
+- /peony-diamond.html — Peony Diamond Case Study
+- /moutai-diamond.html — Moutai Diamond Case Study
+- /chong-zheng-diamond.html — Chong Zheng Diamond Case Study
+- /camel-wool-diamond.html — Camel Wool Diamond Case Study
+- /antique-camphor-diamond.html — Antique Camphor Diamond Case Study
+- /baby-hair-diamond.html — Baby Hair Diamond Case Study
+- /rongjiang-banyan-diamond.html — Rongjiang Banyan Diamond Case Study
+- /plant-fiber-diamond.html — Plant Fiber Diamond Case Study
+- /hakka-ancestral-root-diamond.html — Hakka Ancestral Root Diamond Case Study
+
+### Blog articles (42)
+
+- /blog/bio-carbon-memorial-diamonds-science.html — Bio-Carbon Memorial Diamonds: The Science of Life to Light
+- /blog/biological-carbon-extraction-hair-to-graphite.html — Hair to Graphite: How Biological Carbon Extraction Works
+- /blog/carbon-extraction-yield-hair-pet-fur-botanical.html — Carbon Extraction Yield: Human Hair vs Pet Fur vs Botanical
+- /blog/carbon-purity-requirements-memorial-diamond-synthesis.html — Carbon Purity Requirements for Memorial Diamond Synthesis
+- /blog/carbon-source-purity-diamond-quality.html — Carbon Purity &amp; Memorial Diamond Quality
+- /blog/choosing-memorial-diamond-supplier.html — Choosing a Memorial Diamond Supplier: B2B Buyer Guide
+- /blog/cross-selling-memorial-diamonds-funeral-services.html — Memorial Diamond Cross-Selling: New Revenue for Funeral Homes
+- /blog/crystal-lattice-stability-extreme-pressure.html — Diamond Lattice Stability at 5–6 GPa in HPHT Growth
+- /blog/cutting-proportions-memorial-diamonds-brilliance.html — Cutting Proportions for Memorial Diamonds: Brilliance
+- /blog/diamond-clarity-grading-memorial-diamonds-inclusion-types.html — Memorial Diamond Clarity: Inclusion Types and Grading Guide
+- /blog/diamond-manufacturing-science-materials-engineering.html — Diamond Manufacturing Science: A Materials Engineering Guide
+- /blog/diamond-seed-crystal-selection-hpht-memorial-diamonds.html — Diamond Seed Crystal Selection for HPHT Memorial Diamonds
+- /blog/global-memorial-diamond-supply-chains.html — Memorial Diamond Supply Chain: From Ashes to Global Delivery
+- /blog/graphitization-carbon-structure-memorial-diamonds.html — Graphitization in Memorial Diamond Manufacturing
+- /blog/hair-to-diamond-process.html — From Hair to Memorial Diamond: The Complete Process
+- /blog/how-carbon-becomes-diamond.html — How Carbon Becomes a Memorial Diamond
+- /blog/how-long-does-memorial-diamond-last.html — Do Memorial Diamonds Last Forever? Durability Facts
+- /blog/how-much-ash-for-memorial-diamond.html — Why Ashes Cannot Become Memorial Diamonds: The Chemistry
+- /blog/hpht-synthesis-temperature-pressure-optimization.html — HPHT Diamond Growth: 5.5 GPa, 1,450°C, 20–25 Day Growth Cycle [Parameters Guide]
+- /blog/hpht-vs-cvd-memorial-diamonds.html — HPHT vs CVD: Memorial Diamond Manufacturing Methods Compared
+- /blog/international-distribution-support-memorial-diamond-partners.html — Memorial Diamond Distribution Support for Global Partners
+- /blog/lab-grown-diamond-manufacturing-process.html — How Lab-Grown Diamonds Are Made: The Manufacturing Process
+- /blog/memorial-diamond-color-science-nitrogen-boron-lattice-defects.html — Memorial Diamond Color Science: Nitrogen, Boron &amp; Lattice Defects
+- /blog/memorial-diamond-cost-breakdown.html — What Does a Memorial Diamond Cost? Full Price Breakdown
+- /blog/memorial-diamond-industry-trends-2026-market-analysis.html — 2026 Memorial Diamond Market: Trends, Growth and Outlook
+- /blog/memorial-diamond-marketing-messaging-pet-owners.html — Marketing Pet Memorial Diamonds: Messages That Resonate
+- /blog/memorial-diamond-oem-partnerships-cross-border-deals.html — Memorial Diamond OEM Partnerships: What Three Cross-Border Deals Taught Us
+- /blog/memorial-diamond-production-cycle.html — Memorial Diamond Production Cycle: 60 Days Explained
+- /blog/memorial-diamond-production-timeline.html — Production Timeline
+- /blog/memorial-diamond-returns-remakes-partner-policies.html — Memorial Diamond Returns and Remakes: Partner Policies
+- /blog/memorial-diamond-sales-transparency-strategies.html — Transparent Memorial Diamond Sales: Strategies That Build Trust
+- /blog/memorial-diamond-size-guide-carat-weight.html — Memorial Diamond Carat Sizes: How Much Ash or Hair You Need
+- /blog/memorial-diamond-wholesale-pricing-margin-guide.html — Memorial Diamond Wholesale Pricing and Margins: A B2B Guide
+- /blog/metal-catalyst-solvents-hpht-ni-mn-co-alloy-performance.html — Ni-Mn-Co Catalyst Solvents for HPHT Diamond Growth
+- /blog/oem-memorial-diamond-manufacturing.html — OEM Memorial Diamond Manufacturing for B2B Partners
+- /blog/pet-cremation-services-evaluate-memorial-diamond-suppliers-guide.html — How Pet Cremation Services Evaluate Memorial Diamond Suppliers: A 2026 Buyer's Guide
+- /blog/pet-cremation-services-revenue-memorial-diamonds.html — Pet Cremation Revenue: Memorial Diamonds
+- /blog/pet-memorial-diamond-buying-guide.html — Buying a Pet Memorial Diamond: Costs, Process and Red Flags
+- /blog/sustainable-diamond-manufacturing-environmental-impact.html — Sustainable Diamond Manufacturing: Environmental Impact
+- /blog/synthetic-diamond-engineering-doping-color-control.html — Diamond Color Engineering: Doping and Color Control in HPHT
+- /blog/what-is-hpht-diamond-growth.html — HPHT Diamond Growth Explained: Process, Time and Cost
+- /blog/white-label-memorial-diamonds-guide.html — White-Label Memorial Diamonds
 
 ## One-Line Definition
 
