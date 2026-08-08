@@ -119,6 +119,7 @@
   --ink:        #171409;
   --ink-soft:   #4B463A;
   --graphite:   #837D6F;
+  --graphite-text: #6E6858;  /* WCAG AA on --paper: 4.83:1 — informational small labels */
   --line:       rgba(23,20,9,.16);
   --line-soft:  rgba(23,20,9,.08);
   --signal:     #1F51FF;
@@ -167,7 +168,7 @@ main{ position:relative; z-index:1; }
 .kicker{
   font-family:var(--mono);
   font-size:11px; letter-spacing:.14em; text-transform:uppercase;
-  color:var(--graphite);
+  color:var(--graphite-text);
   display:flex; align-items:center; gap:12px;
 }
 .kicker::before{ content:""; width:34px; height:1px; background:var(--ink); }
@@ -187,7 +188,7 @@ main{ position:relative; z-index:1; }
 .sec-title em{ font-style:italic; }
 .sec-note{
   font-family:var(--mono); font-size:12px; line-height:1.7;
-  color:var(--graphite); max-width:300px; text-align:right;
+  color:var(--graphite-text); max-width:300px; text-align:right;
 }
 section{ position:relative; padding:clamp(72px,9vw,140px) var(--gutter); }
 .sect-tick{ position:absolute; font-family:var(--mono); font-size:13px; color:var(--graphite); user-select:none; }
@@ -212,7 +213,7 @@ header{
 .brand-name{ font-weight:700; font-size:15px; letter-spacing:.01em; }
 .brand-sub{
   font-family:var(--mono); font-size:9px; letter-spacing:.18em;
-  text-transform:uppercase; color:var(--graphite); margin-top:1px;
+  text-transform:uppercase; color:var(--graphite-text); margin-top:1px;
 }
 nav{ display:flex; align-items:stretch; }
 nav a{
@@ -226,7 +227,7 @@ nav a:hover{ color:var(--ink); background:var(--paper-hi); }
 .patent-chip{
   display:flex; align-items:center; padding:0 18px;
   font-family:var(--mono); font-size:10.5px; letter-spacing:.06em;
-  color:var(--graphite); border-left:1px solid var(--line);
+  color:var(--graphite-text); border-left:1px solid var(--line);
 }
 .patent-chip b{ color:var(--ink); font-weight:500; margin-left:6px; }
 .head-cta{
@@ -297,7 +298,7 @@ nav a:hover{ color:var(--ink); background:var(--paper-hi); }
 .btn:hover .arr{ transform:translateX(4px); }
 .hero-meta{
   margin-top:56px; display:flex; gap:28px; flex-wrap:wrap;
-  font-family:var(--mono); font-size:11px; letter-spacing:.06em; color:var(--graphite);
+  font-family:var(--mono); font-size:11px; letter-spacing:.06em; color:var(--graphite-text);
 }
 .hero-meta span b{ color:var(--ink); font-weight:500; }
 
@@ -312,7 +313,7 @@ nav a:hover{ color:var(--ink); background:var(--paper-hi); }
   display:flex; justify-content:space-between; align-items:center;
   padding:14px 18px; border-bottom:1px solid var(--line);
   font-family:var(--mono); font-size:10.5px; letter-spacing:.12em;
-  text-transform:uppercase; color:var(--graphite);
+  text-transform:uppercase; color:var(--graphite-text);
 }
 .draw-head .live{ display:flex; align-items:center; gap:8px; color:var(--ink-soft); }
 .live-dot{
@@ -330,7 +331,7 @@ nav a:hover{ color:var(--ink); background:var(--paper-hi); }
   font-family:var(--mono);
 }
 .draw-foot div:last-child{ border-right:0; }
-.draw-foot small{ display:block; font-size:9px; letter-spacing:.14em; color:var(--graphite); text-transform:uppercase; }
+.draw-foot small{ display:block; font-size:9px; letter-spacing:.14em; color:var(--graphite-text); text-transform:uppercase; }
 .draw-foot b{ font-size:13px; font-weight:500; color:var(--ink); font-variant-numeric:tabular-nums; }
 .pause-btn{
   font-family:var(--mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase;
@@ -358,7 +359,7 @@ nav a:hover{ color:var(--ink); background:var(--paper-hi); }
 .ledger span{
   display:block; margin-top:6px;
   font-family:var(--mono); font-size:9.5px; letter-spacing:.14em;
-  text-transform:uppercase; color:var(--graphite);
+  text-transform:uppercase; color:var(--graphite-text);
 }
 
 /* ---------- archive rows (industries / cases / regions) ---------- */
@@ -380,13 +381,13 @@ nav a:hover{ color:var(--ink); background:var(--paper-hi); }
 }
 .row:hover{ background:var(--paper-hi); padding-left:18px; }
 .row:hover::before{ transform:scale(1); }
-.row .idx{ font-family:var(--mono); font-size:11px; color:var(--graphite); }
+.row .idx{ font-family:var(--mono); font-size:11px; color:var(--graphite-text); }
 .row .name{ font-weight:600; font-size:clamp(16px,1.4vw,20px); letter-spacing:-.01em; display:flex; align-items:center; gap:12px; }
 .row .thumb{ width:40px; height:40px; border-radius:8px; object-fit:cover; flex:none; border:1px solid var(--line-soft); }
 .row .desc{ color:var(--ink-soft); font-size:14.5px; max-width:56ch; }
 .row .fit{
   font-family:var(--mono); font-size:11px; line-height:1.6;
-  color:var(--graphite); text-align:right;
+  color:var(--graphite-text); text-align:right;
 }
 .row .fit b{ color:var(--ink); font-weight:500; }
 .row .go{
@@ -429,7 +430,7 @@ nav a:hover{ color:var(--ink); background:var(--paper-hi); }
 .stage:hover::after{ background:var(--signal); border-color:var(--signal); }
 .stage .no{ font-family:var(--mono); font-size:11px; color:var(--dark-soft); }
 .stage h3,.stage h4{ font-family:var(--serif); font-weight:400; font-size:19px; margin:10px 0 6px; }
-.stage p{ font-family:var(--mono); font-size:10.5px; line-height:1.6; color:var(--dark-soft); }
+.stage p{ font-family:var(--sans); font-size:13px; line-height:1.6; color:var(--dark-soft); }
 .fig{
   border:1px solid var(--dark-line);
 }
@@ -452,16 +453,16 @@ nav a:hover{ color:var(--ink); background:var(--paper-hi); }
   display:grid; grid-template-columns:1fr auto; align-items:baseline; gap:18px;
   padding:22px 0; border-bottom:1px solid var(--line-soft);
 }
-.spec .k{ font-family:var(--mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--graphite); }
+.spec .k{ font-family:var(--mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--graphite-text); }
 .spec .v{
   font-family:var(--mono); font-weight:500;
   font-size:clamp(26px,2.6vw,40px); letter-spacing:-.03em;
   font-variant-numeric:tabular-nums;
 }
-.spec .v i{ font-style:normal; font-size:.5em; color:var(--graphite); letter-spacing:0; }
+.spec .v i{ font-style:normal; font-size:.5em; color:var(--graphite-text); letter-spacing:0; }
 .spec .sub{ grid-column:1/-1; font-size:13px; color:var(--ink-soft); margin-top:-10px; }
 .fig.light{ border-color:var(--line); }
-.fig.light figcaption{ border-top-color:var(--line); color:var(--graphite); }
+.fig.light figcaption{ border-top-color:var(--line); color:var(--graphite-text); }
 .fig.light figcaption b{ color:var(--ink); }
 
 /* honesty manifesto */
@@ -487,6 +488,7 @@ nav a:hover{ color:var(--ink); background:var(--paper-hi); }
   margin-top:clamp(32px,4vw,52px); max-width:62ch;
   color:var(--dark-soft); font-size:15.5px; line-height:1.7;
 }
+.honesty .after + .after{ margin-top:16px; }
 .honesty .after b{ color:var(--dark-text); font-weight:500; }
 .txt-link{
   font-family:var(--mono); font-size:11.5px; letter-spacing:.1em; text-transform:uppercase;
@@ -507,7 +509,7 @@ nav a:hover{ color:var(--ink); background:var(--paper-hi); }
   letter-spacing:.16em; text-transform:uppercase;
   border:1px solid var(--ink); padding:5px 10px; margin-bottom:20px;
 }
-.cust-tag.opt{ border-color:var(--graphite); color:var(--graphite); }
+.cust-tag.opt{ border-color:var(--graphite-text); color:var(--graphite-text); }
 .cust-col h3{ font-family:var(--serif); font-weight:400; font-size:clamp(24px,2.2vw,32px); margin-bottom:14px; }
 .cust-col > p{ color:var(--ink-soft); font-size:14.5px; max-width:48ch; margin-bottom:24px; }
 .cust-list li{
@@ -529,7 +531,7 @@ nav a:hover{ color:var(--ink); background:var(--paper-hi); }
 }
 .spec-table .k{ font-family:var(--mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--graphite); }
 .spec-table .v{ font-family:var(--mono); font-size:14px; font-weight:500; text-align:right; font-variant-numeric:tabular-nums; }
-.spec-table .v i{ font-style:normal; color:var(--signal); }
+.spec-table .v i{ font-style:normal; color:#5B7CFF;  /* WCAG AA on --dark: 5.15:1 */ }
 
 /* regions */
 .regions{ border-top:1px solid var(--dark-line); }
@@ -596,7 +598,7 @@ footer{
 .infra div{ padding:26px 22px; border-right:1px solid var(--dark-line-soft); }
 .infra div:last-child{ border-right:0; }
 .infra h3,.infra h4{ font-family:var(--serif); font-weight:400; font-size:19px; margin-bottom:10px; }
-.infra p{ font-family:var(--mono); font-size:11px; line-height:1.7; color:var(--dark-soft); }
+.infra p{ font-family:var(--sans); font-size:13px; line-height:1.6; color:var(--dark-soft); }
 .capacity-note{
   margin-top:24px; font-family:var(--mono); font-size:12.5px; color:var(--dark-soft);
   display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;
@@ -621,7 +623,7 @@ footer{
 .faq-item .q{ font-family:var(--serif); font-weight:400; font-size:clamp(19px,1.9vw,25px); line-height:1.25; }
 .faq-item .q span{
   display:block; font-family:var(--mono); font-size:10px; letter-spacing:.16em;
-  color:var(--graphite); margin-bottom:12px;
+  color:var(--graphite-text); margin-bottom:12px;
 }
 .faq-item .a{ color:var(--ink-soft); font-size:15px; line-height:1.8; max-width:66ch; }
 .faq-item .a b{ color:var(--ink); font-weight:600; }
@@ -657,7 +659,7 @@ footer{
   padding:20px 20px 24px;
 }
 .trust-cell .no{
-  font-family:var(--mono); font-size:11px; color:var(--graphite);
+  font-family:var(--mono); font-size:11px; color:var(--graphite-text);
   border:1px solid var(--line); width:26px; height:26px; flex:none;
   display:flex; align-items:center; justify-content:center;
 }
@@ -778,7 +780,7 @@ footer{
     <div class="hero-meta rv">
       <span>TURNAROUND <b>~60 DAYS</b></span>
       <span>COLOR <b>E–H ONLY</b></span>
-      <span>MOQ <b>ON PROPOSAL</b></span>
+      <span>MOQ <b>NONE</b></span>
     </div>
   </div>
 
@@ -933,7 +935,7 @@ footer{
       </div>
       <div class="spec">
         <span class="k">Carbon R&amp;D</span><span class="v">2003 <i>since</i></span>
-        <span class="sub">National invention patent granted 2012 — <a href="patent-viewer.html" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-underline-offset:2px">ZL 201010565778.9</a>.</span>
+        <span class="sub">Two decades of carbon research; national invention patent granted 2012.</span>
       </div>
     </div>
     <figure class="fig light rv">
@@ -941,8 +943,9 @@ footer{
       <figcaption><span><b>FIG. 03</b> — SOURCE MATERIAL, PRE-PURIFICATION</span><span>HAIR · FUR · FLOWERS · PLANTS</span></figcaption>
     </figure>
   </div>
-  <p class="depth rv"><b>We do not make jewelry. We make diamonds</b> — from carbon in hair, pet fur, flowers, any organic material. Our 2012 invention patent (<b><a href="patent-viewer.html" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-underline-offset:2px">ZL 201010565778.9</a></b>) covers the full bio-carbon-to-diamond pipeline, and every batch is purified to 99.95%+ carbon — verified by spectroscopy, not claimed on a datasheet. The result: a gem-quality lab-grown diamond, chemically and optically identical to mined stone.</p>
-  <p class="depth rv">Inside our HPHT presses, that carbon is held at <b>5.5 GPa and 1,450 °C</b> for 18–25 days while the crystal grows around a seed. Stability across the entire growth window is what determines clarity.</p>
+  <p class="depth rv"><b>We do not make jewelry. We make diamonds</b> — from carbon in hair, pet fur, flowers, any organic material. Our 2012 invention patent (<b><a href="patent-viewer.html" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-underline-offset:2px">ZL 201010565778.9</a></b>) covers the full bio-carbon-to-diamond pipeline, and every batch is purified to 99.95%+ carbon — verified by spectroscopy, not claimed on a datasheet.</p>
+  <p class="depth rv">The result: a gem-quality lab-grown diamond, chemically and optically identical to mined stone.</p>
+  <p class="depth rv">Inside our HPHT presses, that carbon crystallizes around a seed over 18–25 days. Stability across the entire growth window is what determines clarity.</p>
   <div class="res-links rv">
     <a href="technology.html">Full technology brief →</a>
   </div>
@@ -962,7 +965,8 @@ footer{
     <span class="eq-op">→</span>
     <div class="eq-box"><small>Verdict</small><b class="eq-verdict">THE MATH FAILS</b></div>
   </div>
-  <p class="after rv">Cremation destroys the carbon. The 6–9 grams that remain are carbonate locked inside bone mineral — not extractable feedstock — and 67–91% of even that comes from the cremation furnace's fuel, not the body (Cambridge University, 2017). Any manufacturer promising a diamond from ashes alone is selling sentiment, not chemistry. We extract carbon from <b>hair, fur, flowers and plants</b> — materials where the carbon is still there to be purified. We are the only manufacturer honest enough to say this out loud, and we publish the analysis.</p>
+  <p class="after rv">Cremation destroys the carbon. The 6–9 grams that remain are carbonate locked inside bone mineral — not extractable feedstock — and 67–91% of even that comes from the cremation furnace's fuel, not the body (Cambridge University, 2017).</p>
+  <p class="after rv">Any manufacturer promising a diamond from ashes alone is selling sentiment, not chemistry. We extract carbon from <b>hair, fur, flowers and plants</b> — materials where the carbon is still there to be purified. We are the only manufacturer honest enough to say this out loud, and we publish the analysis.</p>
   <p class="rv" style="margin-top:30px"><a class="txt-link" href="blog/how-much-ash-for-memorial-diamond.html">Read the full analysis →</a></p>
 </section>
 
@@ -998,7 +1002,8 @@ footer{
       </ul>
     </div>
   </div>
-  <p class="depth rv"><b>What CCIC verification actually means:</b> China Certification &amp; Inspection Group is a national-level inspection body, independent from any manufacturer — including us. Each certificate carries a unique QR code that resolves to the stone's chain-of-custody timeline: intake date, purification gate result, growth chamber, grading record. Your clients can verify their diamond's provenance themselves, in seconds, without contacting you or us. For partners selling into markets where memorial diamond provenance is contested, that independence is the difference between a claim and evidence.</p>
+  <p class="depth rv"><b>What CCIC verification actually means:</b> China Certification &amp; Inspection Group is a national-level inspection body, independent from any manufacturer — including us. Each certificate carries a unique QR code that resolves to the stone's chain-of-custody timeline: intake date, purification gate result, growth chamber, grading record.</p>
+  <p class="depth rv">Your clients can verify their diamond's provenance themselves, in seconds, without contacting you or us. For partners selling into markets where memorial diamond provenance is contested, that independence is the difference between a claim and evidence.</p>
   <div class="res-links rv">
     <a href="laboratory.html">Inside the laboratory →</a>
   </div>
@@ -1258,7 +1263,7 @@ footer{
     </div>
     <div class="faq-item rv">
       <h3 class="q"><span>Q.03</span>What certification comes with each diamond?</h3>
-      <p class="a"><b>Every stone ships with a CCIC national traceability certificate as standard</b> — independently issued by China Certification &amp; Inspection Group, with a unique QR code resolving to the full chain-of-custody timeline. An ILDA provenance upgrade is available for partners who need cross-border, mutually recognized dual attestation.</p>
+      <p class="a"><b>Every stone ships with a CCIC national traceability certificate as standard</b> — QR-verifiable provenance your clients can check themselves, in seconds. An ILDA provenance upgrade is available for partners who need cross-border dual attestation.</p>
     </div>
     <div class="faq-item rv">
       <h3 class="q"><span>Q.04</span>What sizes and grades do you manufacture?</h3>
@@ -1270,7 +1275,7 @@ footer{
     </div>
     <div class="faq-item rv">
       <h3 class="q"><span>Q.06</span>Is there a minimum order or capacity limit?</h3>
-      <p class="a"><b>Current capacity is 500 ct per month</b> across multi-chamber HPHT systems with a confirmed scaling roadmap. Minimum order quantities and volume timelines are structured per partner and detailed in your custom proposal — regional distributors can also negotiate exclusive territory.</p>
+      <p class="a"><b>Current capacity is 500 ct per month</b> across multi-chamber HPHT systems with a confirmed scaling roadmap. There is no minimum order — start with a single pilot diamond to validate quality and branding. Volume timelines are structured per partner and detailed in your custom proposal — regional distributors can also negotiate exclusive territory.</p>
     </div>
   </div>
   <div class="res-links rv">
@@ -1466,33 +1471,6 @@ footer{
   window.addEventListener('resize', ()=>{ resize(); if(!running) draw(); });
   if(reduced){ draw(); pauseBtn.textContent='Play'; }
   else setRunning(true);
-})();
-
-/* instrument jitter — FIG.01 metric readouts drift like live instrument readings */
-(function(){
-  const foot=document.querySelector('.draw-foot');
-  if(!foot) return;
-  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const pauseBtn=document.getElementById('pauseBtn');
-  const bs=foot.querySelectorAll('b');
-  if(bs.length<3) return;
-  const chans=[ // mean-reverting random walk around the nominal value
-    {el:bs[0], base:5.5,   amp:.03, val:5.5,   fmt:v=>v.toFixed(2)+' GPa'},
-    {el:bs[1], base:1450,  amp:4,   val:1450,  fmt:v=>Math.round(v).toLocaleString('en-US')+' °C'},
-    {el:bs[2], base:99.95, amp:.02, val:99.95, fmt:v=>v.toFixed(2)+' %+'},
-  ];
-  let paused = pauseBtn && pauseBtn.getAttribute('aria-pressed')==='true';
-  if(pauseBtn) new MutationObserver(()=>{
-    paused = pauseBtn.getAttribute('aria-pressed')==='true';
-  }).observe(pauseBtn,{attributes:true,attributeFilter:['aria-pressed']});
-  (function tick(){
-    if(!paused) for(const c of chans){
-      c.val += (Math.random()-.5)*c.amp*.9 + (c.base-c.val)*.15;
-      c.val = Math.max(c.base-c.amp, Math.min(c.base+c.amp, c.val));
-      c.el.textContent = c.fmt(c.val);
-    }
-    setTimeout(tick, 600+Math.random()*800);
-  })();
 })();
 
 /* mobile menu */
