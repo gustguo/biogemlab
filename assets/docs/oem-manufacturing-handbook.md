@@ -120,9 +120,9 @@ The partner has full control over the following:
 - Warranty and service terms
 - Local customer support channels
 
-## 2.3 Certificates with Partner Logo
+## 2.3 Certificate Sleeves and Documentation with Partner Logo
 
-BioGem Lab supports partner-branded certificates for the default CCIC certificate option (ILDA upgrade available).
+BioGem Lab supports partner-branded certificate sleeves and documentation for the default CCIC certificate option (ILDA upgrade available). Official gemological certificates remain in their original third-party format and cannot be altered.
 
 ### Branded Certificate Requirements
 
