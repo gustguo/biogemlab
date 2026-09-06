@@ -5,7 +5,7 @@
 **Version:** 2026-Q3  
 **Effective Date:** July 13, 2026  
 **Classification:** Confidential — Authorized Partners Only  
-**Document Owner:** BioGem Lab / Luoyang BioGem Technology Co., Ltd.  
+**Document Owner:** BioGem Lab / Luoyang Life Gem Technology Co., Ltd.  
 **Last Updated:** July 26, 2026
 
 ---
@@ -576,7 +576,7 @@ A-Class partners (pet aftercare) may request samples on a case-by-case basis.
 
 ## 12.3 Operations Entity
 
-**Luoyang BioGem Technology Co., Ltd.**  
+**Luoyang Life Gem Technology Co., Ltd.**  
 11F, R&D Building, Zhongke Information Industry Park  
 Yibin District, Luoyang, Henan, China  
 

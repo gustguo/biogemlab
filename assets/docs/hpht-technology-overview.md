@@ -2,7 +2,7 @@
 ## Memorial Diamond Manufacturing
 
 **BioGem Lab Engineering Team**  
-Luoyang BioGem Technology Co., Ltd.  
+Luoyang Life Gem Technology Co., Ltd.  
 July 2026
 
 ---
@@ -377,7 +377,7 @@ After growth, the diamond rough goes to the cutting workshop:
 
 ### 8.1 Laboratory Infrastructure
 
-BioGem Lab operates from a dedicated facility in Luoyang, China (Luoyang BioGem Technology Co., Ltd., Tax ID: 91410300MA9KJT0M47). The facility includes:
+BioGem Lab operates from a dedicated facility in Luoyang, China (Luoyang Life Gem Technology Co., Ltd., Tax ID: 91410300MA9KJT0M47). The facility includes:
 
 - **Carbon extraction laboratory**: Fume hoods, pyrolysis ovens, acid digestion stations.
 - **Purification cleanroom**: ISO 7 cleanroom for carbon purification and graphitization. Positive pressure, HEPA filtration, temperature 22±2°C, humidity 45±5%.
@@ -536,5 +536,5 @@ Cracks form from thermal or mechanical stress:
 
 ---
 
-*© 2026 Luoyang BioGem Technology Co., Ltd. All rights reserved.*  
+*© 2026 Luoyang Life Gem Technology Co., Ltd. All rights reserved.*  
 *Patent: ZL 201010565778.9 | Certificate No. 1058820*
