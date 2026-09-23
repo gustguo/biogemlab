@@ -23,13 +23,13 @@
 
 | SKU | Weight | Grade |
 |-----|--------|-------|
-| 0.5 ct | ~0.50 carat | E–H color, VS clarity |
-| 1.0 ct | ~1.00 carat | E–H color, VS clarity |
-| 1.5 ct | ~1.50 carat | E–H color, VS clarity |
-| 2.0 ct | ~2.00 carat | E–H color, VS clarity |
+| 0.5 ct | ~0.50 carat | E–H color, VVS–SI clarity |
+| 1.0 ct | ~1.00 carat | E–H color, VVS–SI clarity |
+| 1.5 ct | ~1.50 carat | E–H color, VVS–SI clarity |
+| 2.0 ct | ~2.00 carat | E–H color, VVS–SI clarity |
 
 - Color: Colorless, E–H grade only
-- Clarity: VS
+- Clarity: VVS–SI
 - Cut: Round Brilliant (standard); Cushion / Emerald / Oval / Pear / Heart (custom)
 - Certification: Default CCIC traceability QR code; optional IGI or GIA upgrade
 - Minimum sample: 6 g clean dry hair; 10–20 g recommended
