@@ -80,7 +80,7 @@ Cremation temperatures (760–980 °C) fully oxidize carbon to CO₂. What remai
 - /faq.html — Frequently asked questions
 - /contact.html — Inquiry form, contact details, WhatsApp
 - /privacy.html / /terms.html — Legal
-- /blog/ — Technical and industry articles (42 posts)
+- /blog/ — Technical and industry articles (49 posts)
 - /blog/author-lilihua.html — Author page (Chief Scientist / Patent Inventor)
 
 ## Full Content Index
@@ -132,6 +132,7 @@ Cremation temperatures (760–980 °C) fully oxidize carbon to CO₂. What remai
 - /blog/memorial-diamond-sales-transparency-strategies.html — Transparent Memorial Diamond Sales: Strategies That Build Trust
 - /blog/memorial-diamond-size-guide-carat-weight.html — Memorial Diamond Carat Sizes: How Much Ash or Hair You Need
 - /blog/memorial-diamond-wholesale-pricing-margin-guide.html — Memorial Diamond Wholesale Pricing and Margins: A B2B Guide
+- /blog/milestone-diamonds-living-lab-grown.html — Beyond Memorial: Milestone Diamonds for the Living
 - /blog/metal-catalyst-solvents-hpht-ni-mn-co-alloy-performance.html — Ni-Mn-Co Catalyst Solvents for HPHT Diamond Growth
 - /blog/oem-memorial-diamond-manufacturing.html — OEM Memorial Diamond Manufacturing for B2B Partners
 - /blog/pet-cremation-services-evaluate-memorial-diamond-suppliers-guide.html — How Pet Cremation Services Evaluate Memorial Diamond Suppliers: A 2026 Buyer's Guide
