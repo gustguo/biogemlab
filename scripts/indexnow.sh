@@ -27,8 +27,7 @@ url_from_rel() {
 }
 
 post_batch() {
-  local payload="$1" n
-  n=$(grep -o 'https://' <<<"$payload" | wc -l)
+  local payload="$1" n="$2"
   [ "$n" -eq 0 ] && { echo "indexnow: nothing to submit"; exit 0; }
   local http
   http=$(curl -sS -o /tmp/indexnow-resp.txt -w '%{http_code}' \
@@ -72,7 +71,7 @@ cmd_push() {
 
   [ "${#urls[@]}" -eq 0 ] && { echo "$current" > "$STATE"; echo "indexnow: HTML unchanged, state synced"; exit 0; }
 
-  post_batch "$(make_payload "${urls[@]}")"
+  post_batch "$(make_payload "${urls[@]}")" "${#urls[@]}"
   echo "$current" > "$STATE"
 }
 
@@ -81,13 +80,13 @@ cmd_push_all() {
   while IFS= read -r loc; do urls+=("$loc"); done \
     < <(grep -o '<loc>[^<]*</loc>' "$REPO_DIR/sitemap.xml" | sed 's/<[^>]*>//g')
   [ "${#urls[@]}" -eq 0 ] && die "no URLs parsed from sitemap.xml"
-  post_batch "$(make_payload "${urls[@]}")"
+  post_batch "$(make_payload "${urls[@]}")" "${#urls[@]}"
   git -C "$REPO_DIR" rev-parse HEAD > "$STATE"
 }
 
 cmd_push_url() {
   [ "$#" -ge 1 ] || die "usage: $0 push-url URL [URL...]"
-  post_batch "$(make_payload "$@")"
+  post_batch "$(make_payload "$@")" "$#"
   git -C "$REPO_DIR" rev-parse HEAD > "$STATE" 2>/dev/null || true
 }
 
