@@ -80,7 +80,7 @@ Cremation temperatures (760–980 °C) fully oxidize carbon to CO₂. What remai
 - /faq.html — Frequently asked questions
 - /contact.html — Inquiry form, contact details, WhatsApp
 - /privacy.html / /terms.html — Legal
-- /blog/ — Technical and industry articles (49 posts)
+- /blog/ — Technical and industry articles (50 posts)
 - /blog/author-lilihua.html — Author page (Chief Scientist / Patent Inventor)
 
 ## Full Content Index
@@ -97,7 +97,7 @@ Cremation temperatures (760–980 °C) fully oxidize carbon to CO₂. What remai
 - /plant-fiber-diamond.html — Plant Fiber Diamond Case Study
 - /hakka-ancestral-root-diamond.html — Hakka Ancestral Root Diamond Case Study
 
-### Blog articles (42)
+### Blog articles (49)
 
 - /blog/bio-carbon-memorial-diamonds-science.html — Bio-Carbon Memorial Diamonds: The Science of Life to Light
 - /blog/biological-carbon-extraction-hair-to-graphite.html — Hair to Graphite: How Biological Carbon Extraction Works
@@ -111,6 +111,10 @@ Cremation temperatures (760–980 °C) fully oxidize carbon to CO₂. What remai
 - /blog/diamond-clarity-grading-memorial-diamonds-inclusion-types.html — Memorial Diamond Clarity: Inclusion Types and Grading Guide
 - /blog/diamond-manufacturing-science-materials-engineering.html — Diamond Manufacturing Science: A Materials Engineering Guide
 - /blog/diamond-seed-crystal-selection-hpht-memorial-diamonds.html — Diamond Seed Crystal Selection for HPHT Memorial Diamonds
+- /blog/evolution-memorial-technologies-urns-to-crystals.html — Evolution of Memorial Technologies: From Urns to Crystals
+- /blog/factory-audit-memorial-diamond-manufacturer.html — Factory Audit: How to Vet a Memorial Diamond Manufacturer
+- /blog/funeral-industry-innovation-memorial-diamonds-future-end-life-services.html — Funeral Industry Innovation: How Memorial Diamonds Fit the Future of End-of-Life Services
+- /blog/global-demand-memorial-diamonds-regional-analysis.html — Global Demand for Memorial Diamonds: Regional Market Analysis
 - /blog/global-memorial-diamond-supply-chains.html — Memorial Diamond Supply Chain: From Ashes to Global Delivery
 - /blog/graphitization-carbon-structure-memorial-diamonds.html — Graphitization in Memorial Diamond Manufacturing
 - /blog/hair-to-diamond-process.html — From Hair to Memorial Diamond: The Complete Process
@@ -134,10 +138,12 @@ Cremation temperatures (760–980 °C) fully oxidize carbon to CO₂. What remai
 - /blog/memorial-diamond-wholesale-pricing-margin-guide.html — Memorial Diamond Wholesale Pricing and Margins: A B2B Guide
 - /blog/milestone-diamonds-living-lab-grown.html — Beyond Memorial: Milestone Diamonds for the Living
 - /blog/metal-catalyst-solvents-hpht-ni-mn-co-alloy-performance.html — Ni-Mn-Co Catalyst Solvents for HPHT Diamond Growth
+- /blog/nda-to-delivery-memorial-diamond-b2b-partnership.html — NDA to Delivery: Inside a Memorial Diamond B2B Partnership
 - /blog/oem-memorial-diamond-manufacturing.html — OEM Memorial Diamond Manufacturing for B2B Partners
 - /blog/pet-cremation-services-evaluate-memorial-diamond-suppliers-guide.html — How Pet Cremation Services Evaluate Memorial Diamond Suppliers: A 2026 Buyer's Guide
 - /blog/pet-cremation-services-revenue-memorial-diamonds.html — Pet Cremation Revenue: Memorial Diamonds
 - /blog/pet-memorial-diamond-buying-guide.html — Buying a Pet Memorial Diamond: Costs, Process and Red Flags
+- /blog/plant-source-memorial-diamonds-petals-to-heartwood.html — Plant-Source Memorial Diamonds: From Petals to Heartwood
 - /blog/sustainable-diamond-manufacturing-environmental-impact.html — Sustainable Diamond Manufacturing: Environmental Impact
 - /blog/synthetic-diamond-engineering-doping-color-control.html — Diamond Color Engineering: Doping and Color Control in HPHT
 - /blog/what-is-hpht-diamond-growth.html — HPHT Diamond Growth Explained: Process, Time and Cost
