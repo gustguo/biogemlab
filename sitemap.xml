@@ -3,7 +3,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.biogemlab.com/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -203,7 +203,7 @@
   <!-- Blog Index -->
   <url>
     <loc>https://www.biogemlab.com/blog/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -534,6 +534,13 @@
   <url>
     <loc>https://www.biogemlab.com/blog/industrial-applications-lab-grown-diamonds.html</loc>
     <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <!-- Article 53: Luxury Memorial Market Size & Growth Analysis -->
+  <url>
+    <loc>https://www.biogemlab.com/blog/luxury-memorial-market-size-growth-analysis.html</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
