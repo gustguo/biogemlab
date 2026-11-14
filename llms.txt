@@ -104,7 +104,6 @@ Cremation temperatures (760–980 °C) fully oxidize carbon to CO₂. What remai
 - /blog/carbon-extraction-yield-hair-pet-fur-botanical.html — Carbon Extraction Yield: Human Hair vs Pet Fur vs Botanical
 - /blog/carbon-purity-requirements-memorial-diamond-synthesis.html — Carbon Purity Requirements for Memorial Diamond Synthesis
 - /blog/carbon-source-purity-diamond-quality.html — Carbon Purity &amp; Memorial Diamond Quality
-- /blog/choosing-memorial-diamond-supplier.html — Choosing a Memorial Diamond Supplier: B2B Buyer Guide
 - /blog/cross-selling-memorial-diamonds-funeral-services.html — Memorial Diamond Cross-Selling: New Revenue for Funeral Homes
 - /blog/crystal-lattice-stability-extreme-pressure.html — Diamond Lattice Stability at 5–6 GPa in HPHT Growth
 - /blog/cutting-proportions-memorial-diamonds-brilliance.html — Cutting Proportions for Memorial Diamonds: Brilliance
@@ -117,9 +116,6 @@ Cremation temperatures (760–980 °C) fully oxidize carbon to CO₂. What remai
 - /blog/global-demand-memorial-diamonds-regional-analysis.html — Global Demand for Memorial Diamonds: Regional Market Analysis
 - /blog/global-memorial-diamond-supply-chains.html — Memorial Diamond Supply Chain: From Ashes to Global Delivery
 - /blog/graphitization-carbon-structure-memorial-diamonds.html — Graphitization in Memorial Diamond Manufacturing
-- /blog/hair-to-diamond-process.html — From Hair to Memorial Diamond: The Complete Process
-- /blog/how-carbon-becomes-diamond.html — How Carbon Becomes a Memorial Diamond
-- /blog/how-long-does-memorial-diamond-last.html — Do Memorial Diamonds Last Forever? Durability Facts
 - /blog/how-much-ash-for-memorial-diamond.html — Why Ashes Cannot Become Memorial Diamonds: The Chemistry
 - /blog/hpht-synthesis-temperature-pressure-optimization.html — HPHT Diamond Growth: 5.5 GPa, 1,450°C, 20–25 Day Growth Cycle [Parameters Guide]
 - /blog/hpht-vs-cvd-memorial-diamonds.html — HPHT vs CVD: Memorial Diamond Manufacturing Methods Compared
@@ -129,8 +125,6 @@ Cremation temperatures (760–980 °C) fully oxidize carbon to CO₂. What remai
 - /blog/memorial-diamond-cost-breakdown.html — What Does a Memorial Diamond Cost? Full Price Breakdown
 - /blog/memorial-diamond-industry-trends-2026-market-analysis.html — 2026 Memorial Diamond Market: Trends, Growth and Outlook
 - /blog/memorial-diamond-marketing-messaging-pet-owners.html — Marketing Pet Memorial Diamonds: Messages That Resonate
-- /blog/memorial-diamond-oem-partnerships-cross-border-deals.html — Memorial Diamond OEM Partnerships: What Three Cross-Border Deals Taught Us
-- /blog/memorial-diamond-production-cycle.html — Memorial Diamond Production Cycle: 60 Days Explained
 - /blog/memorial-diamond-production-timeline.html — Production Timeline
 - /blog/memorial-diamond-returns-remakes-partner-policies.html — Memorial Diamond Returns and Remakes: Partner Policies
 - /blog/memorial-diamond-sales-transparency-strategies.html — Transparent Memorial Diamond Sales: Strategies That Build Trust
@@ -148,8 +142,6 @@ Cremation temperatures (760–980 °C) fully oxidize carbon to CO₂. What remai
 - /blog/sustainable-diamond-manufacturing-environmental-impact.html — Sustainable Diamond Manufacturing: Environmental Impact
 - /blog/synthetic-diamond-engineering-doping-color-control.html — Diamond Color Engineering: Doping and Color Control in HPHT
 - /blog/top-memorial-diamond-manufacturers-b2b-comparison.html — Top Memorial Diamond Manufacturers: A B2B Buyer's Comparison (2026)
-- /blog/what-is-hpht-diamond-growth.html — HPHT Diamond Growth Explained: Process, Time and Cost
-- /blog/white-label-memorial-diamonds-guide.html — White-Label Memorial Diamonds
 
 ## One-Line Definition
 
